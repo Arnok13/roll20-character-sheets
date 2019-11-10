@@ -620,13 +620,6 @@ select.sheet-attcomptext {
     width: 35px;
 }
 
-select.sheet-attcomptextdefault {
-    font-weight: normal;
-    font-size: 0.9em;
-    width: 35px;
-    color: #B31515;
-}
-
 select.sheet-selComprel,
 select.sheet-selCompjet {
     display: none;
@@ -685,16 +678,38 @@ button[type="roll"].sheet-btRolbrut {
     color: black;
 }
 
+button[type="roll"].sheet-btRolrelDefault,
+button[type="roll"].sheet-btRoljetDefault,
+button[type="roll"].sheet-btRolbrutDefault {
+    width: 142px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent;
+    font-size: 1em;
+    font-weight: bold;
+    background-image: none;
+    background: transparent;
+    text-transform: uppercase;
+    display: none;
+    color: blue;
+}
+
 button[type="roll"].sheet-btRolrel:before,
 button[type="roll"].sheet-btRoljet:before,
-button[type="roll"].sheet-btRolbrut:before {
+button[type="roll"].sheet-btRolbrut:before,
+button[type="roll"].sheet-btRolrelDefault:before,
+button[type="roll"].sheet-btRoljetDefault:before,
+button[type="roll"].sheet-btRolbrutDefault:before {
     content: "t  ";
     text-transform: lowercase;
 }
 
 button[type="roll"].sheet-btRolrel:hover:before,
 button[type="roll"].sheet-btRoljet:hover:before,
-button[type="roll"].sheet-btRolbrut:hover:before {
+button[type="roll"].sheet-btRolbrut:hover:before,
+button[type="roll"].sheet-btRolrelDefault:hover:before,
+button[type="roll"].sheet-btRoljetDefault:hover::before,
+button[type="roll"].sheet-btRolbrutDefault:hover:before {
     font-weight: bold;
     color: #CD071E;
 }
@@ -719,7 +734,10 @@ input[type=radio].sheet-chkSheetBnB:checked~div.sheet-main button[type="roll"].s
 
 button[type="roll"].sheet-btRolrel:hover,
 button[type="roll"].sheet-btRoljet:hover,
-button[type="roll"].sheet-btRolbrut:hover {
+button[type="roll"].sheet-btRolbrut:hover,
+button[type="roll"].sheet-btRolrelDefault:hover,
+button[type="roll"].sheet-btRoljetDefault:hover,
+button[type="roll"].sheet-btRolbrutDefault:hover {
     border-width: 1px;
     border-style: solid;
     border-color: #CD071E;
@@ -743,15 +761,18 @@ input[type=radio].sheet-chkSheetBnB:checked~div.sheet-main button[type="roll"].s
     border-color: #969070;
 }
 
-input[type=checkbox].sheet-chkRolrel:checked~div.sheet-main button[type=roll].sheet-btRolrel {
+input[type=checkbox].sheet-chkRolrel:checked~div.sheet-main button[type=roll].sheet-btRolrel,
+input[type=checkbox].sheet-chkRolrel:checked~div.sheet-main button[type=roll].sheet-btRolrelDefault {
     display: inline-block;
 }
 
-input[type=checkbox].sheet-chkRoljet:checked~div.sheet-main button[type=roll].sheet-btRoljet {
+input[type=checkbox].sheet-chkRoljet:checked~div.sheet-main button[type=roll].sheet-btRoljet,
+input[type=checkbox].sheet-chkRoljet:checked~div.sheet-main button[type=roll].sheet-btRoljetDefault {
     display: inline-block;
 }
 
-input[type=checkbox].sheet-chkRolbrut:checked~div.sheet-main button[type=roll].sheet-btRolbrut {
+input[type=checkbox].sheet-chkRolbrut:checked~div.sheet-main button[type=roll].sheet-btRolbrut,
+input[type=checkbox].sheet-chkRolbrut:checked~div.sheet-main button[type=roll].sheet-btRolbrutDefault {
     display: inline-block;
 }
 

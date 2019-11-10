@@ -3,7 +3,7 @@
     <!-- TABS -->
     <input type="radio" name="attr_chkvie" value="0" class="onglmain" data-i18n-title="feuille" title="Feuille" checked /><span data-i18n="feuille">Feuille</span>
     <input type="radio" name="attr_chkvie" value="1" class="onglconfig" title="Configuration" /><span data-i18n="configuration">Configuration</span>
-    <span style="display:inline-block;width:150px;text-align: center;color: #888888;font-size: 0.9em;">SWADE v1.0 (15/12/2018)</span>
+    <span style="display:inline-block;width:150px;text-align: center;color: #888888;font-size: 0.9em;">SWADE v1.0 (10/11/2019)</span>
     <!-- Styling -->
     <input type="radio" name="attr_sheetDead" value="0" class="chkSheetSaWo" checked />
     <!-- Savage Worlds -->
@@ -13,6 +13,13 @@
     <!-- Lankhmar -->
     <input type="radio" name="attr_sheetDead" value="3" class="chkSheetBnB" />
     <!-- Beast & Barbarian -->
+    <input type="radio" name="attr_sheetDead" value="4" class="chkSheetInterface" />
+    <!-- Interface Zero 3.0 -->
+    <input type="radio" name="attr_sheetDead" value="5" class="chkSheetParsec" />
+    <!-- The Last Parsec -->
+    <input type="radio" name="attr_sheetDead" value="6" class="chkSheetCrystal" />
+    <!-- Crystal Heart -->
+
     <!-- hidden settings -->
     <input type="checkbox" name="attr_sheetStyle" value="0" class="chkRolrel" />
     <input type="checkbox" name="attr_sheetStyle" value="1" class="chkRoljet" checked/>
@@ -25,32 +32,37 @@
     <input type="checkbox" name="attr_bless2" value="1" class="persoBless2" checked />
     <input type="checkbox" name="attr_bless3" value="1" class="persoBless3" checked />
     <!-- Skills displaying -->
-    <input type="checkbox" name="attr_chkAcademics" class="chkAcademics" value="1" checked />
     <input type="checkbox" name="attr_chkAthletics" class="chkAthletics" value="1" checked />
+    <input type="checkbox" name="attr_chkCommonKnowledge" class="chkCommonKnowledge" value="1" checked />
+    <input type="checkbox" name="attr_chkPerception" class="chkPerception" value="1" checked />
+    <input type="checkbox" name="attr_chkPersuasion" class="chkPersuasion" value="1" checked />
+    <input type="checkbox" name="attr_chkDiscretion" class="chkDiscretion" value="1" checked />
+    <input type="checkbox" name="attr_chkPerformance" class="chkPerformance" value="1" checked />
     <input type="checkbox" name="attr_chkBattle" class="chkBattle" value="1" checked />
     <input type="checkbox" name="attr_chkCombat" class="chkCombat" value="1" checked />
     <input type="checkbox" name="attr_chkConduite" class="chkConduite" value="1" checked />
-    <input type="checkbox" name="attr_chkConnaissance" class="chkConnaissance" value="1" checked />
-    <input type="checkbox" name="attr_chkCrochetage" class="chkCrochetage" value="1" checked />
-    <input type="checkbox" name="attr_chkDiscretion" class="chkDiscretion" value="1" checked />
+    <input type="checkbox" name="attr_chkThieverie" class="chkThieverie" value="1" checked />
+    <input type="checkbox" name="attr_chkElectronics" class="chkElectronics" value="1" checked />
     <input type="checkbox" name="attr_chkEquitation" class="chkEquitation" value="1" checked />
-    <input type="checkbox" name="attr_chkEscalade" class="chkEscalade" value="1" checked />
     <input type="checkbox" name="attr_chkIntimidation" class="chkIntimidation" value="1" checked />
+    <input type="checkbox" name="attr_chkFocus" class="chkFocus" value="0" checked />
+    <input type="checkbox" name="attr_chkFaith" class="chkFaith" value="0" checked />
+    <input type="checkbox" name="attr_chkHacking" class="chkHacking" value="1" checked />
     <input type="checkbox" name="attr_chkJeu" class="chkJeu" value="1" checked />
-    <input type="checkbox" name="attr_chkLancer" class="chkLancer" value="1" checked />
-    <input type="checkbox" name="attr_chkNatation" class="chkNatation" value="1" checked />
     <input type="checkbox" name="attr_chkNavigation" class="chkNavigation" value="1" checked />
-    <input type="checkbox" name="attr_chkPerception" class="chkPerception" value="1" checked />
-    <input type="checkbox" name="attr_chkPersuasion" class="chkPersuasion" value="1" checked />
+    <input type="checkbox" name="attr_chkOccultism" class="chkOccultism" value="0" checked />
     <input type="checkbox" name="attr_chkPilotage" class="chkPilotage" value="1" checked />
-    <input type="checkbox" name="attr_chkPistage" class="chkPistage" value="1" checked />
+    <input type="checkbox" name="attr_chkPsionic" class="chkPsionic" value="0" checked />
     <input type="checkbox" name="attr_chkRecherche" class="chkRecherche" value="1" checked />
     <input type="checkbox" name="attr_chkReparation" class="chkReparation" value="1" checked />
-    <input type="checkbox" name="attr_chkReseaux" class="chkReseaux" value="1" checked />
     <input type="checkbox" name="attr_chkSarcasme" class="chkSarcasme" value="1" checked />
+    <input type="checkbox" name="attr_chkScience" class="chkScience" value="1" checked />
+    <input type="checkbox" name="attr_chkWeirdScience" class="chkWeirdScience" value="0" checked />
     <input type="checkbox" name="attr_chkSoins" class="chkSoins" value="1" checked />
+    <input type="checkbox" name="attr_chkSpellcasting" class="chkSpellcasting" value="0" checked />
     <input type="checkbox" name="attr_chkSurvie" class="chkSurvie" value="1" checked />
     <input type="checkbox" name="attr_chkTir" class="chkTir" value="1" checked />
+    <input type="checkbox" name="attr_chkAcademics" class="chkAcademics" value="1" checked />
     <!-- Real start of the sheet -->
     <div class="main">
         <!--- ***  MAIN *** -->
@@ -170,26 +182,26 @@
                         <!-- FIN NON ENTRAINE -->
                         <div class="input chkAthletics">
                             <!-- Athletics -->
-                            <button type="roll" name="Btrel-Athletics" class="btRolrel" value="@{relRollAthletics}" data-i18n="Athletics">Athlétisme</button>
-                            <button type="roll" name="Btjet-Athletics" class="btRoljet" value="@{jetRollAthletics}" data-i18n="Athletics">Athlétisme</button>
-                            <button type="roll" name="BtBrut-Athletics" class="btRolbrut" value="/em @{character_name} @{text_jet-de} @{Athletics_nom}&#010;/roll @{RollAthletics}" data-i18n="Athletics">Athlétisme</button>
-                            <div class="attcomptextdefault" data-i18n="agi-u">AGI</div>
-                            <SELECT name="attr_academics_de" class="selde">
+                            <button type="roll" name="Btrel-Athletics" class="btRolrelDefault" value="@{relRollAthletics}" data-i18n="athletics">Athlétisme</button>
+                            <button type="roll" name="Btjet-Athletics" class="btRoljetDefault" value="@{jetRollAthletics}" data-i18n="athletics">Athlétisme</button>
+                            <button type="roll" name="BtBrut-Athletics" class="btRolbrutDefault" value="/em @{character_name} @{text_jet-de} @{Athletics_nom}&#010;/roll @{RollAthletics}" data-i18n="athletics">Athlétisme</button>
+                            <div class="attcomptext" data-i18n="agi-u">AGI</div>
+                            <SELECT name="attr_athletics_de" class="selde">
                                 <OPTION value="4" SELECTED data-i18n="d4">&nbsp;d4</OPTION>
                                 <OPTION value="6" data-i18n="d6">&nbsp;d6</OPTION>
                                 <OPTION value="8" data-i18n="d8">&nbsp;d8</OPTION>
                                 <OPTION value="10" data-i18n="d10">d10</OPTION>
                                 <OPTION value="12" data-i18n="d12">d12</OPTION>
                             </SELECT> +
-                            <input type="number" class="selde" name="attr_academics_bonus" value="0" min="-9" />
+                            <input type="number" class="selde" name="attr_athletics_bonus" value="0" min="-9" />
                         </div>
                         <!-- FIN ATHLETICS -->
                         <div class="input chkCommonKnowledge">
                             <!-- CULTURE GENERALE -->
-                            <button type="roll" name="Btrel-CommonKnowledge" class="btRolrel" value="@{relRollCommonKnowledge}" data-i18n="culture generale">Culture G</button>
-                            <button type="roll" name="Btjet-CommonKnowledge" class="btRoljet" value="@{jetRollCommonKnowledge}" data-i18n="culture generale">Culture G</button>
-                            <button type="roll" name="BtBrut-CommonKnowledge" class="btRolbrut" value="/em @{character_name} @{text_jet-de} @{text_conduite}&#010;/roll @{RollCommonKnowledge}" data-i18n="culture generale">Culture_générale</button>
-                            <div class="attcomptextdefault" data-i18n="int-u">INT</div>
+                            <button type="roll" name="Btrel-CommonKnowledge" class="btRolrelDefault" value="@{relRollCommonKnowledge}" data-i18n="culture-generale">Culture G</button>
+                            <button type="roll" name="Btjet-CommonKnowledge" class="btRoljetDefault" value="@{jetRollCommonKnowledge}" data-i18n="culture-generale">Culture G</button>
+                            <button type="roll" name="BtBrut-CommonKnowledge" class="btRolbrutDefault" value="/em @{character_name} @{text_jet-de} @{text_conduite}&#010;/roll @{RollCommonKnowledge}" data-i18n="culture-generale">Culture_générale</button>
+                            <div class="attcomptext" data-i18n="int-u">INT</div>
                             <SELECT name="attr_commonknowledge_de" class="selde">
                                 <OPTION value="4" SELECTED data-i18n="d4">&nbsp;d4</OPTION>
                                 <OPTION value="6" data-i18n="d6">&nbsp;d6</OPTION>
@@ -202,10 +214,10 @@
                         <!-- FIN CULTURE GENERALE -->
                         <div class="input chkPerception">
                             <!-- PERCEPTION -->
-                            <button type="roll" name="Btrel-Perception" class="btRolrel" value="@{relRollPerception}" data-i18n="perception">Perception</button>
-                            <button type="roll" name="Btjet-Perception" class="btRoljet" value="@{jetRollPerception}" data-i18n="perception">Perception</button>
-                            <button type="roll" name="BtBrut-Perception" class="btRolbrut" value="/em @{character_name} @{text_jet-de} @{text_perception}&#010;/roll @{RollPerception}" data-i18n="perception">Perception</button>
-                            <div class="attcomptextdefault" data-i18n="int-u">INT</div>
+                            <button type="roll" name="Btrel-Perception" class="btRolrelDefault" value="@{relRollPerception}" data-i18n="perception">Perception</button>
+                            <button type="roll" name="Btjet-Perception" class="btRoljetDefault" value="@{jetRollPerception}" data-i18n="perception">Perception</button>
+                            <button type="roll" name="BtBrut-Perception" class="btRolbrutDefault" value="/em @{character_name} @{text_jet-de} @{text_perception}&#010;/roll @{RollPerception}" data-i18n="perception">Perception</button>
+                            <div class="attcomptext" data-i18n="int-u">INT</div>
                             <SELECT name="attr_perception_de" class="selde">
                                 <OPTION value="4" SELECTED data-i18n="d4">&nbsp;d4</OPTION>
                                 <OPTION value="6" data-i18n="d6">&nbsp;d6</OPTION>
@@ -218,10 +230,10 @@
                         <!-- FIN PERCEPTION -->
                         <div class="input chkPersuasion">
                             <!-- PERSUASION -->
-                            <button type="roll" name="Btrel-Persuasion" class="btRolrel" value="@{relRollPersuasion}" data-i18n="persuasion">Persuasion</button>
-                            <button type="roll" name="Btjet-Persuasion" class="btRoljet" value="@{jetRollPersuasion}" data-i18n="persuasion">Persuasion</button>
-                            <button type="roll" name="BtBrut-Persuasion" class="btRolbrut" value="/em @{character_name} @{text_jet-de} @{text_persuasion}&#010;/roll @{RollPersuasion}" data-i18n="persuasion">Persuasion</button>
-                            <div class="attcomptextdefault" data-i18n="ame-u">ÂME</div>
+                            <button type="roll" name="Btrel-Persuasion" class="btRolrelDefault" value="@{relRollPersuasion}" data-i18n="persuasion">Persuasion</button>
+                            <button type="roll" name="Btjet-Persuasion" class="btRoljetDefault" value="@{jetRollPersuasion}" data-i18n="persuasion">Persuasion</button>
+                            <button type="roll" name="BtBrut-Persuasion" class="btRolbrutDefault" value="/em @{character_name} @{text_jet-de} @{text_persuasion}&#010;/roll @{RollPersuasion}" data-i18n="persuasion">Persuasion</button>
+                            <div class="attcomptext" data-i18n="ame-u">ÂME</div>
                             <SELECT name="attr_persuasion_de" class="selde">
                                 <OPTION value="4" SELECTED data-i18n="d4">&nbsp;d4</OPTION>
                                 <OPTION value="6" data-i18n="d6">&nbsp;d6</OPTION>
@@ -234,10 +246,10 @@
                         <!-- FIN PERSUASION -->
                         <div class="input chkDiscretion">
                             <!-- DISCRÉTION -->
-                            <button type="roll" name="Btrel-Discretion" class="btRolrel" value="@{relRollDiscretion}" data-i18n="discretion">Discrétion</button>
-                            <button type="roll" name="Btjet-Discretion" class="btRoljet" value="@{jetRollDiscretion}" data-i18n="discretion">Discrétion</button>
-                            <button type="roll" name="BtBrut-Discretion" class="btRolbrut" value="/em @{character_name} @{text_jet-de} @{text_discretion}&#010;/roll @{RollDiscretion}" data-i18n="discretion">Discrétion</button>
-                            <div class="attcomptextdefault" data-i18n="agi-u">AGI</div>
+                            <button type="roll" name="Btrel-Discretion" class="btRolrelDefault" value="@{relRollDiscretion}" data-i18n="discretion">Discrétion</button>
+                            <button type="roll" name="Btjet-Discretion" class="btRoljetDefault" value="@{jetRollDiscretion}" data-i18n="discretion">Discrétion</button>
+                            <button type="roll" name="BtBrut-Discretion" class="btRolbrutDefault" value="/em @{character_name} @{text_jet-de} @{text_discretion}&#010;/roll @{RollDiscretion}" data-i18n="discretion">Discrétion</button>
+                            <div class="attcomptext" data-i18n="agi-u">AGI</div>
                             <SELECT name="attr_discretion_de" class="selde">
                                 <OPTION value="4" SELECTED data-i18n="d4">&nbsp;d4</OPTION>
                                 <OPTION value="6" data-i18n="d6">&nbsp;d6</OPTION>
@@ -266,9 +278,9 @@
                         <!-- FIN PERFORMANCE -->
                         <div class="input chkBattle">
                             <!-- Battle -->
-                            <button type="roll" name="Btrel-Battle" class="btRolrel" value="@{relRollBattle}" data-i18n="Battle">Batailles</button>
-                            <button type="roll" name="Btjet-Battle" class="btRoljet" value="@{jetRollBattle}" data-i18n="Battle">Batailles</button>
-                            <button type="roll" name="BtBrut-Battle" class="btRolbrut" value="/em @{character_name} @{text_jet-de} @{Battle_nom}&#010;/roll @{RollBattle}" data-i18n="Battle">Batailles</button>
+                            <button type="roll" name="Btrel-Battle" class="btRolrel" value="@{relRollBattle}" data-i18n="battle">Batailles</button>
+                            <button type="roll" name="Btjet-Battle" class="btRoljet" value="@{jetRollBattle}" data-i18n="battle">Batailles</button>
+                            <button type="roll" name="BtBrut-Battle" class="btRolbrut" value="/em @{character_name} @{text_jet-de} @{Battle_nom}&#010;/roll @{RollBattle}" data-i18n="battle">Batailles</button>
                             <div class="attcomptext" data-i18n="int-u">INT</div>
                             <SELECT name="attr_battle_de" class="selde">
                                 <OPTION value="4" SELECTED data-i18n="d4">&nbsp;d4</OPTION>
@@ -379,7 +391,7 @@
                         <div class="input chkFocus">
                             <!-- FOCUS -->
                             <button type="roll" name="Btrel-Focus" class="btRolrel" value="@{relRollFocus}" data-i18n="focus">Focus</button>
-                            <button type="roll" name="Btjet-Focus" class="btRoljet" value="@{jetRollFocus}" data-i18n="faith">Focus</button>
+                            <button type="roll" name="Btjet-Focus" class="btRoljet" value="@{jetRollFocus}" data-i18n="focus">Focus</button>
                             <button type="roll" name="BtBrut-Focus" class="btRolbrut" value="/em @{character_name} @{text_jet-de} @{text_focus}&#010;/roll @{RollFocus}" data-i18n="focus">Focus</button>
                             <div class="attcomptext" data-i18n="ame-u">ÂME</div>
                             <SELECT name="attr_focus_de" class="selde">
@@ -588,7 +600,7 @@
                         <div class="input chkWeirdScience">
                             <!-- WEIRD SCIENCE -->
                             <button type="roll" name="Btrel-WeirdScience" class="btRolrel" value="@{relRollWeirdScience}" data-i18n="weirdscience">Sc. Etrange</button>
-                            <button type="roll" name="Btjet-WeirdScience" class="btRoljet" value="@{jetRollWeirdScience}" data-i18n="science">Sc. Etrange</button>
+                            <button type="roll" name="Btjet-WeirdScience" class="btRoljet" value="@{jetRollWeirdScience}" data-i18n="weirdscience">Sc. Etrange</button>
                             <button type="roll" name="BtBrut-WeirdScience" class="btRolbrut" value="/em @{character_name} @{text_jet-de} @{text_weirdscience}&#010;/roll @{RollWeirdScience}" data-i18n="weirdscience">Sc. Etrange</button>
                             <div class="attcomptext" data-i18n="int-u">INT</div>
                             <SELECT name="attr_weirdscience_de" class="selde">
@@ -756,11 +768,12 @@
                     <input type="checkbox" class="secoue" name="attr_entangled" value='1' data-i18n-title="entangled" title="Enchevêtré" /><span></span>
                     <div class="redtitle3" style="text-align: right;width:80px;" data-i18n="bound-u">BLOQUÉ</div>
                     <input type="checkbox" class="secoue" name="attr_bound" value='1' data-i18n-title="bound" title="Bloqué" /><span></span>
-                    <div class="redtitle1" style="display: inline-block;" data-i18n="degats-u">DÉGÂTS</div>
-                    <div class="redtitle3" style="text-align: right;width:50px;" data-i18n="secoue-u">SECOUÉ</div>
+                    <div class="redtitle3" style="text-align: right;width:80px;" data-i18n="secoue-u">SECOUÉ</div>
                     <input type="checkbox" class="secoue" name="attr_secoue" value='1' data-i18n-title="secoue" title="Secoué" /><span></span>
-                    <div class="redtitle3" style="text-align: right;width:50px;" data-i18n="sonne-u">SONNÉ</div>
+                    <div class="redtitle3" style="text-align: right;width:80px;" data-i18n="sonne-u">SONNÉ</div>
                     <input type="checkbox" class="secoue" name="attr_sonne" value='1' data-i18n-title="sonne" title="Sonné" /><span></span>
+                    <br>
+                    <div class="redtitle1" style="display: inline-block;" data-i18n="degats-u">DÉGÂTS</div>
                 </div>
                 <div style="height: 30px;">
                     <div class="redtitle3" style="width:80px;" data-i18n="blessures-u">BLESSURES</div>
@@ -775,7 +788,8 @@
                     <input type="radio" class="blessure" name="attr_fatigue" value="0" data-i18n-title="no-fatigue" title="Pas de de fatigue" checked /><span>0</span>
                     <input type="radio" class="blessure" name="attr_fatigue" value="1" data-i18n-title="one-fatigue" title="Un niveau de Fatigue" /><span>1</span>
                     <input type="radio" class="blessure" name="attr_fatigue" value="2" data-i18n-title="two-fatigue" title="Deux niveaux de Fatigue" /><span>2</span>
-                    <input type="radio" class="blessure" name="attr_fatigue" value="3" data-i18n-title="etat-critique" title="État critique" /><span style="font-family: pictos;font-weight:bold;">Y</span>
+                    <input type="radio" class="blessure" name="attr_fatigue" value="3" data-i18n-title="three-fatigue" title="trois niveaux de Fatigue" /><span>3</span>
+                    <input type="radio" class="blessure" name="attr_fatigue" value="4" data-i18n-title="etat-critique" title="État critique" /><span style="font-family: pictos;font-weight:bold;">Y</span>
                 </div>
             </div>
             <!-- FIN DEGATS -->
@@ -791,10 +805,20 @@
                         <input type="number" name="attr_allure" value="[[@{allure_base}+(@{allure_bonus})-@{blessures}]]" data-i18n-title="total-allure" title="allure totale" disabled />
                     </div>
                     <div class="input">
+                        <button type="roll" name="Btjet-Course" class="btRoljet" value="@{jetRollCourse}" data-i18n="course">Course</button>
+                        <SELECT name="course_de" class="selde">
+                                <OPTION value="4" data-i18n="d4">&nbsp;d4</OPTION>
+                                <OPTION value="6" SELECTED data-i18n="d6">&nbsp;d6</OPTION>
+                                <OPTION value="8" data-i18n="d8">&nbsp;d8</OPTION>
+                                <OPTION value="10" data-i18n="d10">d10</OPTION>
+                                <OPTION value="12" data-i18n="d12">d12</OPTION>
+                        </SELECT>
+                    </div>
+                    <div class="input">
                         <div class="comptext" data-i18n="parade">PARADE</div>
-                        <input type="number" name="attr_parade_base" value="3" data-i18n-title="base-parade" title="Valeur de parade de base" readonly /> +
+                        <input type="number" name="attr_parade_base" value="2" data-i18n-title="base-parade" title="Valeur de parade de base" readonly /> +
                         <input type="number" name="attr_parade_bonus" value="0" data-i18n-title="bonus-parade" title="Bonus de parade" /> =
-                        <input type="number" name="attr_parade" value="3" data-i18n-title="total-parade" title="Parade totale" readonly />
+                        <input type="number" name="attr_parade" value="2" data-i18n-title="total-parade" title="Parade totale" readonly />
                     </div>
                     <div class="input">
                         <div class="comptext" data-i18n="resistance-u">RÉSISTANCE</div>
@@ -870,6 +894,10 @@
                     <div class="input">
                         <div class="blacktext1" style="width:50px;" data-i18n="sexe">Sexe: </div><input type="text" name="attr_sexe" style="width:70px;" />
                         <div class="blacktext1" style="width:50px;" data-i18n="age">Âge: </div><input type="text" name="attr_age" style="width:70px;" />
+                    </div>
+                    <div class="input">
+                        <div class="blacktext1" style="width:50px;" data-i18n="race">Race: </div><input type="text" name="attr_race" style="width:70px;" />
+                        <div class="blacktext1" style="width:50px;" data-i18n="role">Rôle: </div><input type="text" name="attr_role" style="width:70px;" />
                     </div>
                     <div class="blacktext1" data-i18n="signes">Signes particuliers: </div>
                     <div class="input">
@@ -1224,6 +1252,12 @@
                         </SELECT>
                     </div>
                 </div>
+                <div class="confcat"><span data-i18n="fatigue">Niveau de fatigue :</span>
+                    <SELECT name="fatigue-level">
+                        <OPTION value="0" selected data-i18n="fatigue-standard">Standard 2 niveaux</OPTION>
+                        <OPTION value="1" data-i18n="fatigue-extended">Supérieur 3 niveaux</OPTION>
+                    </SELECT>
+                </div>
             </div>
             <div class="col">
                 <div class="conftitre" data-i18n="visuel">VISUEL</div>
@@ -1261,30 +1295,37 @@
             <div class="col">
                 <div class="conftitre" data-i18n="affichage">AFFICHAGE DES COMPETENCES</div>
                 <div class="row" style="text-align: center;"><input type="checkbox" name="attr_chkAllComp" value="1" class="chkSkill" title="Afficher/Masquer toutes les compétence" checked /><span data-i18n="toutes">Toutes</span></div>
-                <input type="checkbox" name="attr_chkArcane" value="1" class="chkSkill" checked /><span data-i18n="arcane">Arcane</span>
-                <input type="checkbox" name="attr_chkCombat" value="1" class="chkSkill" checked /><span data-i18n="combat">Combat</span>
-                <input type="checkbox" name="attr_chkConduite" value="1" class="chkSkill" checked /><span data-i18n="conduite">Conduite</span>
-                <input type="checkbox" name="attr_chkConnaissance" value="1" class="chkSkill" checked /><span data-i18n="connaissance">Connaissance</span>
-                <input type="checkbox" name="attr_chkCrochetage" value="1" class="chkSkill" checked /><span data-i18n="crochetage">Crochetage</span>
-                <input type="checkbox" name="attr_chkDiscretion" value="1" class="chkSkill" checked /><span data-i18n="discretion">Discrétion</span>
-                <input type="checkbox" name="attr_chkEquitation" value="1" class="chkSkill" checked /><span data-i18n="equitation">Équitation</span>
-                <input type="checkbox" name="attr_chkEscalade" value="1" class="chkSkill" checked /><span data-i18n="escalade">Escalade</span>
-                <input type="checkbox" name="attr_chkIntimidation" value="1" class="chkSkill" checked /><span data-i18n="intimidation">Intimidation</span>
-                <input type="checkbox" name="attr_chkJeu" value="1" class="chkSkill" checked /><span data-i18n="jeu">Jeu</span>
-                <input type="checkbox" name="attr_chkLancer" value="1" class="chkSkill" checked /><span data-i18n="lancer">Lancer</span>
-                <input type="checkbox" name="attr_chkNatation" value="1" class="chkSkill" checked /><span data-i18n="natation">Natation</span>
-                <input type="checkbox" name="attr_chkNavigation" value="1" class="chkSkill" checked /><span data-i18n="navigation">Navigation</span>
+                <input type="checkbox" name="attr_chkAthletics" value="1" class="chkSkill" checked /><span data-i18n="athletics">Athlétisme</span>
+                <input type="checkbox" name="attr_chkCommonKnowledge" value="1" class="chkSkill" checked /><span data-i18n="commonknowledge">Culture Gé</span>
                 <input type="checkbox" name="attr_chkPerception" value="1" class="chkSkill" checked /><span data-i18n="perception">Perception</span>
                 <input type="checkbox" name="attr_chkPersuasion" value="1" class="chkSkill" checked /><span data-i18n="persuasion">Persuasion</span>
+                <input type="checkbox" name="attr_chkDiscretion" value="1" class="chkSkill" checked /><span data-i18n="discretion">Discrétion</span>
+                <input type="checkbox" name="attr_chkPerformance" value="1" class="chkSkill" checked /><span data-i18n="performance">Artiste</span>
+                <input type="checkbox" name="attr_chkBattle" value="1" class="chkSkill" checked /><span data-i18n="battles">Batailles</span>
+                <input type="checkbox" name="attr_chkCombat" value="1" class="chkSkill" checked /><span data-i18n="combat">Combat</span>
+                <input type="checkbox" name="attr_chkConduite" value="1" class="chkSkill" checked /><span data-i18n="conduite">Conduite</span>
+                <input type="checkbox" name="attr_chkThieverie" value="1" class="chkSkill" checked /><span data-i18n="thieverie">Cambriole</span>
+                <input type="checkbox" name="attr_chkElectronics" value="1" class="chkSkill" checked /><span data-i18n="electronics">Electronique</span>
+                <input type="checkbox" name="attr_chkEquitation" value="1" class="chkSkill" checked /><span data-i18n="equitation">Équitation</span>
+                <input type="checkbox" name="attr_chkIntimidation" value="1" class="chkSkill" checked /><span data-i18n="intimidation">Intimidation</span>
+                <input type="checkbox" name="attr_chkFocus" value="1" class="chkSkill" checked /><span data-i18n="focus">Focus</span>
+                <input type="checkbox" name="attr_chkFaith" value="1" class="chkSkill" checked /><span data-i18n="faith">Foi</span>
+                <input type="checkbox" name="attr_chkHacking" value="1" class="chkSkill" checked /><span data-i18n="hacking">Hacking</span>
+                <input type="checkbox" name="attr_chkJeu" value="1" class="chkSkill" checked /><span data-i18n="jeu">Jeu</span>
+                <input type="checkbox" name="attr_chkNavigation" value="1" class="chkSkill" checked /><span data-i18n="navigation">Navigation</span>
+                <input type="checkbox" name="attr_chkOccultism" value="1" class="chkSkill" checked /><span data-i18n="occultism">Occultisme</span>
                 <input type="checkbox" name="attr_chkPilotage" value="1" class="chkSkill" checked /><span data-i18n="pilotage">Pilotage</span>
-                <input type="checkbox" name="attr_chkPistage" value="1" class="chkSkill" checked /><span data-i18n="pistage">Pistage</span>
+                <input type="checkbox" name="attr_chkPsionic" value="1" class="chkSkill" checked /><span data-i18n="psionic">Psionique</span>
                 <input type="checkbox" name="attr_chkRecherche" value="1" class="chkSkill" checked /><span data-i18n="resherche">Recherche</span>
-                <input type="checkbox" name="attr_chkReparation" value="1" class="chkSkill" checked /><span data-i18n="reparation">Réparation</span>
-                <input type="checkbox" name="attr_chkReseaux" value="1" class="chkSkill" checked /><span data-i18n="reseaux">Réseaux</span>
+                <input type="checkbox" name="attr_chkReparation" value="1" class="chkSkill" checked /><span data-i18n="repair">Réparation</span>
                 <input type="checkbox" name="attr_chkSarcasme" value="1" class="chkSkill" checked /><span data-i18n="sarcasme">Sarcasme</span>
+                <input type="checkbox" name="attr_chkScience" value="1" class="chkSkill" checked /><span data-i18n="science">Science</span>
+                <input type="checkbox" name="attr_chkWeirdScience" value="1" class="chkSkill" checked /><span data-i18n="weirdscience">Science Etrange</span>
                 <input type="checkbox" name="attr_chkSoins" value="1" class="chkSkill" checked /><span data-i18n="soins">Soins</span>
+                <input type="checkbox" name="attr_chkSpellcasting" value="1" class="chkSkill" checked /><span data-i18n="spellcasting">Sorcellerie</span>
                 <input type="checkbox" name="attr_chkSurvie" value="1" class="chkSkill" checked /><span data-i18n="survie">Survie</span>
                 <input type="checkbox" name="attr_chkTir" value="1" class="chkSkill" checked /><span data-i18n="tir">Tir</span>
+                <input type="checkbox" name="attr_chkAcademics" value="1" class="chkSkill" checked /><span data-i18n="academics">Universalis</span>
             </div>
         </div>
     </div>
@@ -1446,23 +1487,20 @@
     <input type="hidden" name="attr_relRollArmeFixe3DgtPlus" value="{ floor( ( @{jetRollArmeFixe3Dgt}+1d6!! - (@{cibleresistance}[@{text_resistance}] - 4 ) ) /4), 0d0 }kh1 " />
 
     <!-- SKILLS -->
+    <!-- Non Entrainé -->
     <input type="hidden" name="attr_RollIncomp" value="{ 1d4!![@{text_nonentraine}],@{joker_de}!![@{text_joker}]}kh1 + (-2)[@{text_bonus}] - @{malusblessures}[@{text_blessures}] - @{malusfatigue}[@{text_fatigue}] + @{rollmodquery}" />
     <input type="hidden" name="attr_relRollIncomp" value="&{template:sawo} {{etat=[[@{templateetat}]]}} {{name=@{text_nonentraine}}} {{perso=@{character_name}}} {{secoue=[[@{secoue}]]}} {{relances=[[  { floor( ( { @{RollIncomp} } ) /(@{rolldiffquery}), 0d0 }kh1 ]]}} {{blessures=[[@{blessures}]]}} {{fatigue=[[@{fatigue}]]}}"
     />
     <input type="hidden" name="attr_jetRollIncomp" value="&{template:sawo} {{etat=[[@{templateetat}]]}} {{name=@{text_nonentraine}}} {{perso=@{character_name}}} {{secoue=[[@{secoue}]]}} {{jet=[[@{RollIncomp}]]}} {{blessures=[[@{blessures}]]}} {{fatigue=[[@{fatigue}]]}}"
     />
 
-    <input type="hidden" name="attr_RollArcane" value="{ 1d@{arcane_de}!![@{arcane_nom}],@{joker_de}!![@{text_joker}]}kh1 + (@{arcane_bonus})[@{text_bonus}] - @{malusblessures}[@{text_blessures}] - @{malusfatigue}[@{text_fatigue}] + @{rollmodquery}" />
-    <input type="hidden" name="attr_relRollArcane" value="&{template:sawo} {{etat=[[@{templateetat}]]}} {{name=@{arcane_nom}}} {{perso=@{character_name}}} {{secoue=[[@{secoue}]]}} {{relances=[[  { floor( ( { @{RollArcane} } ) /(@{rolldiffquery}), 0d0 }kh1 ]]}} {{blessures=[[@{blessures}]]}} {{fatigue=[[@{fatigue}]]}}"
-    />
-    <input type="hidden" name="attr_jetRollArcane" value="&{template:sawo} {{etat=[[@{templateetat}]]}} {{name=@{arcane_nom}}} {{perso=@{character_name}}} {{secoue=[[@{secoue}]]}} {{jet=[[@{RollArcane}]]}} {{blessures=[[@{blessures}]]}} {{fatigue=[[@{fatigue}]]}}"
-    />
-
+    <!-- Combat -->
     <input type="hidden" name="attr_relRollCombat" value="&{template:sawo} {{etat=[[@{templateetat}]]}} {{name=@{text_combat}}} {{perso=@{character_name}}} {{secoue=[[@{secoue}]]}} {{relances=[[@{relRollBastCombat}]]}} {{atkcible=[[@{atkcible}]]}} {{cible=@{atknom}}} {{blessures=[[@{blessures}]]}} {{fatigue=[[@{fatigue}]]}} {{encombrement=[[@{encombrement}]]}}"
     />
     <input type="hidden" name="attr_jetRollCombat" value="&{template:sawo} {{etat=[[@{templateetat}]]}} {{name=@{text_combat}}} {{perso=@{character_name}}} {{secoue=[[@{secoue}]]}} {{jet=[[@{jetRollBastCombat}]]}} {{blessures=[[@{blessures}]]}} {{fatigue=[[@{fatigue}]]}} {{encombrement=[[@{encombrement}]]}}"
     />
 
+    <!-- Conduite -->
     <input type="hidden" name="attr_RollConduite" value="{ 1d@{conduite_de}!![Conduite],@{joker_de}!![@{text_joker}]}kh1 + (@{conduite_bonus})[@{text_bonus}] - @{malusblessures}[@{text_blessures}] - @{malusfatigue}[@{text_fatigue}] - @{encombrement}[@{text_encombrement}] + @{rollmodquery}"
     />
     <input type="hidden" name="attr_relRollConduite" value="&{template:sawo} {{etat=[[@{templateetat}]]}} {{name=@{text_conduite}}} {{perso=@{character_name}}} {{secoue=[[@{secoue}]]}} {{relances=[[  { floor( ( { @{RollConduite} } ) /(@{rolldiffquery}), 0d0 }kh1 ]]}} {{blessures=[[@{blessures}]]}} {{fatigue=[[@{fatigue}]]}} {{encombrement=[[@{encombrement}]]}}"
@@ -1470,20 +1508,7 @@
     <input type="hidden" name="attr_jetRollConduite" value="&{template:sawo} {{etat=[[@{templateetat}]]}} {{name=@{text_conduite}}} {{perso=@{character_name}}} {{secoue=[[@{secoue}]]}} {{jet=[[@{RollConduite}]]}} {{blessures=[[@{blessures}]]}} {{fatigue=[[@{fatigue}]]}} {{encombrement=[[@{encombrement}]]}}"
     />
 
-    <input type="hidden" name="attr_RollConnaissance" value="{ 1d@{connaissance_de}!![@{connaissance_nom}],@{joker_de}!![@{text_joker}]}kh1 + (@{connaissance_bonus})[@{text_bonus}] - @{malusblessures}[@{text_blessures}] - @{malusfatigue}[@{text_fatigue}] + @{rollmodquery}"
-    />
-    <input type="hidden" name="attr_relRollConnaissance" value="&{template:sawo} {{etat=[[@{templateetat}]]}} {{name=@{connaissance_nom}}} {{perso=@{character_name}}} {{secoue=[[@{secoue}]]}} {{relances=[[  { floor( ( { @{RollConnaissance} } ) /(@{rolldiffquery}), 0d0 }kh1 ]]}} {{blessures=[[@{blessures}]]}} {{fatigue=[[@{fatigue}]]}}"
-    />
-    <input type="hidden" name="attr_jetRollConnaissance" value="&{template:sawo} {{etat=[[@{templateetat}]]}} {{name=@{connaissance_nom}}} {{perso=@{character_name}}} {{secoue=[[@{secoue}]]}} {{jet=[[@{RollConnaissance}]]}} {{blessures=[[@{blessures}]]}} {{fatigue=[[@{fatigue}]]}}"
-    />
-
-    <input type="hidden" name="attr_RollCrochetage" value="{ 1d@{crochetage_de}!![Crochetage],@{joker_de}!![@{text_joker}]}kh1 + (@{crochetage_bonus})[@{text_bonus}] - @{malusblessures}[@{text_blessures}] - @{malusfatigue}[@{text_fatigue}] - @{encombrement}[@{text_encombrement}] + @{rollmodquery}"
-    />
-    <input type="hidden" name="attr_relRollCrochetage" value="&{template:sawo} {{etat=[[@{templateetat}]]}} {{name=@{text_crochetage}}} {{perso=@{character_name}}} {{secoue=[[@{secoue}]]}} {{relances=[[  { floor( ( { @{RollCrochetage} } ) /(@{rolldiffquery}), 0d0 }kh1 ]]}} {{blessures=[[@{blessures}]]}} {{fatigue=[[@{fatigue}]]}} {{encombrement=[[@{encombrement}]]}}"
-    />
-    <input type="hidden" name="attr_jetRollCrochetage" value="&{template:sawo} {{etat=[[@{templateetat}]]}} {{name=@{text_crochetage}}} {{perso=@{character_name}}} {{secoue=[[@{secoue}]]}} {{jet=[[@{RollCrochetage}]]}} {{blessures=[[@{blessures}]]}} {{fatigue=[[@{fatigue}]]}} {{encombrement=[[@{encombrement}]]}}"
-    />
-
+    <!-- Discretion -->
     <input type="hidden" name="attr_RollDiscretion" value="{ 1d@{discretion_de}!![Discretion],@{joker_de}!![@{text_joker}]}kh1 + (@{discretion_bonus})[@{text_bonus}] - @{malusblessures}[@{text_blessures}] - @{malusfatigue}[@{text_fatigue}] - @{encombrement}[@{text_encombrement}] + @{rollmodquery}"
     />
     <input type="hidden" name="attr_relRollDiscretion" value="&{template:sawo} {{etat=[[@{templateetat}]]}} {{name=@{text_discretion}}} {{perso=@{character_name}}} {{secoue=[[@{secoue}]]}} {{relances=[[  { floor( ( { @{RollDiscretion} } ) /(@{rolldiffquery}), 0d0 }kh1 ]]}} {{blessures=[[@{blessures}]]}} {{fatigue=[[@{fatigue}]]}} {{encombrement=[[@{encombrement}]]}}"
@@ -1491,6 +1516,7 @@
     <input type="hidden" name="attr_jetRollDiscretion" value="&{template:sawo} {{etat=[[@{templateetat}]]}} {{name=@{text_discretion}}} {{perso=@{character_name}}} {{secoue=[[@{secoue}]]}} {{jet=[[@{RollDiscretion}]]}} {{blessures=[[@{blessures}]]}} {{fatigue=[[@{fatigue}]]}} {{encombrement=[[@{encombrement}]]}}"
     />
 
+    <!-- Equitation -->
     <input type="hidden" name="attr_RollEquitation" value="{ 1d@{equitation_de}!![Equitation],@{joker_de}!![@{text_joker}]}kh1 + (@{equitation_bonus})[@{text_bonus}] - @{malusblessures}[@{text_blessures}] - @{malusfatigue}[@{text_fatigue}] - @{encombrement}[@{text_encombrement}] + @{rollmodquery}"
     />
     <input type="hidden" name="attr_relRollEquitation" value="&{template:sawo} {{etat=[[@{templateetat}]]}} {{name=@{text_equitation}}} {{perso=@{character_name}}} {{secoue=[[@{secoue}]]}} {{relances=[[  { floor( ( { @{RollEquitation} } ) /(@{rolldiffquery}), 0d0 }kh1 ]]}} {{blessures=[[@{blessures}]]}} {{fatigue=[[@{fatigue}]]}} {{encombrement=[[@{encombrement}]]}}"
@@ -1498,13 +1524,7 @@
     <input type="hidden" name="attr_jetRollEquitation" value="&{template:sawo} {{etat=[[@{templateetat}]]}} {{name=@{text_equitation}}} {{perso=@{character_name}}} {{secoue=[[@{secoue}]]}} {{jet=[[@{RollEquitation}]]}} {{blessures=[[@{blessures}]]}} {{fatigue=[[@{fatigue}]]}} {{encombrement=[[@{encombrement}]]}}"
     />
 
-    <input type="hidden" name="attr_RollEscalade" value="{ 1d@{escalade_de}!![Escalade],@{joker_de}!![@{text_joker}]}kh1 + (@{escalade_bonus})[@{text_bonus}] - @{malusblessures}[@{text_blessures}] - @{malusfatigue}[@{text_fatigue}] - @{encombrement}[@{text_encombrement}] + @{rollmodquery}"
-    />
-    <input type="hidden" name="attr_relRollEscalade" value="&{template:sawo} {{etat=[[@{templateetat}]]}} {{name=@{text_escalade}}} {{perso=@{character_name}}} {{secoue=[[@{secoue}]]}} {{relances=[[  { floor( ( { @{RollEscalade} } ) /(@{rolldiffquery}), 0d0 }kh1 ]]}} {{blessures=[[@{blessures}]]}} {{fatigue=[[@{fatigue}]]}} {{encombrement=[[@{encombrement}]]}}"
-    />
-    <input type="hidden" name="attr_jetRollEscalade" value="&{template:sawo} {{etat=[[@{templateetat}]]}} {{name=@{text_escalade}}} {{perso=@{character_name}}} {{secoue=[[@{secoue}]]}} {{jet=[[@{RollEscalade}]]}} {{blessures=[[@{blessures}]]}} {{fatigue=[[@{fatigue}]]}} {{encombrement=[[@{encombrement}]]}}"
-    />
-
+    <!-- Initimidation -->
     <input type="hidden" name="attr_RollIntimidation" value="{ 1d@{intimidation_de}!![Intimidation],@{joker_de}!![@{text_joker}]}kh1 + (@{intimidation_bonus})[@{text_bonus}] - @{malusblessures}[@{text_blessures}] - @{malusfatigue}[@{text_fatigue}] + @{rollmodquery}"
     />
     <input type="hidden" name="attr_relRollIntimidation" value="&{template:sawo} {{etat=[[@{templateetat}]]}} {{name=@{text_intimidation}}} {{perso=@{character_name}}} {{secoue=[[@{secoue}]]}} {{relances=[[  { floor( ( { @{RollIntimidation} } ) /(@{rolldiffquery}), 0d0 }kh1 ]]}} {{blessures=[[@{blessures}]]}} {{fatigue=[[@{fatigue}]]}}"
@@ -1512,24 +1532,14 @@
     <input type="hidden" name="attr_jetRollIntimidation" value="&{template:sawo} {{etat=[[@{templateetat}]]}} {{name=@{text_intimidation}}} {{perso=@{character_name}}} {{secoue=[[@{secoue}]]}} {{jet=[[@{RollIntimidation}]]}} {{blessures=[[@{blessures}]]}} {{fatigue=[[@{fatigue}]]}}"
     />
 
+    <!-- Jeu -->
     <input type="hidden" name="attr_RollJeu" value="{ 1d@{jeu_de}!![Jeu],@{joker_de}!![@{text_joker}]}kh1 + (@{jeu_bonus})[@{text_bonus}] - @{malusblessures}[@{text_blessures}] - @{malusfatigue}[@{text_fatigue}] + @{rollmodquery}" />
     <input type="hidden" name="attr_relRollJeu" value="&{template:sawo} {{etat=[[@{templateetat}]]}} {{name=@{text_jeu}}} {{perso=@{character_name}}} {{secoue=[[@{secoue}]]}} {{relances=[[  { floor( ( { @{RollJeu} } ) /(@{rolldiffquery}), 0d0 }kh1 ]]}} {{blessures=[[@{blessures}]]}} {{fatigue=[[@{fatigue}]]}}"
     />
     <input type="hidden" name="attr_jetRollJeu" value="&{template:sawo} {{etat=[[@{templateetat}]]}} {{name=@{text_jeu}}} {{perso=@{character_name}}} {{secoue=[[@{secoue}]]}} {{jet=[[@{RollJeu}]]}} {{blessures=[[@{blessures}]]}} {{fatigue=[[@{fatigue}]]}}"
     />
 
-    <input type="hidden" name="attr_relRollLancer" value="&{template:sawo} {{etat=[[@{templateetat}]]}} {{name=@{text_lancer}}} {{perso=@{character_name}}} {{secoue=[[@{secoue}]]}} {{relances=[[@{relRollBastLancer}]]}} {{atkcible=[[@{atkcible}]]}} {{cible=@{atknom}}} {{blessures=[[@{blessures}]]}} {{fatigue=[[@{fatigue}]]}} {{encombrement=[[@{encombrement}]]}}"
-    />
-    <input type="hidden" name="attr_jetRollLancer" value="&{template:sawo} {{etat=[[@{templateetat}]]}} {{name=@{text_lancer}}} {{perso=@{character_name}}} {{secoue=[[@{secoue}]]}} {{jet=[[@{jetRollBastLancer}]]}} {{blessures=[[@{blessures}]]}} {{fatigue=[[@{fatigue}]]}} {{encombrement=[[@{encombrement}]]}}"
-    />
-
-    <input type="hidden" name="attr_RollNatation" value="{ 1d@{natation_de}!![Natation],@{joker_de}!![@{text_joker}]}kh1 + (@{natation_bonus})[@{text_bonus}] - @{malusblessures}[@{text_blessures}] - @{malusfatigue}[@{text_fatigue}] - @{encombrement}[@{text_encombrement}] + @{rollmodquery}"
-    />
-    <input type="hidden" name="attr_relRollNatation" value="&{template:sawo} {{etat=[[@{templateetat}]]}} {{name=@{text_natation}}} {{perso=@{character_name}}} {{secoue=[[@{secoue}]]}} {{relances=[[  { floor( ( { @{RollNatation} } ) /(@{rolldiffquery}), 0d0 }kh1 ]]}} {{blessures=[[@{blessures}]]}} {{fatigue=[[@{fatigue}]]}} {{encombrement=[[@{encombrement}]]}}"
-    />
-    <input type="hidden" name="attr_jetRollNatation" value="&{template:sawo} {{etat=[[@{templateetat}]]}} {{name=@{text_natation}}} {{perso=@{character_name}}} {{secoue=[[@{secoue}]]}} {{jet=[[@{RollNatation}]]}} {{blessures=[[@{blessures}]]}} {{fatigue=[[@{fatigue}]]}} {{encombrement=[[@{encombrement}]]}}"
-    />
-
+    <!-- Navigation -->
     <input type="hidden" name="attr_RollNavigation" value="{ 1d@{navigation_de}!![Navigation],@{joker_de}!![@{text_joker}]}kh1 + (@{navigation_bonus})[@{text_bonus}] - @{malusblessures}[@{text_blessures}] - @{malusfatigue}[@{text_fatigue}] - @{encombrement}[@{text_encombrement}] + @{rollmodquery}"
     />
     <input type="hidden" name="attr_relRollNavigation" value="&{template:sawo} {{etat=[[@{templateetat}]]}} {{name=@{text_navigation}}} {{perso=@{character_name}}} {{secoue=[[@{secoue}]]}} {{relances=[[  { floor( ( { @{RollNavigation} } ) /(@{rolldiffquery}), 0d0 }kh1 ]]}} {{blessures=[[@{blessures}]]}} {{fatigue=[[@{fatigue}]]}} {{encombrement=[[@{encombrement}]]}}"
@@ -1537,6 +1547,7 @@
     <input type="hidden" name="attr_jetRollNavigation" value="&{template:sawo} {{etat=[[@{templateetat}]]}} {{name=@{text_navigation}}} {{perso=@{character_name}}} {{secoue=[[@{secoue}]]}} {{jet=[[@{RollNavigation}]]}} {{blessures=[[@{blessures}]]}} {{fatigue=[[@{fatigue}]]}} {{encombrement=[[@{encombrement}]]}}"
     />
 
+    <!-- Perception -->
     <input type="hidden" name="attr_RollPerception" value="{ 1d@{perception_de}!![Perception],@{joker_de}!![@{text_joker}]}kh1 + (@{perception_bonus})[@{text_bonus}] - @{malusblessures}[@{text_blessures}] - @{malusfatigue}[@{text_fatigue}] + @{rollmodquery}"
     />
     <input type="hidden" name="attr_relRollPerception" value="&{template:sawo} {{etat=[[@{templateetat}]]}} {{name=@{text_perception}}} {{perso=@{character_name}}} {{secoue=[[@{secoue}]]}} {{relances=[[  { floor( ( { @{RollPerception} } ) /(@{rolldiffquery}), 0d0 }kh1 ]]}} {{blessures=[[@{blessures}]]}} {{fatigue=[[@{fatigue}]]}} {{blessures=[[@{blessures}]]}} {{fatigue=[[@{fatigue}]]}}"
@@ -1544,6 +1555,7 @@
     <input type="hidden" name="attr_jetRollPerception" value="&{template:sawo} {{etat=[[@{templateetat}]]}} {{name=@{text_perception}}} {{perso=@{character_name}}} {{secoue=[[@{secoue}]]}} {{jet=[[@{RollPerception}]]}} {{blessures=[[@{blessures}]]}} {{fatigue=[[@{fatigue}]]}} {{blessures=[[@{blessures}]]}} {{fatigue=[[@{fatigue}]]}}"
     />
 
+    <!-- Persuasion -->
     <input type="hidden" name="attr_RollPersuasion" value="{ 1d@{persuasion_de}!![Persuasion],@{joker_de}!![@{text_joker}]}kh1 + (@{persuasion_bonus})[@{text_bonus}] + @{charisme}[Charisme] - @{malusblessures}[@{text_blessures}] - @{malusfatigue}[@{text_fatigue}] + @{rollmodquery}"
     />
     <input type="hidden" name="attr_relRollPersuasion" value="&{template:sawo} {{etat=[[@{templateetat}]]}} {{name=@{text_persuasion}}} {{perso=@{character_name}}} {{secoue=[[@{secoue}]]}} {{relances=[[  { floor( ( { @{RollPersuasion} } ) /(@{rolldiffquery}), 0d0 }kh1 ]]}} {{charisme=@{charisme}}} {{blessures=[[@{blessures}]]}} {{fatigue=[[@{fatigue}]]}}"
@@ -1551,6 +1563,7 @@
     <input type="hidden" name="attr_jetRollPersuasion" value="&{template:sawo} {{etat=[[@{templateetat}]]}} {{name=@{text_persuasion}}} {{perso=@{character_name}}} {{secoue=[[@{secoue}]]}} {{jet=[[@{RollPersuasion}]]}} {{charisme=@{charisme}}} {{blessures=[[@{blessures}]]}} {{fatigue=[[@{fatigue}]]}}"
     />
 
+    <!-- Pilotage -->
     <input type="hidden" name="attr_RollPilotage" value="{ 1d@{pilotage_de}!![Pilotage],@{joker_de}!![@{text_joker}]}kh1 + (@{pilotage_bonus})[@{text_bonus}] - @{malusblessures}[@{text_blessures}] - @{malusfatigue}[@{text_fatigue}] - @{encombrement}[@{text_encombrement}] + @{rollmodquery}"
     />
     <input type="hidden" name="attr_relRollPilotage" value="&{template:sawo} {{etat=[[@{templateetat}]]}} {{name=@{text_pilotage}}} {{perso=@{character_name}}} {{secoue=[[@{secoue}]]}} {{relances=[[  { floor( ( { @{RollPilotage} } ) /(@{rolldiffquery}), 0d0 }kh1 ]]}} {{blessures=[[@{blessures}]]}} {{fatigue=[[@{fatigue}]]}} {{encombrement=[[@{encombrement}]]}}"
@@ -1558,18 +1571,14 @@
     <input type="hidden" name="attr_jetRollPilotage" value="&{template:sawo} {{etat=[[@{templateetat}]]}} {{name=@{text_pilotage}}} {{perso=@{character_name}}} {{secoue=[[@{secoue}]]}} {{jet=[[@{RollPilotage}]]}} {{blessures=[[@{blessures}]]}} {{fatigue=[[@{fatigue}]]}} {{encombrement=[[@{encombrement}]]}}"
     />
 
-    <input type="hidden" name="attr_RollPistage" value="{ 1d@{pistage_de}!![Pistage],@{joker_de}!![@{text_joker}]}kh1 + (@{pistage_bonus})[@{text_bonus}] - @{malusblessures}[@{text_blessures}] - @{malusfatigue}[@{text_fatigue}] + @{rollmodquery}" />
-    <input type="hidden" name="attr_relRollPistage" value="&{template:sawo} {{etat=[[@{templateetat}]]}} {{name=@{text_pistage}}} {{perso=@{character_name}}} {{secoue=[[@{secoue}]]}} {{relances=[[  { floor( ( { @{RollPistage} } ) /(@{rolldiffquery}), 0d0 }kh1 ]]}} {{blessures=[[@{blessures}]]}} {{fatigue=[[@{fatigue}]]}}"
-    />
-    <input type="hidden" name="attr_jetRollPistage" value="&{template:sawo} {{etat=[[@{templateetat}]]}} {{name=@{text_pistage}}} {{perso=@{character_name}}} {{secoue=[[@{secoue}]]}} {{jet=[[@{RollPistage}]]}} {{blessures=[[@{blessures}]]}} {{fatigue=[[@{fatigue}]]}}"
-    />
-
+    <!-- Recherche -->
     <input type="hidden" name="attr_RollRecherche" value="{ 1d@{recherche_de}!![Trait],@{joker_de}!![Recherche]}kh1 + (@{recherche_bonus})[@{text_bonus}] - @{malusblessures}[@{text_blessures}] - @{malusfatigue}[@{text_fatigue}] + @{rollmodquery}" />
     <input type="hidden" name="attr_relRollRecherche" value="&{template:sawo} {{etat=[[@{templateetat}]]}} {{name=@{text_recherche}}} {{perso=@{character_name}}} {{secoue=[[@{secoue}]]}} {{relances=[[  { floor( ( { @{RollRecherche} } ) /(@{rolldiffquery}), 0d0 }kh1 ]]}} {{blessures=[[@{blessures}]]}} {{fatigue=[[@{fatigue}]]}}"
     />
     <input type="hidden" name="attr_jetRollRecherche" value="&{template:sawo} {{etat=[[@{templateetat}]]}} {{name=@{text_recherche}}} {{perso=@{character_name}}} {{secoue=[[@{secoue}]]}} {{jet=[[@{RollRecherche}]]}} {{blessures=[[@{blessures}]]}} {{fatigue=[[@{fatigue}]]}}"
     />
 
+    <!-- Reparation -->
     <input type="hidden" name="attr_RollReparation" value="{ 1d@{reparation_de}!![Réparation],@{joker_de}!![@{text_joker}]}kh1 + (@{reparation_bonus})[@{text_bonus}] - @{malusblessures}[@{text_blessures}] - @{malusfatigue}[@{text_fatigue}] + @{rollmodquery}"
     />
     <input type="hidden" name="attr_relRollReparation" value="&{template:sawo} {{etat=[[@{templateetat}]]}} {{name=@{text_reparation}}} {{perso=@{character_name}}} {{secoue=[[@{secoue}]]}} {{relances=[[  { floor( ( { @{RollReparation} } ) /(@{rolldiffquery}), 0d0 }kh1 ]]}} {{blessures=[[@{blessures}]]}} {{fatigue=[[@{fatigue}]]}}"
@@ -1577,159 +1586,181 @@
     <input type="hidden" name="attr_jetRollReparation" value="&{template:sawo} {{etat=[[@{templateetat}]]}} {{name=@{text_reparation}}} {{perso=@{character_name}}} {{secoue=[[@{secoue}]]}} {{jet=[[@{RollReparation}]]}} {{blessures=[[@{blessures}]]}} {{fatigue=[[@{fatigue}]]}}"
     />
 
-    <input type="hidden" name="attr_RollReseaux" value="{ 1d@{reseaux_de}!![Réseaux],@{joker_de}!![@{text_joker}]}kh1 + (@{reseaux_bonus})[@{text_bonus}] + @{charisme}[Charisme] - @{malusblessures}[@{text_blessures}] - @{malusfatigue}[@{text_fatigue}] + @{rollmodquery}"
-    />
-    <input type="hidden" name="attr_relRollReseaux" value="&{template:sawo} {{etat=[[@{templateetat}]]}} {{name=@{text_reseaux}}} {{perso=@{character_name}}} {{secoue=[[@{secoue}]]}} {{relances=[[  { floor( ( { @{RollReseaux} } ) /(@{rolldiffquery}), 0d0 }kh1 ]]}} {{charisme=@{charisme}}} {{blessures=[[@{blessures}]]}} {{fatigue=[[@{fatigue}]]}} "
-    />
-    <input type="hidden" name="attr_jetRollReseaux" value="&{template:sawo} {{etat=[[@{templateetat}]]}} {{name=@{text_reseaux}}} {{perso=@{character_name}}} {{secoue=[[@{secoue}]]}} {{jet=[[@{RollReseaux}]]}} {{charisme=@{charisme}}} {{blessures=[[@{blessures}]]}} {{fatigue=[[@{fatigue}]]}} "
-    />
-
+    <!-- Sarcasmes -->
     <input type="hidden" name="attr_RollSarcasme" value="{ 1d@{sarcasme_de}!![Sarcasme],@{joker_de}!![@{text_joker}]}kh1 + (@{sarcasme_bonus})[@{text_bonus}] - @{malusblessures}[@{text_blessures}] - @{malusfatigue}[@{text_fatigue}] + @{rollmodquery}" />
     <input type="hidden" name="attr_relRollSarcasme" value="&{template:sawo} {{etat=[[@{templateetat}]]}} {{name=@{text_sarcasme}}} {{perso=@{character_name}}} {{secoue=[[@{secoue}]]}} {{relances=[[  { floor( ( { @{RollSarcasme} } ) /(@{rolldiffquery}), 0d0 }kh1 ]]}} {{blessures=[[@{blessures}]]}} {{fatigue=[[@{fatigue}]]}}"
     />
     <input type="hidden" name="attr_jetRollSarcasme" value="&{template:sawo} {{etat=[[@{templateetat}]]}} {{name=@{text_sarcasme}}} {{perso=@{character_name}}} {{secoue=[[@{secoue}]]}} {{jet=[[@{RollSarcasme}]]}} {{blessures=[[@{blessures}]]}} {{fatigue=[[@{fatigue}]]}}"
     />
 
+    <!-- Soins -->
     <input type="hidden" name="attr_RollSoins" value="{ 1d@{soins_de}!![Soins],@{joker_de}!![@{text_joker}]}kh1 + (@{soins_bonus})[@{text_bonus}] - @{malusblessures}[@{text_blessures}] - @{malusfatigue}[@{text_fatigue}] + @{rollmodquery}" />
     <input type="hidden" name="attr_relRollSoins" value="&{template:sawo} {{etat=[[@{templateetat}]]}} {{name=@{text_soins}}} {{perso=@{character_name}}} {{secoue=[[@{secoue}]]}} {{relances=[[  { floor( ( { @{RollSoins} } ) /(@{rolldiffquery}), 0d0 }kh1 ]]}} {{blessures=[[@{blessures}]]}} {{fatigue=[[@{fatigue}]]}}"
     />
     <input type="hidden" name="attr_jetRollSoins" value="&{template:sawo} {{etat=[[@{templateetat}]]}} {{name=@{text_soins}}} {{perso=@{character_name}}} {{secoue=[[@{secoue}]]}} {{jet=[[@{RollSoins}]]}} {{blessures=[[@{blessures}]]}} {{fatigue=[[@{fatigue}]]}}"
     />
 
+    <!-- Survie -->
     <input type="hidden" name="attr_RollSurvie" value="{ 1d@{survie_de}!![Survie],@{joker_de}!![@{text_joker}]}kh1 + (@{survie_bonus})[@{text_bonus}] - @{malusblessures}[@{text_blessures}] - @{malusfatigue}[@{text_fatigue}] + @{rollmodquery}" />
     <input type="hidden" name="attr_relRollSurvie" value="&{template:sawo} {{etat=[[@{templateetat}]]}} {{name=@{text_survie}}} {{perso=@{character_name}}} {{secoue=[[@{secoue}]]}} {{relances=[[  { floor( ( { @{RollSurvie} } ) /(@{rolldiffquery}), 0d0 }kh1 ]]}} {{blessures=[[@{blessures}]]}} {{fatigue=[[@{fatigue}]]}}"
     />
     <input type="hidden" name="attr_jetRollSurvie" value="&{template:sawo} {{etat=[[@{templateetat}]]}} {{name=@{text_survie}}} {{perso=@{character_name}}} {{secoue=[[@{secoue}]]}} {{jet=[[@{RollSurvie}]]}} {{blessures=[[@{blessures}]]}} {{fatigue=[[@{fatigue}]]}}"
     />
 
+    <!-- Tir -->
     <input type="hidden" name="attr_relRollTir" value="&{template:sawo} {{etat=[[@{templateetat}]]}} {{name=@{text_tir}}} {{perso=@{character_name}}} {{secoue=[[@{secoue}]]}} {{relances=[[@{relRollBastTir}]]}} {{atkcible=[[@{atkcible}]]}} {{cible=@{atknom}}} {{blessures=[[@{blessures}]]}} {{fatigue=[[@{fatigue}]]}} {{encombrement=[[@{encombrement}]]}}"
     />
     <input type="hidden" name="attr_jetRollTir" value="&{template:sawo} {{etat=[[@{templateetat}]]}} {{name=@{text_tir}}} {{perso=@{character_name}}} {{secoue=[[@{secoue}]]}} {{jet=[[@{jetRollBastTir}]]}} {{blessures=[[@{blessures}]]}} {{fatigue=[[@{fatigue}]]}} {{encombrement=[[@{encombrement}]]}}"
     />
 
+    <!-- Tripes-->
     <input type="hidden" name="attr_RollTripes" value="{ 1d@{tripes_de}!![Tripes],@{joker_de}!![@{text_joker}]}kh1 + (@{tripes_bonus})[@{text_bonus}] + (@{trempe})[Trempe] - @{malusblessures}[@{text_blessures}] - @{malusfatigue}[@{text_fatigue}] + @{rollmodquery}"
     />
     <input type="hidden" name="attr_relRollTripes" value="&{template:sawo} {{etat=[[@{templateetat}]]}} {{name=@{text_tripes}}} {{perso=@{character_name}}} {{secoue=[[@{secoue}]]}} {{relances=[[  { floor( ( { @{RollTripes} } ) /(@{rolldiffquery}), 0d0 }kh1 ]]}} {{blessures=[[@{blessures}]]}} {{fatigue=[[@{fatigue}]]}}"
     />
     <input type="hidden" name="attr_jetRollTripes" value="&{template:sawo} {{etat=[[@{templateetat}]]}} {{name=@{text_tripes}}} {{perso=@{character_name}}} {{secoue=[[@{secoue}]]}} {{jet=[[@{RollTripes}]]}} {{blessures=[[@{blessures}]]}} {{fatigue=[[@{fatigue}]]}}"
     />
-</div>
-<!-- *** HIDDEN ROLLS  & ATTRIBUTES ** -->
-<!-- ROLL TEMPLATES -->
-<rolltemplate class="sheet-rolltemplate-sawo">
-    <div class="tmpl">
-        {{#perso}}
-        <div class="titre">{{name}}{{#competence}} ({{competence}}){{/competence}}</div>
-        <div class="ligne">
-            {{#pouvoir}}<span data-i18n="pouvoir-de">Pouvoir de</span>{{/pouvoir}}
-            <b>{{perso}}</b> {{#attaque}}
-            <span data-i18n="attaque">attaque</span>{{/attaque}} {{^pouvoir}} {{^attaque}}
-            <span data-i18n="fait-jet">fait un jet</span>{{/attaque}} {{/pouvoir}} {{#cible}} {{#rollTotal() atkcible 1}} {{^attaque}}
-            <span data-i18n="contre">contre</span>{{/attaque}}
-            <b>{{cible}}</b> {{/rollTotal() atkcible 1}} {{/cible}}
-        </div>
-        {{#rollTotal() etat 1}}
-        <div class="ligne">
-            <span class="desc">{{perso}} est</span> {{#rollTotal() blessures 0}} {{#rollTotal() fatigue 0}} {{#rollTotal() secoue 0}}
-            <span class="etat" data-i18n="normal">Normal</span> {{/rollTotal() secoue 0}} {{/rollTotal() fatigue 0}} {{/rollTotal() blessures 0}} {{#rollTotal() secoue 1}}
-            <span class="etat attention" data-i18n="secoue">Secoué</span> {{/rollTotal() secoue 1}} {{#rollGreater() blessures 0}} {{#rollLess() blessures 4}}<span class="etat"><span data-i18n="blesse">Blessé</span> ({{blessures}})</span>{{/rollLess()
-            blessures 4}} {{#rollTotal() blessures 4}}<span class="etat echec"><span data-i18n="etat-critique">en État critique</span></span>{{/rollTotal() blessures 4}} {{/rollGreater() blessures 0}} {{#rollGreater() fatigue 0}} {{#rollTotal() fatigue
-            1}}
-            <span class="etat" data-i18n="fatigued">Fatigué</span>{{/rollTotal() fatigue 1}} {{#rollTotal() fatigue 2}}<span class="etat attention" data-i18n="epuised">Épuisé</span>{{/rollTotal() fatigue 2}} {{#rollTotal() fatigue 3}}<span class="etat echec"
-                data-i18n="fatigue-critique">en Fatigue Critique</span>{{/rollTotal() fatigue 3}} {{/rollGreater() fatigue 0}} {{#rollGreater() encombrement 0}}<span class="etat"><span data-i18n="encombred">Encombré</span> ({{encombrement}})</span>{{/rollGreater()
-            encombrement 0}}
-        </div>
-        {{/rollTotal() etat 1}} {{/perso}} {{#relances}} {{#rollLess() relances 1}}
-        <div class="ligne">
-            <div class="jet">{{#attaque}}<span class="etat" data-i18n="attaque">Attaque</span>{{/attaque}}<span class="echec" data-i18n="echec">Échec</span> ({{relances}})</div>
-        </div>
-        {{/rollLess() relances 1}} {{#rollTotal() relances 1}}
-        <div class="ligne">
-            <div class="jet">{{#attaque}}<span class="etat" data-i18n="attaque">Attaque</span>{{/attaque}}{{relances}} <span class="succes" data-i18n="succes">Succès</span> <span data-i18n="sans-relance">sans relance</span></div>
-        </div>
-        {{#attaque}}
-        <div class="ligne">
-            <div class="jet">
-                {{#rollLess() degatsrel 1}}<span class="etat" data-i18n="degats">Dégâts</span><span class="aucun" data-i18n="aucun">Aucun</span> ({{degatsrel}}){{/rollLess() degatsrel 1}} {{#rollTotal() degatsrel 1}}<span class="etat" data-i18n="degats">Dégâts</span>{{degatsrel}}
-                <span class="succes" data-i18n="succes">Succès</span> <span data-i18n="sans-relance">sans relance</span>{{/rollTotal() degatsrel 1}} {{#rollGreater() degatsrel 1}}<span class="etat" data-i18n="degats">Dégâts</span><span class="succes"
-                    data-i18n="succes">Succès</span> <span data-i18n="et">et</span> {{degatsrel}}<span class="pseudores">-1</span> <span data-i18n="relance-s">relance(s)</span>{{/rollGreater() degatsrel 1}}
-            </div>
-        </div>
-        {{/attaque}} {{/rollTotal() relances 1}} {{#rollGreater() relances 1}}
-        <div class="ligne">
-            <div class="jet">{{#attaque}}<span class="etat" data-i18n="attaque">Attaque</span>{{/attaque}}<span class="succes" data-i18n="succes">Succès</span> <span data-i18n="et">et</span> {{relances}}<span class="pseudores">-1</span> <span data-i18n="relance-s">relance(s)</span></div>
-        </div>
-        {{#attaque}}
-        <div class="ligne">
-            <div class="jet">
-                {{#rollLess() degatsrelplus 1}}<span class="etat" data-i18n="degats-plus-1d6">Dégâts +1d6</span> <span class="echec" data-i18n="aucun">Aucun</span> ({{degatsrelplus}}){{/rollLess() degatsrelplus 1}} {{#rollTotal() degatsrelplus 1}}
-                <span class="etat" data-i18n="degats-plus-1d6">Dégâts +1d6</span> {{degatsrelplus}} <span class="succes" data-i18n="succes">Succès</span> <span data-i18n="sans-relance">sans relance</span>{{/rollTotal() degatsrelplus 1}} {{#rollGreater()
-                degatsrelplus 1}}<span class="etat" data-i18n="degats-plus-1d6">Dégâts +1d6</span>
-                <span class="succes" data-i18n="succes">Succès</span> <span data-i18n="et">et</span> {{degatsrelplus}}<span class="pseudores">-1</span> <span data-i18n="relance-s">relance(s)</span>{{/rollGreater() degatsrelplus 1}}
-            </div>
-        </div>
-        {{/attaque}} {{/rollGreater() relances 1}} {{/relances}} {{#jet}}
-        <div class="ligne">
-            <div class="jet"><span class="etat" data-i18n="jet">Jet</span>{{jet}}</div>
-        </div>
-        {{#degats}}
-        <div class="ligne">
-            <div class="jet"><span class="etat" data-i18n="degats">Dégâts</span>{{degats}} +{{degatsplus}} (1d6) <span data-i18n="si-relance">si relance</span></div>
-        </div>
-        {{/degats}} {{/jet}} {{#pouvoir}}
-        <div class="jetdesc">{{pp}} <span data-i18n="pp">PP</span></div>
-        <div class="jetdesc"><span data-i18n="portee">Portée</span> {{portee}}</div>
-        <div class="jetdesc"><span data-i18n="duree">Durée</span> {{duree}}</div>
-        <div class="jetdesc">{{description}}</div>
-        {{/pouvoir}}
-    </div>
-</rolltemplate>
 
-<!-- **** SCRIPTS / SHEET WORKERS -->
-<script type="text/worker">
-    // Version handling and translation text loading on("sheet:opened",function(){ getAttrs(["sheetVersion","atkcible"], function(values) { var update = {}; // Translation text for rolls update["text_agilite"] = getTranslationByKey("agilite"); update["text_ame"]
-    = getTranslationByKey("ame"); update["text_arcane"] = getTranslationByKey("arcane"); update["text_blessures"] = getTranslationByKey("blessures"); update["text_bonus"] = getTranslationByKey("bonus"); update["text_combat"] = getTranslationByKey("combat");
-    update["text_conduite"] = getTranslationByKey("conduite"); update["text_crochetage"] = getTranslationByKey("crochetage"); update["text_difficulte"] = getTranslationByKey("difficulte"); update["text_discretion"] = getTranslationByKey("discretion");
-    update["text_encombrement"] = getTranslationByKey("encombrement"); update["text_equitation"] = getTranslationByKey("equitation"); update["text_escalade"] = getTranslationByKey("escalade"); update["text_fatigue"] = getTranslationByKey("fatigue"); update["text_force"]
-    = getTranslationByKey("force"); update["text_intimidation"] = getTranslationByKey("intimidation"); update["text_intellect"] = getTranslationByKey("intellect"); update["text_intimidation"] = getTranslationByKey("intimidation"); update["text_jet-de"]
-    = getTranslationByKey("jet-de"); update["text_jeu"] = getTranslationByKey("jeu"); update["text_joker"] = getTranslationByKey("joker"); update["text_lancer"] = getTranslationByKey("lancer"); update["text_modificateur"] = getTranslationByKey("modificateur");
-    update["text_natation"] = getTranslationByKey("natation"); update["text_navigation"] = getTranslationByKey("navigation"); update["text_nonentraine"] = getTranslationByKey("nonentraine"); update["text_perception"] = getTranslationByKey("perception");
-    update["text_persuasion"] = getTranslationByKey("persuasion"); update["text_pilotage"] = getTranslationByKey("pilotage"); update["text_pistage"] = getTranslationByKey("pistage"); update["text_recherche"] = getTranslationByKey("recherche"); update["text_reparation"]
-    = getTranslationByKey("reparation"); update["text_reseaux"] = getTranslationByKey("reseaux"); update["text_sarcasme"] = getTranslationByKey("sarcasme"); update["text_soins"] = getTranslationByKey("soins"); update["text_survie"] = getTranslationByKey("survie");
-    update["text_tir"] = getTranslationByKey("tir"); update["text_tripes"] = getTranslationByKey("tripes"); update["text_vigueur"] = getTranslationByKey("vigueur"); update["text_attaque-avec"] = getTranslationByKey("attaque-avec"); update["text_degats"]
-    = getTranslationByKey("degats"); update["text_degats-relance"] = getTranslationByKey("degats-relance"); update["text_weap-dmg"] = getTranslationByKey("weap-dmg"); update["text_resistance"] = getTranslationByKey("resistance"); update["text_damage-mod"]
-    = getTranslationByKey("damage-mod"); update["text_dejoker"] = getTranslationByKey("dejoker"); update["text_yes"] = getTranslationByKey("yes"); update["text_no"] = getTranslationByKey("no"); update["text_portee"] = getTranslationByKey("portee"); update["text_courte"]
-    = getTranslationByKey("courte"); update["text_moyenne"] = getTranslationByKey("moyenne"); update["text_longue"] = getTranslationByKey("longue"); // Version var vers = parseFloat(values.sheetVersion) || 0; if (vers
-    < 3.0) { // Gestion du type de personnage getAttrs([ "pnjtype", "extra", "pnj"], function(values) { var pnjtyp=p arseInt(values.pnjtype) || 0; var pnjval=( (parseInt(values.extra) || 0)*3) + (parseInt(values.pnj) || 0); if ( (pnjtyp==0 ) && (pnjval> 0) ) { update["pnjtype"] = pnjval; } update["sheetVersion"] = 3.0; }); } if (vers
-        < 3.2) { if ((parseInt(values.atkcible) || 0)==1 ) { update[ "cibleparade"]="@{target|parade}" ; update[ "cibleresistance"]="@{target|resistance}" ; update[ "ciblearcane"]="?{" + getTranslationByKey( "difficulte") + "|4}"; update[ "atknom"]="@{target|character_name}"
-            ; } else { update[ "cibleparade"]="?{" + getTranslationByKey( "parade") + "|4}"; update[ "cibleresistance"]="?{" + getTranslationByKey( "resistance") + "|4}"; update[ "ciblearcane"]="?{" + getTranslationByKey( "difficulte") + "|4}"; update[
-            "atknom"]="-" ; } update[ "sheetVersion"]=3 .2; } setAttrs(update); }); }); //===J OKER / PNJ / EXTRA on( "change:pnjtype", function(eventinfo){ var pjtype=p arseInt(eventinfo.newValue) || 0; var ispnj=1 ; var isextra=0 ; var possessions=1 ; var disposs=1
-            ; var tpletat=1 ; var joker="1d6" ; var nbbless=3 ; var logo=1; var lib="" ; switch(pjtype) { case 0: ispnj=0 ; isextra=0 ; possessions=1 ; disposs=1 ; tpletat=1 ; joker="1d6" ; nbbless=3 ; logo=1 ; lib=g etTranslationByKey( "personnage"); break;
-            case 1: //PNJ Joker ispnj=1 ; isextra=0 ; possessions=1 ; disposs=0 ; tpletat=0 ; joker="1d6" ; nbbless=3 ; logo=0 ; lib=g etTranslationByKey( "joker-pnj"); break; case 2: //Sous-fifre ispnj=1 ; isextra=0 ; possessions=1 ; disposs=0 ; tpletat=0
-            ; joker="0d4" ; nbbless=3 ; logo=0 ; lib=g etTranslationByKey( "sous-fifre-pnj"); break; case 3: //Bras droit ispnj=1 ; isextra=0 ; possessions=1 ; disposs=0 ; tpletat=0 ; joker="1d6" ; nbbless=0 ; logo=0 ; lib=g etTranslationByKey(
-            "bras-droit-pnj"); break; case 4: //Extra ispnj=1 ; isextra=1 ; possessions=0 ; disposs=0 ; tpletat=0 ; joker="0d4" ; nbbless=0 ; logo=0 ; lib=g etTranslationByKey( "extra-pnj-short"); break; default: //Personnalisé ispnj=1 ; isextra=0 ; possessions=1 ; disposs=0
-            ; tpletat=0 ; joker="1d6" ; nbbless=3 ; logo=0 ; lib=g etTranslationByKey( "pnj-custom"); } setAttrs({ "pnj": ispnj, "extra": isextra, "chkPossessions": possessions, "dispPossessions": disposs, "templateetat": tpletat, "joker_de": joker,
-            "confBlessures": nbbless, "sheetLogo": logo, "pnjtypelib": lib }); }); //===B LESSURES et Malus blessure // TODO conf blessures on( "change:confBlessures", function(eventinfo){ var conf=p arseInt(eventinfo.newValue) || 0; setAttrs({ bless1: parseInt(+(conf>0)) || 0, bless2: parseInt(+(conf>1)) || 0, bless3: parseInt(+(conf>2)) || 0 }); }); on("change:blessures", function(eventinfo) { var malusblessures = 0; if (eventinfo.newValue > 3) { malusblessures = 3; } else { malusblessures = eventinfo.newValue;
-            } setAttrs({ malusblessures: malusblessures }); }); // === FATIGUE et Malus blessure on("change:fatigue", function(eventinfo) { var malusfatigue = 0; if (eventinfo.newValue > 2) { malusfatigue = 2; } else { malusfatigue = eventinfo.newValue;
-            } setAttrs({ malusfatigue: malusfatigue }); }); // === ARMES FIXES on("change:arme1_comp", function(eventinfo) { setAttrs({ arme1_comp_rel: "@{relRollBast" + eventinfo.newValue + "}", arme1_comp_jet: "@{jetRollBast" + eventinfo.newValue +
-            "}", arme1_comp_brut: "@{RollBast" + eventinfo.newValue + "}" }); }); on("change:arme2_comp", function(eventinfo) { setAttrs({ arme2_comp_rel: "@{relRollBast" + eventinfo.newValue + "}", arme2_comp_jet: "@{jetRollBast" + eventinfo.newValue
-            + "}", arme2_comp_brut: "@{RollBast" + eventinfo.newValue + "}" }); }); on("change:arme3_comp", function(eventinfo) { setAttrs({ arme3_comp_rel: "@{relRollBast" + eventinfo.newValue + "}", arme3_comp_jet: "@{jetRollBast" + eventinfo.newValue
-            + "}", arme3_comp_brut: "@{RollBast" + eventinfo.newValue + "}" }); }); // === ARMES DYNAMIQUES on("change:repeating_armes:armed_comp", function(eventinfo) { setAttrs({ repeating_armes_armeD_comp_rel: "@{relRollBast" + eventinfo.newValue +
-            "}", repeating_armes_armeD_comp_jet: "@{jetRollBast" + eventinfo.newValue + "}" ,repeating_armes_armeD_comp_brut: "@{RollBast" + eventinfo.newValue + "}" }); }); // === CARACS DÉRIVÉES // Charisme on("change:charisme_base change:charisme_bonus",
-            function() { getAttrs(["charisme_base","charisme_bonus"], function(values) { setAttrs({ charisme: parseInt(values.charisme_base) + parseInt(values.charisme_bonus) }); }); }); // Parade on("change:combat_de change:combat_bonus change:parade_bonus",
-            function() { getAttrs(["combat_de","combat_bonus","parade_bonus"], function(values) { setAttrs({ parade_base: 2 + Math.floor( (parseInt(values.combat_de) + parseInt(values.combat_bonus)) / 2), parade: parseInt(values.parade_bonus) + 2 + Math.floor(
-            (parseInt(values.combat_de) + parseInt(values.combat_bonus)) / 2) }); }); }); // Résistance on("change:vigueur_de change:vigueur_bonus change:resistance_bonus", function() { getAttrs(["vigueur_de","vigueur_bonus","resistance_bonus"], function(values)
-            { setAttrs({ resistance_base: 2 + Math.floor( (parseInt(values.vigueur_de) + parseInt(values.vigueur_bonus)) / 2), resistance: parseInt(values.resistance_bonus) + 2 + Math.floor( (parseInt(values.vigueur_de) + parseInt(values.vigueur_bonus))
-            / 2) }); }); }); // Affichage / Masquage toutes compétences on("change:chkAllComp", function(eventinfo) { setAttrs({ chkArcane: eventinfo.newValue, chkCombat: eventinfo.newValue, chkConduite: eventinfo.newValue, chkConnaissance: eventinfo.newValue,
-            chkCrochetage: eventinfo.newValue, chkDiscretion: eventinfo.newValue, chkEquitation: eventinfo.newValue, chkEscalade: eventinfo.newValue, chkIntimidation: eventinfo.newValue, chkJeu: eventinfo.newValue, chkLancer: eventinfo.newValue, chkNatation:
-            eventinfo.newValue, chkNavigation: eventinfo.newValue, chkPerception: eventinfo.newValue, chkPersuasion: eventinfo.newValue, chkPilotage: eventinfo.newValue, chkPistage: eventinfo.newValue, chkRecherche: eventinfo.newValue, chkReparation:
-            eventinfo.newValue, chkReseaux: eventinfo.newValue, chkSarcasme: eventinfo.newValue, chkSoins: eventinfo.newValue, chkSurvie: eventinfo.newValue, chkTir: eventinfo.newValue }); }); // === Inventaire et encombrement on("change:force_de", function(eventinfo)
-            { setAttrs({ encombmax: parseInt(eventinfo.newValue)*2.5 }); }); on("change:repeating_equipements:equipqte change:repeating_equipements:equippdsunit", function() { getAttrs(["repeating_equipements_equipqte", "repeating_equipements_equippdsunit"],
-            function(values) { var qte = parseFloat(values.repeating_equipements_equipqte) || 1.0; var pds = parseFloat(values.repeating_equipements_equippdsunit) || 0.0; setAttrs({ repeating_equipements_equippoids: qte*pds }); }); }); on("remove:repeating_equipements
-            change:repeating_equipements:equippoids",function(){ getSectionIDs("repeating_equipements", function(idws) { var totwght = 0.0; idws.forEach(function(idw,index,arr){ var uwght = "repeating_equipements_" + idw + "_equippoids"; var lng = parseInt(arr.length)
-            || 0; getAttrs([uwght], function(val) { totwght = totwght + parseFloat(val[uwght]) || 0.0; if ( (index+1) == lng ){ setAttrs({ encombpoids: totwght }); } }); }); }); }); on("change:encombpoids change:encombmax", function() { getAttrs(["encombmax","encombpoids"],
-            function(values) { var lemax = parseInt(values.encombmax) || 1; var lepoids = parseInt(values.encombpoids) || 0; setAttrs({ encombrement: Math.floor(lepoids/lemax) }); }); }); // === Attaques on("change:atkcible", function (eventinfo) { var
-            cibleparade = "", cibleresistance = "", ciblearcane = "", atknom = ""; if (eventinfo.newValue == 1) { cibleparade = "@{target|parade}"; cibleresistance = "@{target|resistance}"; ciblearcane = "?{" + getTranslationByKey("difficulte") + "|4}";
-            atknom = "@{target|character_name}"; } else { cibleparade = "?{" + getTranslationByKey("parade") + "|4}"; cibleresistance = "?{" + getTranslationByKey("resistance") + "|4}"; ciblearcane = "?{" + getTranslationByKey("difficulte") + "|4}"; atknom
-            = "-"; } setAttrs({ cibleparade: cibleparade, cibleresistance: cibleresistance, ciblearcane: ciblearcane, atknom: atknom }); });
-</script>
+    <!-- Course -->
+    <input type="hiden" name="attr_jetRollCourse" " value="{} " />
+
+    <!-- *** HIDDEN ROLLS  & ATTRIBUTES ** -->
+    <!-- ROLL TEMPLATES -->
+    <rolltemplate class="sheet-rolltemplate-sawo ">
+        <div class="tmpl ">
+            {{#perso}}
+            <div class="titre ">{{name}}{{#competence}} ({{competence}}){{/competence}}</div>
+            <div class="ligne ">
+                {{#pouvoir}}<span data-i18n="pouvoir-de ">Pouvoir de</span>{{/pouvoir}}
+                <b>{{perso}}</b> {{#attaque}}
+                <span data-i18n="attaque ">attaque</span>{{/attaque}} {{^pouvoir}} {{^attaque}}
+                <span data-i18n="fait-jet ">fait un jet</span>{{/attaque}} {{/pouvoir}} {{#cible}} {{#rollTotal() atkcible 1}} {{^attaque}}
+                <span data-i18n="contre ">contre</span>{{/attaque}}
+                <b>{{cible}}</b> {{/rollTotal() atkcible 1}} {{/cible}}
+            </div>
+            {{#rollTotal() etat 1}}
+            <div class="ligne ">
+                <span class="desc ">{{perso}} est</span> {{#rollTotal() blessures 0}} {{#rollTotal() fatigue 0}} {{#rollTotal() secoue 0}}
+                <span class="etat " data-i18n="normal ">Normal</span> {{/rollTotal() secoue 0}} {{/rollTotal() fatigue 0}} {{/rollTotal() blessures 0}} {{#rollTotal() secoue 1}}
+                <span class="etat attention " data-i18n="secoue ">Secoué</span> {{/rollTotal() secoue 1}} {{#rollGreater() blessures 0}} {{#rollLess() blessures 4}}<span class="etat "><span data-i18n="blesse ">Blessé</span> ({{blessures}})</span>{{/rollLess()
+                blessures 4}} {{#rollTotal() blessures 4}}<span class="etat echec "><span data-i18n="etat-critique ">en État critique</span></span>{{/rollTotal() blessures 4}} {{/rollGreater() blessures 0}} {{#rollGreater() fatigue 0}} {{#rollTotal() fatigue
+                1}}
+                <span class="etat " data-i18n="fatigued ">Fatigué</span>{{/rollTotal() fatigue 1}} {{#rollTotal() fatigue 2}}<span class="etat attention " data-i18n="epuised
+        ">Épuisé</span>{{/rollTotal() fatigue 2}} {{#rollTotal() fatigue 3}}<span class="etat echec "
+                    data-i18n="fatigue-critique ">en Fatigue Critique</span>{{/rollTotal() fatigue 3}} {{/rollGreater() fatigue 0}} {{#rollGreater() encombrement 0}}<span class="etat "><span data-i18n="encombred ">Encombré</span> ({{encombrement}})</span>{{/rollGreater()
+                encombrement 0}}
+            </div>
+            {{/rollTotal() etat 1}} {{/perso}} {{#relances}} {{#rollLess() relances 1}}
+            <div class="ligne ">
+                <div class="jet ">{{#attaque}}<span class="etat " data-i18n="attaque ">Attaque</span>{{/attaque}}<span class="echec " data-i18n="echec ">Échec</span> ({{relances}})</div>
+            </div>
+            {{/rollLess() relances 1}} {{#rollTotal() relances 1}}
+            <div class="ligne ">
+                <div class="jet ">{{#attaque}}<span class="etat " data-i18n="attaque ">Attaque</span>{{/attaque}}{{relances}} <span class="succes " data-i18n="succes ">Succès</span> <span data-i18n="sans-relance ">sans relance</span></div>
+            </div>
+            {{#attaque}}
+            <div class="ligne ">
+                <div class="jet ">
+                    {{#rollLess() degatsrel 1}}<span class="etat " data-i18n="degats ">Dégâts</span><span class="aucun " data-i18n="aucun ">Aucun</span> ({{degatsrel}}){{/rollLess() degatsrel 1}} {{#rollTotal() degatsrel 1}}<span class="etat
+        " data-i18n="degats ">Dégâts</span>{{degatsrel}}
+                    <span class="succes " data-i18n="succes ">Succès</span> <span data-i18n="sans-relance ">sans relance</span>{{/rollTotal() degatsrel 1}} {{#rollGreater() degatsrel 1}}<span class="etat " data-i18n="degats
+        ">Dégâts</span><span class="succes "
+                        data-i18n="succes ">Succès</span> <span data-i18n="et ">et</span> {{degatsrel}}<span class="pseudores ">-1</span> <span data-i18n="relance-s ">relance(s)</span>{{/rollGreater() degatsrel 1}}
+                </div>
+            </div>
+            {{/attaque}} {{/rollTotal() relances 1}} {{#rollGreater() relances 1}}
+            <div class="ligne ">
+                <div class="jet ">{{#attaque}}<span class="etat " data-i18n="attaque ">Attaque</span>{{/attaque}}<span class="succes " data-i18n="succes ">Succès</span> <span data-i18n="et ">et</span> {{relances}}<span class="pseudores
+        ">-1</span> <span data-i18n="relance-s ">relance(s)</span></div>
+            </div>
+            {{#attaque}}
+            <div class="ligne ">
+                <div class="jet ">
+                    {{#rollLess() degatsrelplus 1}}<span class="etat " data-i18n="degats-plus-1d6 ">Dégâts +1d6</span> <span class="echec " data-i18n="aucun ">Aucun</span> ({{degatsrelplus}}){{/rollLess() degatsrelplus 1}} {{#rollTotal() degatsrelplus 1}}
+                    <span class="etat " data-i18n="degats-plus-1d6 ">Dégâts +1d6</span> {{degatsrelplus}} <span class="succes " data-i18n="succes ">Succès</span> <span data-i18n="sans-relance ">sans relance</span>{{/rollTotal() degatsrelplus 1}} {{#rollGreater()
+                    degatsrelplus 1}}<span class="etat " data-i18n="degats-plus-1d6 ">Dégâts +1d6</span>
+                    <span class="succes " data-i18n="succes ">Succès</span> <span data-i18n="et ">et</span> {{degatsrelplus}}<span class="pseudores ">-1</span> <span data-i18n="relance-s ">relance(s)</span>{{/rollGreater() degatsrelplus 1}}
+                </div>
+            </div>
+            {{/attaque}} {{/rollGreater() relances 1}} {{/relances}} {{#jet}}
+            <div class="ligne ">
+                <div class="jet "><span class="etat " data-i18n="jet ">Jet</span>{{jet}}</div>
+            </div>
+            {{#degats}}
+            <div class="ligne ">
+                <div class="jet "><span class="etat " data-i18n="degats ">Dégâts</span>{{degats}} +{{degatsplus}} (1d6) <span data-i18n="si-relance ">si relance</span></div>
+            </div>
+            {{/degats}} {{/jet}} {{#pouvoir}}
+            <div class="jetdesc ">{{pp}} <span data-i18n="pp ">PP</span></div>
+            <div class="jetdesc "><span data-i18n="portee ">Portée</span> {{portee}}</div>
+            <div class="jetdesc "><span data-i18n="duree ">Durée</span> {{duree}}</div>
+            <div class="jetdesc ">{{description}}</div>
+            {{/pouvoir}}
+        </div>
+    </rolltemplate>
+
+    <!-- **** SCRIPTS / SHEET WORKERS -->
+    <script type="text/worker ">
+        // Version handling and translation text loading on("sheet:opened ",function(){ getAttrs(["sheetVersion ","atkcible "], function(values) { var update = {}; // Translation text for rolls update["text_agilite "] = getTranslationByKey("agilite
+        "); update["text_ame "]
+        = getTranslationByKey("ame "); update["text_arcane "] = getTranslationByKey("arcane "); update["text_blessures "] = getTranslationByKey("blessures "); update["text_bonus "] = getTranslationByKey("bonus "); update["text_combat
+        "] = getTranslationByKey("combat ");
+        update["text_conduite "] = getTranslationByKey("conduite "); update["text_crochetage "] = getTranslationByKey("crochetage "); update["text_difficulte "] = getTranslationByKey("difficulte "); update["text_discretion "] = getTranslationByKey("discretion ");
+        update["text_encombrement "] = getTranslationByKey("encombrement "); update["text_equitation "] = getTranslationByKey("equitation "); update["text_escalade "] = getTranslationByKey("escalade "); update["text_fatigue
+        "] = getTranslationByKey("fatigue ");
+        update["text_force "] = getTranslationByKey("force "); update["text_intimidation "] = getTranslationByKey("intimidation "); update["text_intellect "] = getTranslationByKey("intellect "); update["text_intimidation "] = getTranslationByKey("intimidation ");
+        update["text_jet-de "] = getTranslationByKey("jet-de "); update["text_jeu "] = getTranslationByKey("jeu "); update["text_joker "] = getTranslationByKey("joker "); update["text_lancer "] = getTranslationByKey("lancer "); update["text_modificateur
+        "] = getTranslationByKey("modificateur ");
+        update["text_natation "] = getTranslationByKey("natation "); update["text_navigation "] = getTranslationByKey("navigation "); update["text_nonentraine "] = getTranslationByKey("nonentraine "); update["text_perception
+        "] = getTranslationByKey("perception ");
+        update["text_persuasion "] = getTranslationByKey("persuasion "); update["text_pilotage "] = getTranslationByKey("pilotage "); update["text_pistage "] = getTranslationByKey("pistage "); update["text_recherche "] = getTranslationByKey("recherche
+        "); update["text_reparation "]
+        = getTranslationByKey("reparation "); update["text_reseaux "] = getTranslationByKey("reseaux "); update["text_sarcasme "] = getTranslationByKey("sarcasme "); update["text_soins "] = getTranslationByKey("soins "); update["text_survie
+        "] = getTranslationByKey("survie ");
+        update["text_tir "] = getTranslationByKey("tir "); update["text_tripes "] = getTranslationByKey("tripes "); update["text_vigueur "] = getTranslationByKey("vigueur "); update["text_attaque-avec "] = getTranslationByKey("attaque-avec
+        "); update["text_degats "]
+        = getTranslationByKey("degats "); update["text_degats-relance "] = getTranslationByKey("degats-relance "); update["text_weap-dmg "] = getTranslationByKey("weap-dmg "); update["text_resistance "] = getTranslationByKey("resistance "); update["text_damage-mod "]
+        = getTranslationByKey("damage-mod "); update["text_dejoker "] = getTranslationByKey("dejoker "); update["text_yes "] = getTranslationByKey("yes "); update["text_no "] = getTranslationByKey("no "); update["text_portee
+        "] = getTranslationByKey("portee ");
+        update["text_courte "] = getTranslationByKey("courte "); update["text_moyenne "] = getTranslationByKey("moyenne "); update["text_longue "] = getTranslationByKey("longue "); // Version var vers = parseFloat(values.sheetVersion) || 0; if (vers
+        < 3.0) { // Gestion du type de personnage getAttrs([ "pnjtype ", "extra ", "pnj
+        "], function(values) { var pnjtyp=p arseInt(values.pnjtype) || 0; var pnjval=( (parseInt(values.extra) || 0)*3) + (parseInt(values.pnj) || 0); if ( (pnjtyp==0 ) && (pnjval> 0) ) { update["pnjtype "] = pnjval; } update["sheetVersion "] = 3.0; }); } if (vers
+            < 3.2) { if ((parseInt(values.atkcible) || 0)==1 ) { update[ "cibleparade "]="@{target|parade} " ; update[ "cibleresistance "]="@{target|resistance} " ; update[ "ciblearcane "]="?{ " + getTranslationByKey( "difficulte ") + "|4}
+        "; update[ "atknom "]="@{target|character_name} "
+                ; } else { update[ "cibleparade "]="?{ " + getTranslationByKey( "parade ") + "|4} "; update[ "cibleresistance "]="?{ " + getTranslationByKey( "resistance ") + "|4} "; update[ "ciblearcane "]="?{ " + getTranslationByKey( "difficulte
+        ") + "|4} "; update[
+                "atknom "]="- " ; } update[ "sheetVersion "]=3 .2; } setAttrs(update); }); }); //===J OKER / PNJ / EXTRA on( "change:pnjtype ", function(eventinfo){ var pjtype=p arseInt(eventinfo.newValue) || 0; var ispnj=1 ; var isextra=0 ; var possessions=1 ; var
+                disposs=1 ; var tpletat=1 ; var joker="1d6 " ; var nbbless=3 ; var logo=1; var lib=" " ; switch(pjtype) { case 0: ispnj=0 ; isextra=0 ; possessions=1 ; disposs=1 ; tpletat=1 ; joker="1d6 " ; nbbless=3 ; logo=1 ; lib=g etTranslationByKey(
+                "personnage "); break; case 1: //PNJ Joker ispnj=1 ; isextra=0 ; possessions=1 ; disposs=0 ; tpletat=0 ; joker="1d6 " ; nbbless=3 ; logo=0 ; lib=g etTranslationByKey( "joker-pnj "); break; case 2: //Sous-fifre ispnj=1 ; isextra=0 ; possessions=1 ; disposs=0
+                ; tpletat=0 ; joker="0d4 " ; nbbless=3 ; logo=0 ; lib=g etTranslationByKey( "sous-fifre-pnj "); break; case 3: //Bras droit ispnj=1 ; isextra=0 ; possessions=1 ; disposs=0 ; tpletat=0 ; joker="1d6 " ; nbbless=0 ; logo=0 ; lib=g etTranslationByKey(
+                "bras-droit-pnj "); break; case 4: //Extra ispnj=1 ; isextra=1 ; possessions=0 ; disposs=0 ; tpletat=0 ; joker="0d4 " ; nbbless=0 ; logo=0 ; lib=g etTranslationByKey( "extra-pnj-short "); break; default: //Personnalisé ispnj=1 ; isextra=0 ; possessions=1 ;
+                disposs=0 ; tpletat=0 ; joker="1d6 " ; nbbless=3 ; logo=0 ; lib=g etTranslationByKey( "pnj-custom "); } setAttrs({ "pnj ": ispnj, "extra ": isextra, "chkPossessions ": possessions, "dispPossessions ": disposs, "templateetat
+        ": tpletat, "joker_de ":
+                joker, "confBlessures ": nbbless, "sheetLogo ": logo, "pnjtypelib ": lib }); }); //===B LESSURES et Malus blessure // TODO conf blessures on( "change:confBlessures ", function(eventinfo){ var conf=p arseInt(eventinfo.newValue) || 0; setAttrs({
+                bless1: parseInt(+(conf>0)) || 0, bless2: parseInt(+(conf>1)) || 0, bless3: parseInt(+(conf>2)) || 0 }); }); on("change:blessures ", function(eventinfo) { var malusblessures = 0; if (eventinfo.newValue > 3) { malusblessures = 3; } else { malusblessures = eventinfo.newValue;
+                } setAttrs({ malusblessures: malusblessures }); }); // === FATIGUE et Malus blessure on("change:fatigue ", function(eventinfo) { var malusfatigue = 0; if (eventinfo.newValue > 2) { malusfatigue = 2; } else { malusfatigue = eventinfo.newValue;
+                } setAttrs({ malusfatigue: malusfatigue }); }); // === ARMES FIXES on("change:arme1_comp ", function(eventinfo) { setAttrs({ arme1_comp_rel: "@{relRollBast " + eventinfo.newValue + "} ", arme1_comp_jet: "@{jetRollBast " + eventinfo.newValue
+                + "} ", arme1_comp_brut: "@{RollBast " + eventinfo.newValue + "} " }); }); on("change:arme2_comp ", function(eventinfo) { setAttrs({ arme2_comp_rel: "@{relRollBast " + eventinfo.newValue + "} ", arme2_comp_jet: "@{jetRollBast " + eventinfo.newValue
+                + "} ", arme2_comp_brut: "@{RollBast " + eventinfo.newValue + "} " }); }); on("change:arme3_comp ", function(eventinfo) { setAttrs({ arme3_comp_rel: "@{relRollBast " + eventinfo.newValue + "} ", arme3_comp_jet: "@{jetRollBast " + eventinfo.newValue
+                + "} ", arme3_comp_brut: "@{RollBast " + eventinfo.newValue + "} " }); }); // === ARMES DYNAMIQUES on("change:repeating_armes:armed_comp ", function(eventinfo) { setAttrs({ repeating_armes_armeD_comp_rel: "@{relRollBast " + eventinfo.newValue
+                + "} ", repeating_armes_armeD_comp_jet: "@{jetRollBast " + eventinfo.newValue + "} " ,repeating_armes_armeD_comp_brut: "@{RollBast " + eventinfo.newValue + "} " }); }); // === CARACS DÉRIVÉES // Charisme on("change:charisme_base change:charisme_bonus ",
+                function() { getAttrs(["charisme_base ","charisme_bonus "], function(values) { setAttrs({ charisme: parseInt(values.charisme_base) + parseInt(values.charisme_bonus) }); }); }); // Parade on("change:combat_de change:combat_bonus change:parade_bonus ",
+                function() { getAttrs(["combat_de ","combat_bonus ","parade_bonus "], function(values) { setAttrs({ parade_base: 2 + Math.floor( (parseInt(values.combat_de) + parseInt(values.combat_bonus)) / 2), parade: parseInt(values.parade_bonus) + 2
+                + Math.floor( (parseInt(values.combat_de) + parseInt(values.combat_bonus)) / 2) }); }); }); // Résistance on("change:vigueur_de change:vigueur_bonus change:resistance_bonus ", function() { getAttrs(["vigueur_de ","vigueur_bonus ","resistance_bonus "],
+                function(values) { setAttrs({ resistance_base: 2 + Math.floor( (parseInt(values.vigueur_de) + parseInt(values.vigueur_bonus)) / 2), resistance: parseInt(values.resistance_bonus) + 2 + Math.floor( (parseInt(values.vigueur_de) + parseInt(values.vigueur_bonus))
+                / 2) }); }); }); // Affichage / Masquage toutes compétences on("change:chkAllComp ", function(eventinfo) { setAttrs({ chkArcane: eventinfo.newValue, chkCombat: eventinfo.newValue, chkConduite: eventinfo.newValue, chkConnaissance: eventinfo.newValue,
+                chkCrochetage: eventinfo.newValue, chkDiscretion: eventinfo.newValue, chkEquitation: eventinfo.newValue, chkEscalade: eventinfo.newValue, chkIntimidation: eventinfo.newValue, chkJeu: eventinfo.newValue, chkLancer: eventinfo.newValue, chkNatation:
+                eventinfo.newValue, chkNavigation: eventinfo.newValue, chkPerception: eventinfo.newValue, chkPersuasion: eventinfo.newValue, chkPilotage: eventinfo.newValue, chkPistage: eventinfo.newValue, chkRecherche: eventinfo.newValue, chkReparation:
+                eventinfo.newValue, chkReseaux: eventinfo.newValue, chkSarcasme: eventinfo.newValue, chkSoins: eventinfo.newValue, chkSurvie: eventinfo.newValue, chkTir: eventinfo.newValue }); }); // === Inventaire et encombrement on("change:force_de ",
+                function(eventinfo) { setAttrs({ encombmax: parseInt(eventinfo.newValue)*2.5 }); }); on("change:repeating_equipements:equipqte change:repeating_equipements:equippdsunit ", function() { getAttrs(["repeating_equipements_equipqte ", "repeating_equipements_equippdsunit "],
+                function(values) { var qte = parseFloat(values.repeating_equipements_equipqte) || 1.0; var pds = parseFloat(values.repeating_equipements_equippdsunit) || 0.0; setAttrs({ repeating_equipements_equippoids: qte*pds }); }); }); on("remove:repeating_equipements
+        change:repeating_equipements:equippoids ",function(){ getSectionIDs("repeating_equipements ", function(idws) { var totwght = 0.0; idws.forEach(function(idw,index,arr){ var uwght = "repeating_equipements_ " + idw + "_equippoids "; var lng =
+                parseInt(arr.length) || 0; getAttrs([uwght], function(val) { totwght = totwght + parseFloat(val[uwght]) || 0.0; if ( (index+1) == lng ){ setAttrs({ encombpoids: totwght }); } }); }); }); }); on("change:encombpoids change:encombmax ", function()
+                { getAttrs(["encombmax ","encombpoids
+        "], function(values) { var lemax = parseInt(values.encombmax) || 1; var lepoids = parseInt(values.encombpoids) || 0; setAttrs({ encombrement: Math.floor(lepoids/lemax) }); }); }); // === Attaques on("change:atkcible ",
+                function (eventinfo) { var cibleparade = " ", cibleresistance = " ", ciblearcane = " ", atknom = " "; if (eventinfo.newValue == 1) { cibleparade = "@{target|parade} "; cibleresistance = "@{target|resistance} "; ciblearcane = "?{
+        " + getTranslationByKey("difficulte ")
+                + "|4} "; atknom = "@{target|character_name} "; } else { cibleparade = "?{ " + getTranslationByKey("parade ") + "|4} "; cibleresistance = "?{ " + getTranslationByKey("resistance ") + "|4} "; ciblearcane = "?{
+        " + getTranslationByKey("difficulte ")
+                + "|4} "; atknom = "- "; } setAttrs({ cibleparade: cibleparade, cibleresistance: cibleresistance, ciblearcane: ciblearcane, atknom: atknom }); });
+    </script>
