@@ -262,9 +262,9 @@
                         <!-- FIN DISCRÉTION -->
                         <div class="input chkPerformance">
                             <!-- PERFORMANCE -->
-                            <button type="roll" name="Btrel-Performance" class="btRolrel" value="@{relRollPerformance}" data-i18n="Performance">Artiste</button>
-                            <button type="roll" name="Btjet-Perfromance" class="btRoljet" value="@{jetRollPerformance}" data-i18n="Performance">Artiste</button>
-                            <button type="roll" name="BtBrut-Performance" class="btRolbrut" value="/em @{character_name} @{text_jet-de} @{Performance_nom}&#010;/roll @{RollPerformance}" data-i18n="Performance">Artiste</button>
+                            <button type="roll" name="Btrel-Performance" class="btRolrel" value="@{relRollPerformance}" data-i18n="performance">Artiste</button>
+                            <button type="roll" name="Btjet-Perfromance" class="btRoljet" value="@{jetRollPerformance}" data-i18n="performance">Artiste</button>
+                            <button type="roll" name="BtBrut-Performance" class="btRolbrut" value="/em @{character_name} @{text_jet-de} @{Performance_nom}&#010;/roll @{RollPerformance}" data-i18n="performance">Artiste</button>
                             <div class="attcomptext" data-i18n="ame-u">ÂME</div>
                             <SELECT name="attr_performance_de" class="selde">
                                 <OPTION value="4" SELECTED data-i18n="d4">&nbsp;d4</OPTION>
@@ -679,9 +679,9 @@
                         <!-- FIN TIR -->
                         <div class="input chkAcademics">
                             <!-- ACADEMICS -->
-                            <button type="roll" name="Btrel-Academics" class="btRolrel" value="@{relRollAcademics}" data-i18n="Academics">Universalis</button>
-                            <button type="roll" name="Btjet-Academics" class="btRoljet" value="@{jetRollAcademics}" data-i18n="Academics">Universalis</button>
-                            <button type="roll" name="BtBrut-Academics" class="btRolbrut" value="/em @{character_name} @{text_jet-de} @{academics_nom}&#010;/roll @{RollAcademics}" data-i18n="Academics">Universalis</button>
+                            <button type="roll" name="Btrel-Academics" class="btRolrel" value="@{relRollAcademics}" data-i18n="academics">Universalis</button>
+                            <button type="roll" name="Btjet-Academics" class="btRoljet" value="@{jetRollAcademics}" data-i18n="academics">Universalis</button>
+                            <button type="roll" name="BtBrut-Academics" class="btRolbrut" value="/em @{character_name} @{text_jet-de} @{academics_nom}&#010;/roll @{RollAcademics}" data-i18n="academics">Universalis</button>
                             <div class="attcomptext" data-i18n="int-u">INT</div>
                             <SELECT name="attr_academics_de" class="selde">
                                 <OPTION value="4" SELECTED data-i18n="d4">&nbsp;d4</OPTION>
@@ -1270,6 +1270,7 @@
                             <OPTION value="3" data-i18n="beasts">Beasts & Barbarians</OPTION>
                             <OPTION value="4" data-i18n="interface">Interface Zero 3.0</OPTION>
                             <OPTION value="5" data-i18n="parsec">The Last Parsec</OPTION>
+                            <OPTION value="6" data-i18n="crystal">Crystal Heart</OPTION>
                         </SELECT>
                     </div>
                 </div>
@@ -1295,16 +1296,11 @@
             <div class="col">
                 <div class="conftitre" data-i18n="affichage">AFFICHAGE DES COMPETENCES</div>
                 <div class="row" style="text-align: center;"><input type="checkbox" name="attr_chkAllComp" value="1" class="chkSkill" title="Afficher/Masquer toutes les compétence" checked /><span data-i18n="toutes">Toutes</span></div>
-                <input type="checkbox" name="attr_chkAthletics" value="1" class="chkSkill" checked /><span data-i18n="athletics">Athlétisme</span>
-                <input type="checkbox" name="attr_chkCommonKnowledge" value="1" class="chkSkill" checked /><span data-i18n="commonknowledge">Culture Gé</span>
-                <input type="checkbox" name="attr_chkPerception" value="1" class="chkSkill" checked /><span data-i18n="perception">Perception</span>
-                <input type="checkbox" name="attr_chkPersuasion" value="1" class="chkSkill" checked /><span data-i18n="persuasion">Persuasion</span>
-                <input type="checkbox" name="attr_chkDiscretion" value="1" class="chkSkill" checked /><span data-i18n="discretion">Discrétion</span>
                 <input type="checkbox" name="attr_chkPerformance" value="1" class="chkSkill" checked /><span data-i18n="performance">Artiste</span>
-                <input type="checkbox" name="attr_chkBattle" value="1" class="chkSkill" checked /><span data-i18n="battles">Batailles</span>
+                <input type="checkbox" name="attr_chkBattle" value="1" class="chkSkill" checked /><span data-i18n="battle">Batailles</span>
                 <input type="checkbox" name="attr_chkCombat" value="1" class="chkSkill" checked /><span data-i18n="combat">Combat</span>
                 <input type="checkbox" name="attr_chkConduite" value="1" class="chkSkill" checked /><span data-i18n="conduite">Conduite</span>
-                <input type="checkbox" name="attr_chkThieverie" value="1" class="chkSkill" checked /><span data-i18n="thieverie">Cambriole</span>
+                <input type="checkbox" name="attr_chkThieverie" value="1" class="chkSkill" checked /><span data-i18n="cambriole">Cambriole</span>
                 <input type="checkbox" name="attr_chkElectronics" value="1" class="chkSkill" checked /><span data-i18n="electronics">Electronique</span>
                 <input type="checkbox" name="attr_chkEquitation" value="1" class="chkSkill" checked /><span data-i18n="equitation">Équitation</span>
                 <input type="checkbox" name="attr_chkIntimidation" value="1" class="chkSkill" checked /><span data-i18n="intimidation">Intimidation</span>
@@ -1313,11 +1309,11 @@
                 <input type="checkbox" name="attr_chkHacking" value="1" class="chkSkill" checked /><span data-i18n="hacking">Hacking</span>
                 <input type="checkbox" name="attr_chkJeu" value="1" class="chkSkill" checked /><span data-i18n="jeu">Jeu</span>
                 <input type="checkbox" name="attr_chkNavigation" value="1" class="chkSkill" checked /><span data-i18n="navigation">Navigation</span>
-                <input type="checkbox" name="attr_chkOccultism" value="1" class="chkSkill" checked /><span data-i18n="occultism">Occultisme</span>
+                <input type="checkbox" name="attr_chkOccultism" value="1" class="chkSkill" checked /><span data-i18n="occult">Occultisme</span>
                 <input type="checkbox" name="attr_chkPilotage" value="1" class="chkSkill" checked /><span data-i18n="pilotage">Pilotage</span>
-                <input type="checkbox" name="attr_chkPsionic" value="1" class="chkSkill" checked /><span data-i18n="psionic">Psionique</span>
-                <input type="checkbox" name="attr_chkRecherche" value="1" class="chkSkill" checked /><span data-i18n="resherche">Recherche</span>
-                <input type="checkbox" name="attr_chkReparation" value="1" class="chkSkill" checked /><span data-i18n="repair">Réparation</span>
+                <input type="checkbox" name="attr_chkPsionic" value="1" class="chkSkill" checked /><span data-i18n="psionics">Psionique</span>
+                <input type="checkbox" name="attr_chkRecherche" value="1" class="chkSkill" checked /><span data-i18n="recherche">Recherche</span>
+                <input type="checkbox" name="attr_chkReparation" value="1" class="chkSkill" checked /><span data-i18n="reparation">Réparation</span>
                 <input type="checkbox" name="attr_chkSarcasme" value="1" class="chkSkill" checked /><span data-i18n="sarcasme">Sarcasme</span>
                 <input type="checkbox" name="attr_chkScience" value="1" class="chkSkill" checked /><span data-i18n="science">Science</span>
                 <input type="checkbox" name="attr_chkWeirdScience" value="1" class="chkSkill" checked /><span data-i18n="weirdscience">Science Etrange</span>
@@ -1344,37 +1340,30 @@
     <!-- translation text for rolls -->
     <input type="hidden" name="attr_text_agilite" value="" />
     <input type="hidden" name="attr_text_ame" value="" />
-    <input type="hidden" name="attr_text_arcane" value="" />
     <input type="hidden" name="attr_text_blessures" value="" />
     <input type="hidden" name="attr_text_bonus" value="" />
     <input type="hidden" name="attr_text_combat" value="" />
     <input type="hidden" name="attr_text_conduite" value="" />
-    <input type="hidden" name="attr_text_crochetage" value="" />
     <input type="hidden" name="attr_text_difficulte" value="" />
     <input type="hidden" name="attr_text_discretion" value="" />
     <input type="hidden" name="attr_text_encombrement" value="" />
     <input type="hidden" name="attr_text_equitation" value="" />
-    <input type="hidden" name="attr_text_escalade" value="" />
     <input type="hidden" name="attr_text_fatigue" value="" />
     <input type="hidden" name="attr_text_force" value="" />
     <input type="hidden" name="attr_text_intimidation" value="" />
     <input type="hidden" name="attr_text_intellect" value="" />
-    <input type="hidden" name="attr_text_intimidation" value="" />
     <input type="hidden" name="attr_text_jet-de" value="" />
     <input type="hidden" name="attr_text_jeu" value="" />
     <input type="hidden" name="attr_text_joker" value="" />
     <input type="hidden" name="attr_text_lancer" value="" />
     <input type="hidden" name="attr_text_modificateur" value="" />
-    <input type="hidden" name="attr_text_natation" value="" />
     <input type="hidden" name="attr_text_navigation" value="" />
     <input type="hidden" name="attr_text_nonentraine" value="" />
     <input type="hidden" name="attr_text_perception" value="" />
     <input type="hidden" name="attr_text_persuasion" value="" />
     <input type="hidden" name="attr_text_pilotage" value="" />
-    <input type="hidden" name="attr_text_pistage" value="" />
     <input type="hidden" name="attr_text_recherche" value="" />
     <input type="hidden" name="attr_text_reparation" value="" />
-    <input type="hidden" name="attr_text_reseaux" value="" />
     <input type="hidden" name="attr_text_sarcasme" value="" />
     <input type="hidden" name="attr_text_soins" value="" />
     <input type="hidden" name="attr_text_survie" value="" />
