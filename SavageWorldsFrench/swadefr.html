@@ -26,7 +26,7 @@
     <input type="checkbox" name="attr_bless3" value="1" class="persoBless3" checked />
     <!-- Skills displaying -->
     <input type="checkbox" name="attr_chkAcademics" class="chkAcademics" value="1" checked />
-    <input type="checkbox" name="attr_chkAthletics" class="chkAtletics" value="1" checked />
+    <input type="checkbox" name="attr_chkAthletics" class="chkAthletics" value="1" checked />
     <input type="checkbox" name="attr_chkBattle" class="chkBattle" value="1" checked />
     <input type="checkbox" name="attr_chkCombat" class="chkCombat" value="1" checked />
     <input type="checkbox" name="attr_chkConduite" class="chkConduite" value="1" checked />
@@ -170,10 +170,10 @@
                         <!-- FIN NON ENTRAINE -->
                         <div class="input chkAthletics">
                             <!-- Athletics -->
-                            <button type="roll" name="Btrel-Athelics" class="btRolrel" value="@{relRollAthletics}" data-i18n="Athletics">Athlétisme</button>
+                            <button type="roll" name="Btrel-Athletics" class="btRolrel" value="@{relRollAthletics}" data-i18n="Athletics">Athlétisme</button>
                             <button type="roll" name="Btjet-Athletics" class="btRoljet" value="@{jetRollAthletics}" data-i18n="Athletics">Athlétisme</button>
                             <button type="roll" name="BtBrut-Athletics" class="btRolbrut" value="/em @{character_name} @{text_jet-de} @{Athletics_nom}&#010;/roll @{RollAthletics}" data-i18n="Athletics">Athlétisme</button>
-                            <div class="attcomptext" data-i18n="agi-u">AGI</div>
+                            <div class="attcomptextdefault" data-i18n="agi-u">AGI</div>
                             <SELECT name="attr_academics_de" class="selde">
                                 <OPTION value="4" SELECTED data-i18n="d4">&nbsp;d4</OPTION>
                                 <OPTION value="6" data-i18n="d6">&nbsp;d6</OPTION>
@@ -186,10 +186,10 @@
                         <!-- FIN ATHLETICS -->
                         <div class="input chkCommonKnowledge">
                             <!-- CULTURE GENERALE -->
-                            <button type="roll" name="Btrel-CommonKnowledge" class="btRolrel" value="@{relRollCommonKnowledge}" data-i18n="culture generale">Culture générale</button>
-                            <button type="roll" name="Btjet-CommonKnowledge" class="btRoljet" value="@{jetRollCommonKnowledge}" data-i18n="culture generale">Culture générale</button>
-                            <button type="roll" name="BtBrut-CommonKnowledge" class="btRolbrut" value="/em @{character_name} @{text_jet-de} @{text_conduite}&#010;/roll @{RollCommonKnowledge}" data-i18n="culture generale">Culture générale</button>
-                            <div class="attcomptext" data-i18n="int-u">INT</div>
+                            <button type="roll" name="Btrel-CommonKnowledge" class="btRolrel" value="@{relRollCommonKnowledge}" data-i18n="culture generale">Culture G</button>
+                            <button type="roll" name="Btjet-CommonKnowledge" class="btRoljet" value="@{jetRollCommonKnowledge}" data-i18n="culture generale">Culture G</button>
+                            <button type="roll" name="BtBrut-CommonKnowledge" class="btRolbrut" value="/em @{character_name} @{text_jet-de} @{text_conduite}&#010;/roll @{RollCommonKnowledge}" data-i18n="culture generale">Culture_générale</button>
+                            <div class="attcomptextdefault" data-i18n="int-u">INT</div>
                             <SELECT name="attr_commonknowledge_de" class="selde">
                                 <OPTION value="4" SELECTED data-i18n="d4">&nbsp;d4</OPTION>
                                 <OPTION value="6" data-i18n="d6">&nbsp;d6</OPTION>
@@ -205,7 +205,7 @@
                             <button type="roll" name="Btrel-Perception" class="btRolrel" value="@{relRollPerception}" data-i18n="perception">Perception</button>
                             <button type="roll" name="Btjet-Perception" class="btRoljet" value="@{jetRollPerception}" data-i18n="perception">Perception</button>
                             <button type="roll" name="BtBrut-Perception" class="btRolbrut" value="/em @{character_name} @{text_jet-de} @{text_perception}&#010;/roll @{RollPerception}" data-i18n="perception">Perception</button>
-                            <div class="attcomptext" data-i18n="int-u">INT</div>
+                            <div class="attcomptextdefault" data-i18n="int-u">INT</div>
                             <SELECT name="attr_perception_de" class="selde">
                                 <OPTION value="4" SELECTED data-i18n="d4">&nbsp;d4</OPTION>
                                 <OPTION value="6" data-i18n="d6">&nbsp;d6</OPTION>
@@ -221,7 +221,7 @@
                             <button type="roll" name="Btrel-Persuasion" class="btRolrel" value="@{relRollPersuasion}" data-i18n="persuasion">Persuasion</button>
                             <button type="roll" name="Btjet-Persuasion" class="btRoljet" value="@{jetRollPersuasion}" data-i18n="persuasion">Persuasion</button>
                             <button type="roll" name="BtBrut-Persuasion" class="btRolbrut" value="/em @{character_name} @{text_jet-de} @{text_persuasion}&#010;/roll @{RollPersuasion}" data-i18n="persuasion">Persuasion</button>
-                            <div class="attcomptext" data-i18n="ame-u">ÂME</div>
+                            <div class="attcomptextdefault" data-i18n="ame-u">ÂME</div>
                             <SELECT name="attr_persuasion_de" class="selde">
                                 <OPTION value="4" SELECTED data-i18n="d4">&nbsp;d4</OPTION>
                                 <OPTION value="6" data-i18n="d6">&nbsp;d6</OPTION>
@@ -237,7 +237,7 @@
                             <button type="roll" name="Btrel-Discretion" class="btRolrel" value="@{relRollDiscretion}" data-i18n="discretion">Discrétion</button>
                             <button type="roll" name="Btjet-Discretion" class="btRoljet" value="@{jetRollDiscretion}" data-i18n="discretion">Discrétion</button>
                             <button type="roll" name="BtBrut-Discretion" class="btRolbrut" value="/em @{character_name} @{text_jet-de} @{text_discretion}&#010;/roll @{RollDiscretion}" data-i18n="discretion">Discrétion</button>
-                            <div class="attcomptext" data-i18n="agi-u">AGI</div>
+                            <div class="attcomptextdefault" data-i18n="agi-u">AGI</div>
                             <SELECT name="attr_discretion_de" class="selde">
                                 <OPTION value="4" SELECTED data-i18n="d4">&nbsp;d4</OPTION>
                                 <OPTION value="6" data-i18n="d6">&nbsp;d6</OPTION>
@@ -410,9 +410,9 @@
                         <!-- FIN FAITH -->
                         <div class="input chkHacking">
                             <!-- HACKING -->
-                            <button type="roll" name="Btrel-Hacking" class="btRolrel" value="@{relRollHacking}" data-i18n="hacking">Informatique</button>
-                            <button type="roll" name="Btjet-Hacking" class="btRoljet" value="@{jetRollHacking}" data-i18n="hacking">Informatique</button>
-                            <button type="roll" name="BtBrut-Hacking" class="btRolbrut" value="/em @{character_name} @{text_jet-de} @{text_hacking}&#010;/roll @{RollHacking}" data-i18n="hacking">Informatique</button>
+                            <button type="roll" name="Btrel-Hacking" class="btRolrel" value="@{relRollHacking}" data-i18n="hacking">Hacking</button>
+                            <button type="roll" name="Btjet-Hacking" class="btRoljet" value="@{jetRollHacking}" data-i18n="hacking">Hacking</button>
+                            <button type="roll" name="BtBrut-Hacking" class="btRolbrut" value="/em @{character_name} @{text_jet-de} @{text_hacking}&#010;/roll @{RollHacking}" data-i18n="hacking">Hacking</button>
                             <div class="attcomptext" data-i18n="int-u">INT</div>
                             <SELECT name="attr_hacking_de" class="selde">
                                 <OPTION value="4" SELECTED data-i18n="d4">&nbsp;d4</OPTION>
@@ -445,8 +445,8 @@
                             <button type="roll" name="Btrel-Language" class="btRolrel" value="@{relRollLanguage}" data-i18n="language">Langage</button>
                             <button type="roll" name="Btjet-Language" class="btRoljet" value="@{jetRollLanguage}" data-i18n="language">Langage</button>
                             <button type="roll" name="BtBrut-Language" class="btRolbrut" value="/em @{character_name} @{text_jet-de} @{text_language}&#010;/roll @{RollLanguage}" data-i18n="language">Langage</button>
-                            <div class="attcomptext" data-i18n="int-u">INT</div>
                             <input type="text" class="compspe" name="attr_language_name" data-i18n-placeholder="language" placeholder="Language" value="" data-i18n-title="language-skill-name" title="Langue correspondant à cette compétence" />
+                            <div class="attcomptext" data-i18n="int-u">INT</div>
                             <SELECT name="attr_jeu_de" class="selde">
                                 <OPTION value="4" SELECTED data-i18n="d4">&nbsp;d4</OPTION>
                                 <OPTION value="6" data-i18n="d6">&nbsp;d6</OPTION>
@@ -521,22 +521,6 @@
                             <input type="number" class="selde" name="attr_psionics_bonus" value="-2" min="-9" />
                         </div>
                         <!-- FIN PSIONICS -->
-                        <div class="input chkRecherche">
-                            <!-- RECHERCHE -->
-                            <button type="roll" name="Btrel-Recherche" class="btRolrel" value="@{relRollRecherche}" data-i18n="recherche">Recherche</button>
-                            <button type="roll" name="Btjet-Recherche" class="btRoljet" value="@{jetRollRecherche}" data-i18n="recherche">Recherche</button>
-                            <button type="roll" name="BtBrut-Recherche" class="btRolbrut" value="/em @{character_name} @{text_jet-de} @{text_recherche}&#010;/roll @{RollRecherche}" data-i18n="recherche">Recherche</button>
-                            <div class="attcomptext" data-i18n="int-u">INT</div>
-                            <SELECT name="attr_recherche_de" class="selde">
-                                <OPTION value="4" SELECTED data-i18n="d4">&nbsp;d4</OPTION>
-                                <OPTION value="6" data-i18n="d6">&nbsp;d6</OPTION>
-                                <OPTION value="8" data-i18n="d8">&nbsp;d8</OPTION>
-                                <OPTION value="10" data-i18n="d10">d10</OPTION>
-                                <OPTION value="12" data-i18n="d12">d12</OPTION>
-                            </SELECT> +
-                            <input type="number" class="selde" name="attr_recherche_bonus" value="-2" min="-2" />
-                        </div>
-                        <!-- FIN RECHERCHE -->
                         <div class="input chkReparation">
                             <!-- RÉPARATION -->
                             <button type="roll" name="Btrel-Reparation" class="btRolrel" value="@{relRollReparation}" data-i18n="reparation">Réparation</button>
@@ -553,6 +537,22 @@
                             <input type="number" class="selde" name="attr_reparation_bonus" value="-2" min="-9" />
                         </div>
                         <!-- FIN RÉPARATION -->
+                        <div class="input chkRecherche">
+                            <!-- RECHERCHE -->
+                            <button type="roll" name="Btrel-Recherche" class="btRolrel" value="@{relRollRecherche}" data-i18n="recherche">Recherche</button>
+                            <button type="roll" name="Btjet-Recherche" class="btRoljet" value="@{jetRollRecherche}" data-i18n="recherche">Recherche</button>
+                            <button type="roll" name="BtBrut-Recherche" class="btRolbrut" value="/em @{character_name} @{text_jet-de} @{text_recherche}&#010;/roll @{RollRecherche}" data-i18n="recherche">Recherche</button>
+                            <div class="attcomptext" data-i18n="int-u">INT</div>
+                            <SELECT name="attr_recherche_de" class="selde">
+                                <OPTION value="4" SELECTED data-i18n="d4">&nbsp;d4</OPTION>
+                                <OPTION value="6" data-i18n="d6">&nbsp;d6</OPTION>
+                                <OPTION value="8" data-i18n="d8">&nbsp;d8</OPTION>
+                                <OPTION value="10" data-i18n="d10">d10</OPTION>
+                                <OPTION value="12" data-i18n="d12">d12</OPTION>
+                            </SELECT> +
+                            <input type="number" class="selde" name="attr_recherche_bonus" value="-2" min="-2" />
+                        </div>
+                        <!-- FIN RECHERCHE -->
                         <div class="input chkSarcasme">
                             <!-- SARCASME -->
                             <button type="roll" name="Btrel-Sarcasme" class="btRolrel" value="@{relRollSarcasme}" data-i18n="sarcasme">Sarcasme</button>
@@ -587,9 +587,9 @@
                         <!-- FIN SCIENCE -->
                         <div class="input chkWeirdScience">
                             <!-- WEIRD SCIENCE -->
-                            <button type="roll" name="Btrel-WeirdScience" class="btRolrel" value="@{relRollWeirdScience}" data-i18n="weirdscience">Science Etrange</button>
-                            <button type="roll" name="Btjet-WeirdScience" class="btRoljet" value="@{jetRollWeirdScience}" data-i18n="science">Science Etrange</button>
-                            <button type="roll" name="BtBrut-WeirdScience" class="btRolbrut" value="/em @{character_name} @{text_jet-de} @{text_weirdscience}&#010;/roll @{RollWeirdScience}" data-i18n="weirdscience">Science Etrange</button>
+                            <button type="roll" name="Btrel-WeirdScience" class="btRolrel" value="@{relRollWeirdScience}" data-i18n="weirdscience">Sc. Etrange</button>
+                            <button type="roll" name="Btjet-WeirdScience" class="btRoljet" value="@{jetRollWeirdScience}" data-i18n="science">Sc. Etrange</button>
+                            <button type="roll" name="BtBrut-WeirdScience" class="btRolbrut" value="/em @{character_name} @{text_jet-de} @{text_weirdscience}&#010;/roll @{RollWeirdScience}" data-i18n="weirdscience">Sc. Etrange</button>
                             <div class="attcomptext" data-i18n="int-u">INT</div>
                             <SELECT name="attr_weirdscience_de" class="selde">
                                 <OPTION value="4" SELECTED data-i18n="d4">&nbsp;d4</OPTION>
@@ -667,9 +667,9 @@
                         <!-- FIN TIR -->
                         <div class="input chkAcademics">
                             <!-- ACADEMICS -->
-                            <button type="roll" name="Btrel-Academics" class="btRolrel" value="@{relRollAcademics}" data-i18n="Academics">Universités</button>
-                            <button type="roll" name="Btjet-Academics" class="btRoljet" value="@{jetRollAcademics}" data-i18n="Academics">Universités</button>
-                            <button type="roll" name="BtBrut-Academics" class="btRolbrut" value="/em @{character_name} @{text_jet-de} @{academics_nom}&#010;/roll @{RollAcademics}" data-i18n="Academics">Universités</button>
+                            <button type="roll" name="Btrel-Academics" class="btRolrel" value="@{relRollAcademics}" data-i18n="Academics">Universalis</button>
+                            <button type="roll" name="Btjet-Academics" class="btRoljet" value="@{jetRollAcademics}" data-i18n="Academics">Universalis</button>
+                            <button type="roll" name="BtBrut-Academics" class="btRolbrut" value="/em @{character_name} @{text_jet-de} @{academics_nom}&#010;/roll @{RollAcademics}" data-i18n="Academics">Universalis</button>
                             <div class="attcomptext" data-i18n="int-u">INT</div>
                             <SELECT name="attr_academics_de" class="selde">
                                 <OPTION value="4" SELECTED data-i18n="d4">&nbsp;d4</OPTION>
@@ -748,19 +748,19 @@
             <div class="colblock">
                 <!-- DEGATS -->
                 <div style="text-align: left;">
+                    <div class="redtitle3" style="text-align: right;width:80px;" data-i18n="distracted-u">DISTRAIT</div>
+                    <input type="checkbox" class="secoue" name="attr_distracted" value='1' data-i18n-title="distracted" title="Distrait" /><span></span>
+                    <div class="redtitle3" style="text-align: right;width:80px;" data-i18n="vulnerable-u">VULNERABLE</div>
+                    <input type="checkbox" class="secoue" name="attr_vulnerable" value='1' data-i18n-title="vulnerable" title="Vulnerable" /><span></span>
+                    <div class="redtitle3" style="text-align: right;width:80px;" data-i18n="entangled-u">ENCHEVÊTRÉ</div>
+                    <input type="checkbox" class="secoue" name="attr_entangled" value='1' data-i18n-title="entangled" title="Enchevêtré" /><span></span>
+                    <div class="redtitle3" style="text-align: right;width:80px;" data-i18n="bound-u">BLOQUÉ</div>
+                    <input type="checkbox" class="secoue" name="attr_bound" value='1' data-i18n-title="bound" title="Bloqué" /><span></span>
                     <div class="redtitle1" style="display: inline-block;" data-i18n="degats-u">DÉGÂTS</div>
-                    <div class="redtitle3" style="text-align: right;width:100px;" data-i18n="secoue-u">SECOUÉ</div>
+                    <div class="redtitle3" style="text-align: right;width:50px;" data-i18n="secoue-u">SECOUÉ</div>
                     <input type="checkbox" class="secoue" name="attr_secoue" value='1' data-i18n-title="secoue" title="Secoué" /><span></span>
-                    <div class="redtitle3" style="text-align: right;width:100px;" data-i18n="sonne-u">SONNÉ</div>
-                    <input type="checkbox" class="sonne" name="attr_sonne" value='1' data-i18n-title="sonne" title="Sonné" /><span></span>
-                    <div class="redtitle3" style="text-align: right;width:100px;" data-i18n="distracted-u">DISTRAIT</div>
-                    <input type="checkbox" class="distracted" name="attr_distracted" value='1' data-i18n-title="distracted" title="Distrait" /><span></span>
-                    <div class="redtitle3" style="text-align: right;width:100px;" data-i18n="vulnerable-u">VULNERABLE</div>
-                    <input type="checkbox" class="vulnerable" name="attr_vulnerable" value='1' data-i18n-title="vulnerable" title="Vulnerable" /><span></span>
-                    <div class="redtitle3" style="text-align: right;width:100px;" data-i18n="entangled-u">ENCHEVÊTRÉ</div>
-                    <input type="checkbox" class="entangled" name="attr_entangled" value='1' data-i18n-title="entangled" title="Enchevêtré" /><span></span>
-                    <div class="redtitle3" style="text-align: right;width:100px;" data-i18n="bound-u">BLOQUÉ</div>
-                    <input type="checkbox" class="bound" name="attr_bound" value='1' data-i18n-title="bound" title="Bloqué" /><span></span>
+                    <div class="redtitle3" style="text-align: right;width:50px;" data-i18n="sonne-u">SONNÉ</div>
+                    <input type="checkbox" class="secoue" name="attr_sonne" value='1' data-i18n-title="sonne" title="Sonné" /><span></span>
                 </div>
                 <div style="height: 30px;">
                     <div class="redtitle3" style="width:80px;" data-i18n="blessures-u">BLESSURES</div>
@@ -965,6 +965,12 @@
                         <div class="blacktext2" style="width:70px;">H</div><input type="text" style="width:195px;" name="attr_progresHeroique3" /></div>
                     <div class="input">
                         <div class="blacktext2" style="width:70px;">Légendaire</div><input type="text" style="width:195px;" name="attr_progresLegendaire0" /></div>
+                    <div class="input">
+                        <div class="blacktext2" style="width:70px;">L</div><input type="text" style="width:195px;" name="attr_progresLegendaire1" /></div>
+                    <div class="input">
+                        <div class="blacktext2" style="width:70px;">L</div><input type="text" style="width:195px;" name="attr_progresLegendaire2" /></div>
+                    <div class="input">
+                        <div class="blacktext2" style="width:70px;">L</div><input type="text" style="width:195px;" name="attr_progresLegendaire3" /></div>
                 </div>
             </div>
         </div>
@@ -991,7 +997,7 @@
                 <SELECT name="attr_arme1_comp" style="width: 55px;margin-left:3px;margin-right:3px;" data-i18n-title="competence" title="Compétence">
                     <OPTION value="0" SELECTED data-i18n="choisir"> - Choisir une compétence :</OPTION>
                     <OPTION value="Combat" data-i18n="combat">Combat</OPTION>
-                    <OPTION value="Lancer" data-i18n="lancer">Lancer</OPTION>
+                    <OPTION value="Athletics" data-i18n="athletics">Athlétisme</OPTION>
                     <OPTION value="Tir" data-i18n="tir">Tir</OPTION>
                     <OPTION value="Arcane" data-i18n="arcane">Arcane</OPTION>
                 </SELECT>
@@ -1028,7 +1034,7 @@
                 <SELECT name="attr_arme2_comp" style="width: 55px;margin-left:3px;margin-right:3px;" data-i18n-title="competence" title="Compétence">
                     <OPTION value="0" SELECTED data-i18n="choisir"> - Choisir une compétence :</OPTION>
                     <OPTION value="Combat" data-i18n="combat">
-                    <OPTION value="Lancer" data-i18n="lancer">Lancer</OPTION>
+                    <OPTION value="Athletics" data-i18n="athletics">Athlétisme</OPTION>
                     <OPTION value="Tir" data-i18n="tir">Tir</OPTION>
                    <OPTION value="Arcane" data-i18n="arcane">Arcane</OPTION>
                 </SELECT>
@@ -1065,7 +1071,7 @@
                 <SELECT name="attr_arme3_comp" style="width: 55px;margin-left:3px;margin-right:3px;" data-i18n-title="competence" title="Compétence">
                     <OPTION value="0" SELECTED data-i18n="choisir"> - Choisir une compétence :</OPTION>
                     <OPTION value="Combat" data-i18n="combat">
-                    <OPTION value="Lancer" data-i18n="lancer">Lancer</OPTION>
+                    <OPTION value="Athletics" data-i18n="athletics">Athlétisme</OPTION>
                     <OPTION value="Tir" data-i18n="tir">Tir</OPTION>
                    <OPTION value="Arcane" data-i18n="arcane">Arcane</OPTION>
                 </SELECT>
@@ -1105,7 +1111,7 @@
                     <SELECT name="attr_armeD_comp" style="width: 55px;margin-left:3px;margin-right:3px;" data-i18n-title="competence" title="Compétence">
                         <OPTION value="0" SELECTED data-i18n="choisir"> - Choisir une compétence :</OPTION>
                         <OPTION value="Combat" data-i18n="combat">
-                        <OPTION value="Lancer" data-i18n="lancer">Lancer</OPTION>
+                        <OPTION value="Athletics" data-i18n="athletics">Athlétisme</OPTION>
                         <OPTION value="Tir" data-i18n="tir">Tir</OPTION>
                        <OPTION value="Arcane" data-i18n="arcane">Arcane</OPTION>
                     </SELECT>
@@ -1228,6 +1234,8 @@
                             <OPTION value="1" data-i18n="deadlands">Deadlands Reloaded</OPTION>
                             <OPTION value="2" data-i18n="lankhmar">Lankhmar</OPTION>
                             <OPTION value="3" data-i18n="beasts">Beasts & Barbarians</OPTION>
+                            <OPTION value="4" data-i18n="interface">Interface Zero 3.0</OPTION>
+                            <OPTION value="5" data-i18n="parsec">The Last Parsec</OPTION>
                         </SELECT>
                     </div>
                 </div>
@@ -1240,9 +1248,9 @@
         <div class="2colrow">
             <div class="col">
                 <div class="conftitre" data-i18n="jets">JETS</div>
-                <div class="confcat" data-i18n="nivaeu">Niveau de détail :</div>
-                <input type="radio" name="attr_sheetStyle" value="0" class="styleRolrel" checked="checked" title="Style de jet par template, montrant succès et relances" /><span data-i18n="succes-relances">Succès+Relances</span>
-                <input type="radio" name="attr_sheetStyle" value="1" class="styleRoljet" title="Style de jet par template, montrant le total des jets" /><span data-i18n="total">Total des Jets</span>
+                <div class="confcat" data-i18n="niveau">Niveau de détail :</div>
+                <input type="radio" name="attr_sheetStyle" value="0" class="styleRolrel" title="Style de jet par template, montrant succès et relances" /><span data-i18n="succes-relances">Succès+Relances</span>
+                <input type="radio" name="attr_sheetStyle" value="1" class="styleRoljet" checked="checked" title="Style de jet par template, montrant le total des jets" /><span data-i18n="total">Total des Jets</span>
                 <input type="radio" name="attr_sheetStyle" value="2" class="styleRolbrut" title="Style de jet 'macro', sans  template, montrant les jets bruts" /><span data-i18n="jets-bruts">Jets bruts</span>
                 <div class="optionEtat" data-i18n="templates">Templates :</div>
                 <input type="checkbox" name="attr_templateetat" class="optionEtat" value="1" title="Afficher l'état du personnage dans les templates de jet" checked /><span class="optionEtat" data-i18n="etats">Etats</span>
@@ -1396,10 +1404,10 @@
     <input type="hidden" name="attr_relRollBastCombat" value="{ floor( ( { @{RollBastCombat} } - (@{cibleparade}[Parade] - 4 ) ) /4), 0d0 }kh1 " />
     <input type="hidden" name="attr_jetRollBastCombat" value="@{RollBastCombat}" />
 
-    <input type="hidden" name="attr_RollBastLancer" value="{ 1d@{lancer_de}!![@{text_lancer}],@{joker_de}!![@{text_joker}]}kh1 + (@{lancer_bonus})[@{text_bonus}] - @{malusblessures}[@{text_blessures}] - @{malusfatigue}[@{text_fatigue}] - @{encombrement}[@{text_encombrement}] - @{rollrngquery} + @{rollmodquery}"
+    <input type="hidden" name="attr_RollBastAthletics" value="{ 1d@{athletics_de}!![@{text_athletics}],@{joker_de}!![@{text_joker}]}kh1 + (@{athletics_bonus})[@{text_bonus}] - @{malusblessures}[@{text_blessures}] - @{malusfatigue}[@{text_fatigue}] - @{encombrement}[@{text_encombrement}] - @{rollrngquery} + @{rollmodquery}"
     />
-    <input type="hidden" name="attr_relRollBastLancer" value="{ floor( ( { @{rollBastLancer} } ) /4), 0d0 }kh1" />
-    <input type="hidden" name="attr_jetRollBastLancer" value="@{RollBastLancer}" />
+    <input type="hidden" name="attr_relRollBastAthletics" value="{ floor( ( { @{rollBastAthletics} } ) /4), 0d0 }kh1" />
+    <input type="hidden" name="attr_jetRollBastAthletics" value="@{RollBastAthletics}" />
 
     <input type="hidden" name="attr_RollBastTir" value="{ 1d@{tir_de}!![@{text_tir}], @{rolljokerquery}}kh1 + (@{tir_bonus})[@{text_bonus}] - @{malusblessures}[@{text_blessures}] - @{malusfatigue}[@{text_fatigue}] - @{encombrement}[@{text_encombrement}] - @{rollrngquery} + @{rollmodquery}"
     />
