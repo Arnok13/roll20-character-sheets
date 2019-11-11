@@ -405,6 +405,24 @@ input[type=checkbox].sheet-persoBless3:checked~div.sheet-main .sheet-blessure.sh
     min-width: 30px;
 }
 
+input[type=checkbox].sheet-persoFatigue1:checked~div.sheet-main .sheet-fatigue.sheet-fatigue1 {
+    display: inline-block;
+    width: 30px;
+    min-width: 30px;
+}
+
+input[type=checkbox].sheet-persoFatigue2:checked~div.sheet-main .sheet-fatigue.sheet-fatigue2 {
+    display: inline-block;
+    width: 30px;
+    min-width: 30px;
+}
+
+input[type=checkbox].sheet-persoFatigue3:checked~div.sheet-main .sheet-fatigue.sheet-fatigue3 {
+    display: inline-block;
+    width: 30px;
+    min-width: 30px;
+}
+
 
 /*** Autres ***/
 
@@ -1273,7 +1291,10 @@ input[type=radio].sheet-chkSheetCrystal,
 input[type=checkbox].sheet-dispLogo,
 input[type=checkbox].sheet-persoBless1,
 input[type=checkbox].sheet-persoBless2,
-input[type=checkbox].sheet-persoBless3 {
+input[type=checkbox].sheet-persoBless3,
+input[type=checkbox].sheet-persoFatigue1,
+input[type=checkbox].sheet-persoFatigue2,
+input[type=checkbox].sheet-persoFatigue3 {
     display: none;
 }
 
@@ -1316,7 +1337,7 @@ input[type=checkbox].sheet-chkAthletics:checked~div.sheet-main div.sheet-chkAthl
     display: block;
 }
 
-input[type=checkbox].sheet-chkCommonKnwledge:checked~div.sheet-main div.sheet-chkCommonKnowledge {
+input[type=checkbox].sheet-chkCommonKnowledge:checked~div.sheet-main div.sheet-chkCommonKnowledge {
     display: block;
 }
 

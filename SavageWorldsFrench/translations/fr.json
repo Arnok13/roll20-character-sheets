@@ -228,6 +228,7 @@
     "performance": "Artiste",
     "battle": "Batailles",
     "cambriole": "Cambriole",
+    "thieverie": "Cambriole",
     "electronics": "Electronique",
     "faith": "Foi",
     "hacking": "Hacking",
@@ -248,5 +249,4 @@
     "fatigue-extended": "Fatigue étendu / 3 niveaux",
     "weirdscience": "Science étrange",
     "focus": "Focus"
-
 }
