@@ -1248,7 +1248,7 @@ input[type=checkbox].sheet-dispLogo:checked~div.sheet-main .sheet-logo {
 }
 
 input[type=checkbox].sheet-chkAthletics,
-input[type=checkbox].sheet-chkchkCommonKnowledge,
+input[type=checkbox].sheet-chkCommonKnowledge,
 input[type=checkbox].sheet-chkPerception,
 input[type=checkbox].sheet-chkPersuasion,
 input[type=checkbox].sheet-chkDiscretion,
@@ -1260,14 +1260,14 @@ input[type=checkbox].sheet-chkThieverie,
 input[type=checkbox].sheet-chkElectronics,
 input[type=checkbox].sheet-chkEquitation,
 input[type=checkbox].sheet-chkIntimidation,
-input[type=checkbox].sheet-chFocus,
+input[type=checkbox].sheet-chkFocus,
 input[type=checkbox].sheet-chkFaith,
 input[type=checkbox].sheet-chkHacking,
 input[type=checkbox].sheet-chkJeu,
 input[type=checkbox].sheet-chkNavigation,
-input[type=checkbox].sheet-chkOccult,
+input[type=checkbox].sheet-chkOccultism,
 input[type=checkbox].sheet-chkPilotage,
-input[type=checkbox].sheet-chkPsionics,
+input[type=checkbox].sheet-chkPsionic,
 input[type=checkbox].sheet-chkRecherche,
 input[type=checkbox].sheet-chkReparation,
 input[type=checkbox].sheet-chkSarcasme,
@@ -1316,9 +1316,9 @@ div.sheet-chkFaith,
 div.sheet-chkHacking,
 div.sheet-chkJeu,
 div.sheet-chkNavigation,
-div.sheet-chkOccult,
+div.sheet-chkOccultism,
 div.sheet-chkPilotage,
-div.sheet-chkPsionics,
+div.sheet-chkPsionic,
 div.sheet-chkRecherche,
 div.sheet-chkReparation,
 div.sheet-chkSarcasme,
@@ -1405,7 +1405,7 @@ input[type=checkbox].sheet-chkNavigation:checked~div.sheet-main div.sheet-chkNav
     display: block;
 }
 
-input[type=checkbox].sheet-chkOccult:checked~div.sheet-main div.sheet-chkOccult {
+input[type=checkbox].sheet-chkOccultism:checked~div.sheet-main div.sheet-chkOccultism {
     display: block;
 }
 
@@ -1413,7 +1413,7 @@ input[type=checkbox].sheet-chkPilotage:checked~div.sheet-main div.sheet-chkPilot
     display: block;
 }
 
-input[type=checkbox].sheet-chkPsionics:checked~div.sheet-main div.sheet-chkPsionics {
+input[type=checkbox].sheet-chkPsionic:checked~div.sheet-main div.sheet-chkPsionic {
     display: block;
 }
 
