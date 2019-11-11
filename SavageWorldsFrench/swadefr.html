@@ -31,6 +31,8 @@
     <input type="checkbox" name="attr_bless1" value="1" class="persoBless1" checked />
     <input type="checkbox" name="attr_bless2" value="1" class="persoBless2" checked />
     <input type="checkbox" name="attr_bless3" value="1" class="persoBless3" checked />
+    <input type="checkbox" name="attr_fatigue1" value="1" class="persoFatigue1" checked />
+    <input type="checkbox" name="attr_fatigue2" value="1" class="persoFatigue2" checked />
     <!-- Skills displaying -->
     <input type="checkbox" name="attr_chkAthletics" class="chkAthletics" value="1" checked />
     <input type="checkbox" name="attr_chkCommonKnowledge" class="chkCommonKnowledge" value="1" checked />
@@ -45,21 +47,21 @@
     <input type="checkbox" name="attr_chkElectronics" class="chkElectronics" value="1" checked />
     <input type="checkbox" name="attr_chkEquitation" class="chkEquitation" value="1" checked />
     <input type="checkbox" name="attr_chkIntimidation" class="chkIntimidation" value="1" checked />
-    <input type="checkbox" name="attr_chkFocus" class="chkFocus" value="0" checked />
-    <input type="checkbox" name="attr_chkFaith" class="chkFaith" value="0" checked />
-    <input type="checkbox" name="attr_chkHacking" class="chkHacking" value="1" checked />
+    <input type="checkbox" name="attr_chkFocus" class="chkFocus" value="1" />
+    <input type="checkbox" name="attr_chkFaith" class="chkFaith" value="1" />
+    <input type="checkbox" name="attr_chkHacking" class="chkHacking" value="1" />
     <input type="checkbox" name="attr_chkJeu" class="chkJeu" value="1" checked />
     <input type="checkbox" name="attr_chkNavigation" class="chkNavigation" value="1" checked />
-    <input type="checkbox" name="attr_chkOccultism" class="chkOccultism" value="0" checked />
-    <input type="checkbox" name="attr_chkPilotage" class="chkPilotage" value="1" checked />
-    <input type="checkbox" name="attr_chkPsionic" class="chkPsionic" value="0" checked />
+    <input type="checkbox" name="attr_chkOccultism" class="chkOccultism" value="1" />
+    <input type="checkbox" name="attr_chkPilotage" class="chkPilotage" value="1" />
+    <input type="checkbox" name="attr_chkPsionic" class="chkPsionic" value="1" />
     <input type="checkbox" name="attr_chkRecherche" class="chkRecherche" value="1" checked />
     <input type="checkbox" name="attr_chkReparation" class="chkReparation" value="1" checked />
     <input type="checkbox" name="attr_chkSarcasme" class="chkSarcasme" value="1" checked />
     <input type="checkbox" name="attr_chkScience" class="chkScience" value="1" checked />
-    <input type="checkbox" name="attr_chkWeirdScience" class="chkWeirdScience" value="0" checked />
+    <input type="checkbox" name="attr_chkWeirdScience" class="chkWeirdScience" value="1" />
     <input type="checkbox" name="attr_chkSoins" class="chkSoins" value="1" checked />
-    <input type="checkbox" name="attr_chkSpellcasting" class="chkSpellcasting" value="0" checked />
+    <input type="checkbox" name="attr_chkSpellcasting" class="chkSpellcasting" value="1" />
     <input type="checkbox" name="attr_chkSurvie" class="chkSurvie" value="1" checked />
     <input type="checkbox" name="attr_chkTir" class="chkTir" value="1" checked />
     <input type="checkbox" name="attr_chkAcademics" class="chkAcademics" value="1" checked />
@@ -756,6 +758,15 @@
                 <div class="SheetBnB" style="text-align:center;">
                     <img style="width: 372px;" src="https://raw.githubusercontent.com/NathaTerrien/roll20-wip/master/SavageWorldsFrench/sawofr_logo_bnb.png" />
                 </div>
+                <div class="SheetInterface" style="text-align:center;">
+                    <img style="width: 372px;" src="https://raw.githubusercontent.com/NathaTerrien/roll20-wip/master/SavageWorldsFrench/sawofr_logo_bnb.png" />
+                </div>
+                <div class="SheetParsec" style="text-align:center;">
+                    <img style="width: 372px;" src="https://raw.githubusercontent.com/NathaTerrien/roll20-wip/master/SavageWorldsFrench/sawofr_logo_bnb.png" />
+                </div>
+                <div class="SheetCrystal" style="text-align:center;">
+                    <img style="width: 372px;" src="https://raw.githubusercontent.com/NathaTerrien/roll20-wip/master/SavageWorldsFrench/sawofr_logo_bnb.png" />
+                </div>
             </div>
             <div class="colblock">
                 <!-- DEGATS -->
@@ -1301,24 +1312,24 @@
                 <input type="checkbox" name="attr_chkCombat" value="1" class="chkSkill" checked /><span data-i18n="combat">Combat</span>
                 <input type="checkbox" name="attr_chkConduite" value="1" class="chkSkill" checked /><span data-i18n="conduite">Conduite</span>
                 <input type="checkbox" name="attr_chkThieverie" value="1" class="chkSkill" checked /><span data-i18n="cambriole">Cambriole</span>
-                <input type="checkbox" name="attr_chkElectronics" value="1" class="chkSkill" checked /><span data-i18n="electronics">Electronique</span>
+                <input type="checkbox" name="attr_chkElectronics" value="1" class="chkSkill" /><span data-i18n="electronics">Electronique</span>
                 <input type="checkbox" name="attr_chkEquitation" value="1" class="chkSkill" checked /><span data-i18n="equitation">Équitation</span>
                 <input type="checkbox" name="attr_chkIntimidation" value="1" class="chkSkill" checked /><span data-i18n="intimidation">Intimidation</span>
-                <input type="checkbox" name="attr_chkFocus" value="1" class="chkSkill" checked /><span data-i18n="focus">Focus</span>
-                <input type="checkbox" name="attr_chkFaith" value="1" class="chkSkill" checked /><span data-i18n="faith">Foi</span>
-                <input type="checkbox" name="attr_chkHacking" value="1" class="chkSkill" checked /><span data-i18n="hacking">Hacking</span>
+                <input type="checkbox" name="attr_chkFocus" value="1" class="chkSkill" /><span data-i18n="focus">Focus</span>
+                <input type="checkbox" name="attr_chkFaith" value="1" class="chkSkill" /><span data-i18n="faith">Foi</span>
+                <input type="checkbox" name="attr_chkHacking" value="1" class="chkSkill" /><span data-i18n="hacking">Hacking</span>
                 <input type="checkbox" name="attr_chkJeu" value="1" class="chkSkill" checked /><span data-i18n="jeu">Jeu</span>
                 <input type="checkbox" name="attr_chkNavigation" value="1" class="chkSkill" checked /><span data-i18n="navigation">Navigation</span>
-                <input type="checkbox" name="attr_chkOccultism" value="1" class="chkSkill" checked /><span data-i18n="occult">Occultisme</span>
+                <input type="checkbox" name="attr_chkOccultism" value="1" class="chkSkill" /><span data-i18n="occult">Occultisme</span>
                 <input type="checkbox" name="attr_chkPilotage" value="1" class="chkSkill" checked /><span data-i18n="pilotage">Pilotage</span>
-                <input type="checkbox" name="attr_chkPsionic" value="1" class="chkSkill" checked /><span data-i18n="psionics">Psionique</span>
+                <input type="checkbox" name="attr_chkPsionic" value="1" class="chkSkill" /><span data-i18n="psionics">Psionique</span>
                 <input type="checkbox" name="attr_chkRecherche" value="1" class="chkSkill" checked /><span data-i18n="recherche">Recherche</span>
                 <input type="checkbox" name="attr_chkReparation" value="1" class="chkSkill" checked /><span data-i18n="reparation">Réparation</span>
                 <input type="checkbox" name="attr_chkSarcasme" value="1" class="chkSkill" checked /><span data-i18n="sarcasme">Sarcasme</span>
                 <input type="checkbox" name="attr_chkScience" value="1" class="chkSkill" checked /><span data-i18n="science">Science</span>
-                <input type="checkbox" name="attr_chkWeirdScience" value="1" class="chkSkill" checked /><span data-i18n="weirdscience">Science Etrange</span>
+                <input type="checkbox" name="attr_chkWeirdScience" value="1" class="chkSkill" /><span data-i18n="weirdscience">Science Etrange</span>
                 <input type="checkbox" name="attr_chkSoins" value="1" class="chkSkill" checked /><span data-i18n="soins">Soins</span>
-                <input type="checkbox" name="attr_chkSpellcasting" value="1" class="chkSkill" checked /><span data-i18n="spellcasting">Sorcellerie</span>
+                <input type="checkbox" name="attr_chkSpellcasting" value="1" class="chkSkill" /><span data-i18n="spellcasting">Sorcellerie</span>
                 <input type="checkbox" name="attr_chkSurvie" value="1" class="chkSkill" checked /><span data-i18n="survie">Survie</span>
                 <input type="checkbox" name="attr_chkTir" value="1" class="chkSkill" checked /><span data-i18n="tir">Tir</span>
                 <input type="checkbox" name="attr_chkAcademics" value="1" class="chkSkill" checked /><span data-i18n="academics">Universalis</span>

@@ -496,6 +496,21 @@ input[type=radio].sheet-chkSheetBnB:checked~div.sheet-main input[type="checkbox"
     color: #969070;
 }
 
+input[type=radio].sheet-chkSheetInterface:checked~div.sheet-main input[type="checkbox"].sheet-loupe:hover+span,
+input[type=radio].sheet-chkSheetInterface:checked~div.sheet-main input[type="checkbox"].sheet-loupe:checked+span {
+    color: dimgray;
+}
+
+input[type=radio].sheet-chkSheetParsec:checked~div.sheet-main input[type="checkbox"].sheet-loupe:hover+span,
+input[type=radio].sheet-chkSheetParsec:checked~div.sheet-main input[type="checkbox"].sheet-loupe:checked+span {
+    color: cornflowerblue;
+}
+
+input[type=radio].sheet-chkSheetCrystal:checked~div.sheet-main input[type="checkbox"].sheet-loupe:hover+span,
+input[type=radio].sheet-chkSheetCrystal:checked~div.sheet-main input[type="checkbox"].sheet-loupe:checked+span {
+    color: darkgreen;
+}
+
 
 /************************************** INPUTS ***************************/
 
@@ -732,6 +747,24 @@ input[type=radio].sheet-chkSheetBnB:checked~div.sheet-main button[type="roll"].s
     color: #969070;
 }
 
+input[type=radio].sheet-chkSheetInterface:checked~div.sheet-main button[type="roll"].sheet-btRolrel:hover:before,
+input[type=radio].sheet-chkSheetInterface:checked~div.sheet-main button[type="roll"].sheet-btRoljet:hover:before,
+input[type=radio].sheet-chkSheetInterface:checked~div.sheet-main button[type="roll"].sheet-btRolbrut:hover:before {
+    color: darkgrey;
+}
+
+input[type=radio].sheet-chkSheetParsec:checked~div.sheet-main button[type="roll"].sheet-btRolrel:hover:before,
+input[type=radio].sheet-chkSheetParsec:checked~div.sheet-main button[type="roll"].sheet-btRoljet:hover:before,
+input[type=radio].sheet-chkSheetParsec:checked~div.sheet-main button[type="roll"].sheet-btRolbrut:hover:before {
+    color: darkblue;
+}
+
+input[type=radio].sheet-chkSheetCrystal:checked~div.sheet-main button[type="roll"].sheet-btRolrel:hover:before,
+input[type=radio].sheet-chkSheetCrystal:checked~div.sheet-main button[type="roll"].sheet-btRoljet:hover:before,
+input[type=radio].sheet-chkSheetCrystal:checked~div.sheet-main button[type="roll"].sheet-btRolbrut:hover:before {
+    color: darkgreen;
+}
+
 button[type="roll"].sheet-btRolrel:hover,
 button[type="roll"].sheet-btRoljet:hover,
 button[type="roll"].sheet-btRolbrut:hover,
@@ -759,6 +792,24 @@ input[type=radio].sheet-chkSheetBnB:checked~div.sheet-main button[type="roll"].s
 input[type=radio].sheet-chkSheetBnB:checked~div.sheet-main button[type="roll"].sheet-btRoljet:hover,
 input[type=radio].sheet-chkSheetBnB:checked~div.sheet-main button[type="roll"].sheet-btRolbrut:hover {
     border-color: #969070;
+}
+
+input[type=radio].sheet-chkSheetInterface:checked~div.sheet-main button[type="roll"].sheet-btRolrel:hover,
+input[type=radio].sheet-chkSheetInterface:checked~div.sheet-main button[type="roll"].sheet-btRoljet:hover,
+input[type=radio].sheet-chkSheetInterface:checked~div.sheet-main button[type="roll"].sheet-btRolbrut:hover {
+    border-color: darkslategray;
+}
+
+input[type=radio].sheet-chkSheetParsec:checked~div.sheet-main button[type="roll"].sheet-btRolrel:hover,
+input[type=radio].sheet-chkSheetParsec:checked~div.sheet-main button[type="roll"].sheet-btRoljet:hover,
+input[type=radio].sheet-chkSheetParsec:checked~div.sheet-main button[type="roll"].sheet-btRolbrut:hover {
+    border-color: darkblue;
+}
+
+input[type=radio].sheet-chkSheetCrystal:checked~div.sheet-main button[type="roll"].sheet-btRolrel:hover,
+input[type=radio].sheet-chkSheetCrystal:checked~div.sheet-main button[type="roll"].sheet-btRoljet:hover,
+input[type=radio].sheet-chkSheetCrystal:checked~div.sheet-main button[type="roll"].sheet-btRolbrut:hover {
+    border-color: darkgreen;
 }
 
 input[type=checkbox].sheet-chkRolrel:checked~div.sheet-main button[type=roll].sheet-btRolrel,
@@ -810,6 +861,18 @@ input[type=radio].sheet-chkSheetLankh:checked~div.sheet-main button[type="roll"]
 
 input[type=radio].sheet-chkSheetBnB:checked~div.sheet-main button[type="roll"].sheet-btDesc:hover {
     color: #969070;
+}
+
+input[type=radio].sheet-chkSheetInterface:checked~div.sheet-main button[type="roll"].sheet-btDesc:hover {
+    color: darkslategray;
+}
+
+input[type=radio].sheet-chkSheetParsec:checked~div.sheet-main button[type="roll"].sheet-btDesc:hover {
+    color: darkblue;
+}
+
+input[type=radio].sheet-chkSheetCrystal:checked~div.sheet-main button[type="roll"].sheet-btDesc:hover {
+    color: darkgreen;
 }
 
 
@@ -922,6 +985,18 @@ input[type=radio].sheet-chkSheetBnB:checked~div.sheet-main {
     background: linear-gradient(#7B7A5B, #969070, #B4B095, #E2DCBA);
 }
 
+input[type=radio].sheet-chkSheetInterface:checked~div.sheet-main {
+    background: linear-gradient(rgb(58, 55, 55), #505050, rgb(175, 175, 175), rgb(226, 226, 226));
+}
+
+input[type=radio].sheet-chkSheetParsec:checked~div.sheet-main {
+    background: linear-gradient(rgb(91, 91, 123), #707696, rgb(149, 154, 180), rgb(186, 189, 226));
+}
+
+input[type=radio].sheet-chkSheetCrystal:checked~div.sheet-main {
+    background: linear-gradient(rgb(92, 123, 91), #709675, rgb(149, 180, 149), rgb(186, 226, 189));
+}
+
 div.sheet-configuration {
     display: none;
     width: 100%;
@@ -972,6 +1047,18 @@ input[type=radio].sheet-chkSheetBnB:checked~div.sheet-main div.sheet-redtitle1 {
     color: #7B7A5B;
 }
 
+input[type=radio].sheet-chkSheetInterface:checked~div.sheet-main div.sheet-redtitle1 {
+    color: rgb(90, 83, 83);
+}
+
+input[type=radio].sheet-chkSheetParsec:checked~div.sheet-main div.sheet-redtitle1 {
+    color: rgb(61, 67, 128);
+}
+
+input[type=radio].sheet-chkSheetCrystal:checked~div.sheet-main div.sheet-redtitle1 {
+    color: rgb(56, 128, 66);
+}
+
 div.sheet-redtitle2 {
     font-family: Candal;
     font-size: 12px;
@@ -997,6 +1084,18 @@ input[type=radio].sheet-chkSheetBnB:checked~div.sheet-main div.sheet-redtitle2 {
     color: #7B7A5B;
 }
 
+input[type=radio].sheet-chkSheetInterface:checked~div.sheet-main div.sheet-redtitle2 {
+    color: rgb(124, 121, 121);
+}
+
+input[type=radio].sheet-chkSheetParsec:checked~div.sheet-main div.sheet-redtitle2 {
+    color: rgb(91, 96, 123);
+}
+
+input[type=radio].sheet-chkSheetCrystal:checked~div.sheet-main div.sheet-redtitle2 {
+    color: rgb(97, 123, 91);
+}
+
 div.sheet-redtitle3 {
     display: inline-block;
     font-family: Candal;
@@ -1017,6 +1116,18 @@ input[type=radio].sheet-chkSheetLankh:checked~div.sheet-main div.sheet-redtitle3
 
 input[type=radio].sheet-chkSheetBnB:checked~div.sheet-main div.sheet-redtitle3 {
     color: #7B7A5B;
+}
+
+input[type=radio].sheet-chkSheetInterface:checked~div.sheet-main div.sheet-redtitle3 {
+    color: rgb(122, 117, 117);
+}
+
+input[type=radio].sheet-chkSheetParsec:checked~div.sheet-main div.sheet-redtitle3 {
+    color: rgb(91, 98, 123);
+}
+
+input[type=radio].sheet-chkSheetCrystal:checked~div.sheet-main div.sheet-redtitle3 {
+    color: rgb(95, 123, 91);
 }
 
 div.sheet-colblock {
@@ -1118,30 +1229,37 @@ input[type=checkbox].sheet-dispLogo:checked~div.sheet-main .sheet-logo {
     display: block;
 }
 
-input[type=checkbox].sheet-chkArcane,
-input[type=checkbox].sheet-chkCombat,
-input[type=checkbox].sheet-chkConduite,
-input[type=checkbox].sheet-chkConnaissance,
-input[type=checkbox].sheet-chkCrochetage,
-input[type=checkbox].sheet-chkDiscretion,
-input[type=checkbox].sheet-chkEquitation,
-input[type=checkbox].sheet-chkEscalade,
-input[type=checkbox].sheet-chkIntimidation,
-input[type=checkbox].sheet-chkJeu,
-input[type=checkbox].sheet-chkLancer,
-input[type=checkbox].sheet-chkNatation,
-input[type=checkbox].sheet-chkNavigation,
+input[type=checkbox].sheet-chkAthletics,
+input[type=checkbox].sheet-chkchkCommonKnowledge,
 input[type=checkbox].sheet-chkPerception,
 input[type=checkbox].sheet-chkPersuasion,
+input[type=checkbox].sheet-chkDiscretion,
+input[type=checkbox].sheet-chkPerformance,
+input[type=checkbox].sheet-chkBattle,
+input[type=checkbox].sheet-chkCombat,
+input[type=checkbox].sheet-chkConduite,
+input[type=checkbox].sheet-chkThieverie,
+input[type=checkbox].sheet-chkElectronics,
+input[type=checkbox].sheet-chkEquitation,
+input[type=checkbox].sheet-chkIntimidation,
+input[type=checkbox].sheet-chFocus,
+input[type=checkbox].sheet-chkFaith,
+input[type=checkbox].sheet-chkHacking,
+input[type=checkbox].sheet-chkJeu,
+input[type=checkbox].sheet-chkNavigation,
+input[type=checkbox].sheet-chkOccult,
 input[type=checkbox].sheet-chkPilotage,
-input[type=checkbox].sheet-chkPistage,
+input[type=checkbox].sheet-chkPsionics,
 input[type=checkbox].sheet-chkRecherche,
 input[type=checkbox].sheet-chkReparation,
-input[type=checkbox].sheet-chkReseaux,
 input[type=checkbox].sheet-chkSarcasme,
+input[type=checkbox].sheet-chkScience,
+input[type=checkbox].sheet-chkWeirdScience,
 input[type=checkbox].sheet-chkSoins,
+input[type=checkbox].sheet-chkSpellcasting,
 input[type=checkbox].sheet-chkSurvie,
 input[type=checkbox].sheet-chkTir,
+input[type=checkbox].sheet-chkAcademics,
 input[type=checkbox].sheet-persoExtra,
 input[type=checkbox].sheet-persoPnj,
 input[type=checkbox].sheet-chkPossessions,
@@ -1149,6 +1267,9 @@ input[type=radio].sheet-chkSheetSaWo,
 input[type=radio].sheet-chkSheetDead,
 input[type=radio].sheet-chkSheetLankh,
 input[type=radio].sheet-chkSheetBnB,
+input[type=radio].sheet-chkSheetInterface,
+input[type=radio].sheet-chkSheetParsec,
+input[type=radio].sheet-chkSheetCrystal,
 input[type=checkbox].sheet-dispLogo,
 input[type=checkbox].sheet-persoBless1,
 input[type=checkbox].sheet-persoBless2,
@@ -1156,83 +1277,46 @@ input[type=checkbox].sheet-persoBless3 {
     display: none;
 }
 
-div.sheet-chkArcane,
-div.sheet-chkCombat,
-div.sheet-chkConduite,
-div.sheet-chkConnaissance,
-div.sheet-chkCrochetage,
-div.sheet-chkDiscretion,
-div.sheet-chkEquitation,
-div.sheet-chkEscalade,
-div.sheet-chkIntimidation,
-div.sheet-chkJeu,
-div.sheet-chkLancer,
-div.sheet-chkNatation,
-div.sheet-chkNavigation,
+div.sheet-chkAtheltics,
+div.sheet-chkCommonKnowledge,
 div.sheet-chkPerception,
 div.sheet-chkPersuasion,
+div.sheet-chkDiscretion,
+div.sheet-chkPerformance,
+div.sheet-chkBattle,
+div.sheet-chkCombat,
+div.sheet-chkConduite,
+div.sheet-chkThieverie,
+div.sheet-chkElectronics,
+div.sheet-chkEquitation,
+div.sheet-chkIntimidation,
+div.sheet-chkFocus,
+div.sheet-chkFaith,
+div.sheet-chkHacking,
+div.sheet-chkJeu,
+div.sheet-chkNavigation,
+div.sheet-chkOccult,
 div.sheet-chkPilotage,
-div.sheet-chkPistage,
+div.sheet-chkPsionics,
 div.sheet-chkRecherche,
 div.sheet-chkReparation,
-div.sheet-chkReseaux,
 div.sheet-chkSarcasme,
+div.sheet-chkScience,
+div.sheet-chkWeirdScience,
 div.sheet-chkSoins,
+div.sheet-chkSpellcasting,
 div.sheet-chkSurvie,
 div.sheet-chkTir,
+div.sheet-chkAcademics,
 div.sheet-chkPossessions {
     display: none;
 }
 
-input[type=checkbox].sheet-chkArcane:checked~div.sheet-main div.sheet-chkArcane {
+input[type=checkbox].sheet-chkAthletics:checked~div.sheet-main div.sheet-chkAthletics {
     display: block;
 }
 
-input[type=checkbox].sheet-chkCombat:checked~div.sheet-main div.sheet-chkCombat {
-    display: block;
-}
-
-input[type=checkbox].sheet-chkConduite:checked~div.sheet-main div.sheet-chkConduite {
-    display: block;
-}
-
-input[type=checkbox].sheet-chkConnaissance:checked~div.sheet-main div.sheet-chkConnaissance {
-    display: block;
-}
-
-input[type=checkbox].sheet-chkCrochetage:checked~div.sheet-main div.sheet-chkCrochetage {
-    display: block;
-}
-
-input[type=checkbox].sheet-chkDiscretion:checked~div.sheet-main div.sheet-chkDiscretion {
-    display: block;
-}
-
-input[type=checkbox].sheet-chkEquitation:checked~div.sheet-main div.sheet-chkEquitation {
-    display: block;
-}
-
-input[type=checkbox].sheet-chkEscalade:checked~div.sheet-main div.sheet-chkEscalade {
-    display: block;
-}
-
-input[type=checkbox].sheet-chkIntimidation:checked~div.sheet-main div.sheet-chkIntimidation {
-    display: block;
-}
-
-input[type=checkbox].sheet-chkJeu:checked~div.sheet-main div.sheet-chkJeu {
-    display: block;
-}
-
-input[type=checkbox].sheet-chkLancer:checked~div.sheet-main div.sheet-chkLancer {
-    display: block;
-}
-
-input[type=checkbox].sheet-chkNatation:checked~div.sheet-main div.sheet-chkNatation {
-    display: block;
-}
-
-input[type=checkbox].sheet-chkNavigation:checked~div.sheet-main div.sheet-chkNavigation {
+input[type=checkbox].sheet-chkCommonKnwledge:checked~div.sheet-main div.sheet-chkCommonKnowledge {
     display: block;
 }
 
@@ -1244,11 +1328,71 @@ input[type=checkbox].sheet-chkPersuasion:checked~div.sheet-main div.sheet-chkPer
     display: block;
 }
 
+input[type=checkbox].sheet-chkDiscretion:checked~div.sheet-main div.sheet-chkDiscretion {
+    display: block;
+}
+
+input[type=checkbox].sheet-chkPerformance:checked~div.sheet-main div.sheet-chkPerformance {
+    display: block;
+}
+
+input[type=checkbox].sheet-chkBattle:checked~div.sheet-main div.sheet-chkBattle {
+    display: block;
+}
+
+input[type=checkbox].sheet-chkCombat:checked~div.sheet-main div.sheet-chkCombat {
+    display: block;
+}
+
+input[type=checkbox].sheet-chkConduite:checked~div.sheet-main div.sheet-chkConduite {
+    display: block;
+}
+
+input[type=checkbox].sheet-chkThieverie:checked~div.sheet-main div.sheet-chkThieverie {
+    display: block;
+}
+
+input[type=checkbox].sheet-chkElectronics:checked~div.sheet-main div.sheet-chkElectronics {
+    display: block;
+}
+
+input[type=checkbox].sheet-chkEquitation:checked~div.sheet-main div.sheet-chkEquitation {
+    display: block;
+}
+
+input[type=checkbox].sheet-chkIntimidation:checked~div.sheet-main div.sheet-chkIntimidation {
+    display: block;
+}
+
+input[type=checkbox].sheet-chkFocus:checked~div.sheet-main div.sheet-chkFocus {
+    display: block;
+}
+
+input[type=checkbox].sheet-chkFaith:checked~div.sheet-main div.sheet-chkFaith {
+    display: block;
+}
+
+input[type=checkbox].sheet-chkHacking:checked~div.sheet-main div.sheet-chkHacking {
+    display: block;
+}
+
+input[type=checkbox].sheet-chkJeu:checked~div.sheet-main div.sheet-chkJeu {
+    display: block;
+}
+
+input[type=checkbox].sheet-chkNavigation:checked~div.sheet-main div.sheet-chkNavigation {
+    display: block;
+}
+
+input[type=checkbox].sheet-chkOccult:checked~div.sheet-main div.sheet-chkOccult {
+    display: block;
+}
+
 input[type=checkbox].sheet-chkPilotage:checked~div.sheet-main div.sheet-chkPilotage {
     display: block;
 }
 
-input[type=checkbox].sheet-chkPistage:checked~div.sheet-main div.sheet-chkPistage {
+input[type=checkbox].sheet-chkPsionics:checked~div.sheet-main div.sheet-chkPsionics {
     display: block;
 }
 
@@ -1260,15 +1404,23 @@ input[type=checkbox].sheet-chkReparation:checked~div.sheet-main div.sheet-chkRep
     display: block;
 }
 
-input[type=checkbox].sheet-chkReseaux:checked~div.sheet-main div.sheet-chkReseaux {
-    display: block;
-}
-
 input[type=checkbox].sheet-chkSarcasme:checked~div.sheet-main div.sheet-chkSarcasme {
     display: block;
 }
 
+input[type=checkbox].sheet-chkScience:checked~div.sheet-main div.sheet-chkScience {
+    display: block;
+}
+
+input[type=checkbox].sheet-chkWeirdScience:checked~div.sheet-main div.sheet-chkWeirdScience {
+    display: block;
+}
+
 input[type=checkbox].sheet-chkSoins:checked~div.sheet-main div.sheet-chkSoins {
+    display: block;
+}
+
+input[type=checkbox].sheet-chkSpellcasting:checked~div.sheet-main div.sheet-chkSpellcasting {
     display: block;
 }
 
@@ -1280,6 +1432,10 @@ input[type=checkbox].sheet-chkTir:checked~div.sheet-main div.sheet-chkTir {
     display: block;
 }
 
+input[type=checkbox].sheet-chkAcademics:checked~div.sheet-main div.sheet-chkAcademics {
+    display: block;
+}
+
 input[type=checkbox].sheet-chkPossessions:checked~div.sheet-main div.sheet-chkPossessions {
     display: block;
 }
@@ -1287,7 +1443,10 @@ input[type=checkbox].sheet-chkPossessions:checked~div.sheet-main div.sheet-chkPo
 div.sheet-SheetSaWo,
 div.sheet-SheetDead,
 div.sheet-SheetLankh,
-div.sheet-SheetBnB {
+div.sheet-SheetBnB,
+div.sheet-SheetInterface,
+div.sheet-SheetParsec,
+div.sheet-SheetCrystal {
     display: none;
 }
 
@@ -1304,6 +1463,18 @@ input[type=radio].sheet-chkSheetLankh:checked~div.sheet-main div.sheet-SheetLank
 }
 
 input[type=radio].sheet-chkSheetBnB:checked~div.sheet-main div.sheet-SheetBnB {
+    display: inline-block;
+}
+
+input[type=radio].sheet-chkSheetInterface:checked~div.sheet-main div.sheet-SheetInterface {
+    display: inline-block;
+}
+
+input[type=radio].sheet-chkSheetParsec:checked~div.sheet-main div.sheet-SheetParsec {
+    display: inline-block;
+}
+
+input[type=radio].sheet-chkSheetCrystal:checked~div.sheet-main div.sheet-SheetCrystal {
     display: inline-block;
 }
 
