@@ -3,7 +3,7 @@
     <!-- TABS -->
     <input type="radio" name="attr_chkvie" value="0" class="onglmain" data-i18n-title="feuille" title="Feuille" checked /><span data-i18n="feuille">Feuille</span>
     <input type="radio" name="attr_chkvie" value="1" class="onglconfig" title="Configuration" /><span data-i18n="configuration">Configuration</span>
-    <span style="display:inline-block;width:150px;text-align: center;color: #888888;font-size: 0.9em;">SWADE v1.0 (10/11/2019)</span>
+    <span style="display:inline-block;width:150px;text-align: center;color: #888888;font-size: 0.9em;">SWADE v1.0 (11/16/2019)</span>
     <!-- Styling -->
     <input type="radio" name="attr_sheetDead" value="0" class="chkSheetSaWo" checked />
     <!-- Savage Worlds -->
@@ -31,9 +31,9 @@
     <input type="checkbox" name="attr_bless1" value="1" class="persoBless1" checked />
     <input type="checkbox" name="attr_bless2" value="1" class="persoBless2" checked />
     <input type="checkbox" name="attr_bless3" value="1" class="persoBless3" checked />
-    <input type="checkbox" name="attr_fatigue1" value="1" class="persoFatigue1" checked />
+    <!--<input type="checkbox" name="attr_fatigue1" value="1" class="persoFatigue1" checked />
     <input type="checkbox" name="attr_fatigue2" value="1" class="persoFatigue2" checked />
-    <input type="checkbox" name="attr_fatigue3" value="1" class="persoFatigue3" />
+    <input type="checkbox" name="attr_fatigue3" value="1" class="persoFatigue3" />-->
     <!-- Skills displaying -->
     <input type="checkbox" name="attr_chkAthletics" class="chkAthletics" value="1" checked />
     <input type="checkbox" name="attr_chkCommonKnowledge" class="chkCommonKnowledge" value="1" checked />
@@ -45,7 +45,7 @@
     <input type="checkbox" name="attr_chkCombat" class="chkCombat" value="1" checked />
     <input type="checkbox" name="attr_chkConduite" class="chkConduite" value="1" checked />
     <input type="checkbox" name="attr_chkThieverie" class="chkThieverie" value="1" checked />
-    <input type="checkbox" name="attr_chkElectronics" class="chkElectronics" value="1" checked />
+    <input type="checkbox" name="attr_chkElectronics" class="chkElectronics" value="1" />
     <input type="checkbox" name="attr_chkEquitation" class="chkEquitation" value="1" checked />
     <input type="checkbox" name="attr_chkIntimidation" class="chkIntimidation" value="1" checked />
     <input type="checkbox" name="attr_chkFocus" class="chkFocus" value="1" />
@@ -187,7 +187,7 @@
                             <!-- Athletics -->
                             <button type="roll" name="Btrel-Athletics" class="btRolrelDefault" value="@{relRollAthletics}" data-i18n="athletics">Athlétisme</button>
                             <button type="roll" name="Btjet-Athletics" class="btRoljetDefault" value="@{jetRollAthletics}" data-i18n="athletics">Athlétisme</button>
-                            <button type="roll" name="BtBrut-Athletics" class="btRolbrutDefault" value="/em @{character_name} @{text_jet-de} @{Athletics_nom}&#010;/roll @{RollAthletics}" data-i18n="athletics">Athlétisme</button>
+                            <button type="roll" name="BtBrut-Athletics" class="btRolbrutDefault" value="/em @{character_name} @{text_jet-de} @{Athletics_nom}&#010;/roll @{RollBastAthletics}" data-i18n="athletics">Athlétisme</button>
                             <div class="attcomptext" data-i18n="agi-u">AGI</div>
                             <SELECT name="attr_athletics_de" class="selde">
                                 <OPTION value="4" SELECTED data-i18n="d4">&nbsp;d4</OPTION>
@@ -201,8 +201,8 @@
                         <!-- FIN ATHLETICS -->
                         <div class="input chkCommonKnowledge">
                             <!-- CULTURE GENERALE -->
-                            <button type="roll" name="Btrel-CommonKnowledge" class="btRolrelDefault" value="@{relRollCommonKnowledge}" data-i18n="culture-generale">Culture G</button>
-                            <button type="roll" name="Btjet-CommonKnowledge" class="btRoljetDefault" value="@{jetRollCommonKnowledge}" data-i18n="culture-generale">Culture G</button>
+                            <button type="roll" name="Btrel-CommonKnowledge" class="btRolrelDefault" value="@{relRollCommonKnowledge}" data-i18n="culture-generale">Culture Gé</button>
+                            <button type="roll" name="Btjet-CommonKnowledge" class="btRoljetDefault" value="@{jetRollCommonKnowledge}" data-i18n="culture-generale">Culture Ge</button>
                             <button type="roll" name="BtBrut-CommonKnowledge" class="btRolbrutDefault" value="/em @{character_name} @{text_jet-de} @{text_conduite}&#010;/roll @{RollCommonKnowledge}" data-i18n="culture-generale">Culture_générale</button>
                             <div class="attcomptext" data-i18n="int-u">INT</div>
                             <SELECT name="attr_commonknowledge_de" class="selde">
@@ -488,11 +488,11 @@
                             <input type="number" class="selde" name="attr_navigation_bonus" value="-2" min="-9" />
                         </div>
                         <!-- FIN NAVIGATION -->
-                        <div class="input chkOccult">
+                        <div class="input chkOccultism">
                             <!-- OCCULTISME -->
-                            <button type="roll" name="Btrel-Occult" class="btRolrel" value="@{relRollOccult}" data-i18n="occult">Occultisme</button>
-                            <button type="roll" name="Btjet-Occult" class="btRoljet" value="@{jetRollOccult}" data-i18n="occult">Occultisme</button>
-                            <button type="roll" name="BtBrut-Occult" class="btRolbrut" value="/em @{character_name} @{text_jet-de} @{text_occult}&#010;/roll @{RollOccult}" data-i18n="occult">Occultisme</button>
+                            <button type="roll" name="Btrel-Occult" class="btRolrel" value="@{relRollOccultism}" data-i18n="occult">Occultisme</button>
+                            <button type="roll" name="Btjet-Occult" class="btRoljet" value="@{jetRollOccultism}" data-i18n="occult">Occultisme</button>
+                            <button type="roll" name="BtBrut-Occult" class="btRolbrut" value="/em @{character_name} @{text_jet-de} @{text_occult}&#010;/roll @{RollOccultism}" data-i18n="occult">Occultisme</button>
                             <div class="attcomptext" data-i18n="int-u">INT</div>
                             <SELECT name="attr_occult_de" class="selde">
                                 <OPTION value="4" SELECTED data-i18n="d4">&nbsp;d4</OPTION>
@@ -816,7 +816,7 @@
                         <input type="number" name="attr_allure_bonus" value="0" data-i18n-title="bonus-allure" title="Bonus d'allure" /> =
                         <input type="number" name="attr_allure" value="[[@{allure_base}+(@{allure_bonus})-@{blessures}]]" data-i18n-title="total-allure" title="allure totale" disabled />
                     </div>
-                    <div class="input">
+                    <!--<div class="input">
                         <button type="roll" name="Btjet-Course" class="btRoljet" value="@{jetRollCourse}" data-i18n="course">Course</button>
                         <SELECT name="course_de" class="selde">
                                 <OPTION value="4" data-i18n="d4">&nbsp;d4</OPTION>
@@ -825,7 +825,7 @@
                                 <OPTION value="10" data-i18n="d10">d10</OPTION>
                                 <OPTION value="12" data-i18n="d12">d12</OPTION>
                         </SELECT>
-                    </div>
+                    </div>-->
                     <div class="input">
                         <div class="comptext" data-i18n="parade">PARADE</div>
                         <input type="number" name="attr_parade_base" value="2" data-i18n-title="base-parade" title="Valeur de parade de base" readonly /> +
@@ -1035,14 +1035,14 @@
                     title="Attaque">&nbsp;</button>
                 <input type="text" class="compspe" name="attr_arme1_nom" data-i18n-placeholder="weapon1-name" placeholder="Nom de l'arme n°1" />
                 <SELECT name="attr_arme1_comp" style="width: 55px;margin-left:3px;margin-right:3px;" data-i18n-title="competence" title="Compétence">
-                        <OPTION value="0" SELECTED data-i18n="choisir"> - Choisir une compétence :</OPTION>
-                        <OPTION value="Combat" data-i18n="combat">
-                        <OPTION value="Athletics" data-i18n="athletics">Athlétisme</OPTION>
-                        <OPTION value="Tir" data-i18n="tir">Tir</OPTION>
-                        <OPTION value="Focus" data-i18n="focus">Focus</OPTION>
-                        <OPTION value="Foi" data-i18n="faith">Foi</OPTION>
-                        <OPTION value="Psionique" data-i18n="psionics">Psionique</OPTION>
-                        <OPTION value="Sorcellerie" data-i18n="spellcasting">Sorcellerie</OPTION>
+                    <OPTION value="0" SELECTED data-i18n="choisir"> - Choisir une compétence :</OPTION>
+                    <OPTION value="Combat" data-i18n="combat">
+                    <OPTION value="Athletics" data-i18n="athletics">Athlétisme</OPTION>
+                    <OPTION value="Tir" data-i18n="tir">Tir</OPTION>
+                    <OPTION value="Focus" data-i18n="focus">Focus</OPTION>
+                    <OPTION value="Faith" data-i18n="faith">Foi</OPTION>
+                    <OPTION value="Psionics" data-i18n="psionics">Psionique</OPTION>
+                    <OPTION value="Spellcasting" data-i18n="spellcasting">Sorcellerie</OPTION>
                     </SELECT>
                 <input type="hidden" name="attr_arme1_comp_rel" value="0" />
                 <input type="hidden" name="attr_arme1_comp_jet" value="0" />
@@ -1080,9 +1080,9 @@
                     <OPTION value="Athletics" data-i18n="athletics">Athlétisme</OPTION>
                     <OPTION value="Tir" data-i18n="tir">Tir</OPTION>
                     <OPTION value="Focus" data-i18n="focus">Focus</OPTION>
-                    <OPTION value="Foi" data-i18n="faith">Foi</OPTION>
-                    <OPTION value="Psionique" data-i18n="psionics">Psionique</OPTION>
-                    <OPTION value="Sorcellerie" data-i18n="spellcasting">Sorcellerie</OPTION>
+                    <OPTION value="Faith" data-i18n="faith">Foi</OPTION>
+                    <OPTION value="Psionics" data-i18n="psionics">Psionique</OPTION>
+                    <OPTION value="Spellcasting" data-i18n="spellcasting">Sorcellerie</OPTION>
                 </SELECT>
                 <input type="hidden" name="attr_arme2_comp_rel" value="0" />
                 <input type="hidden" name="attr_arme2_comp_jet" value="0" />
@@ -1115,14 +1115,14 @@
                     title="Attaque">&nbsp;</button>
                 <input type="text" class="compspe" name="attr_arme3_nom" data-i18n-placeholder="weapon3-name" placeholder="Nom de l'arme n°3" />
                 <SELECT name="attr_arme3_comp" style="width: 55px;margin-left:3px;margin-right:3px;" data-i18n-title="competence" title="Compétence">
-                        <OPTION value="0" SELECTED data-i18n="choisir"> - Choisir une compétence :</OPTION>
-                        <OPTION value="Combat" data-i18n="combat">
-                        <OPTION value="Athletics" data-i18n="athletics">Athlétisme</OPTION>
-                        <OPTION value="Tir" data-i18n="tir">Tir</OPTION>
-                        <OPTION value="Focus" data-i18n="focus">Focus</OPTION>
-                        <OPTION value="Foi" data-i18n="faith">Foi</OPTION>
-                        <OPTION value="Psionique" data-i18n="psionics">Psionique</OPTION>
-                        <OPTION value="Sorcellerie" data-i18n="spellcasting">Sorcellerie</OPTION>
+                    <OPTION value="0" SELECTED data-i18n="choisir"> - Choisir une compétence :</OPTION>
+                    <OPTION value="Combat" data-i18n="combat">
+                    <OPTION value="Athletics" data-i18n="athletics">Athlétisme</OPTION>
+                    <OPTION value="Tir" data-i18n="tir">Tir</OPTION>
+                    <OPTION value="Focus" data-i18n="focus">Focus</OPTION>
+                    <OPTION value="Faith" data-i18n="faith">Foi</OPTION>
+                    <OPTION value="Psionics" data-i18n="psionics">Psionique</OPTION>
+                    <OPTION value="Spellcasting" data-i18n="spellcasting">Sorcellerie</OPTION>
                     </SELECT>
                 <input type="hidden" name="attr_arme3_comp_rel" value="0" />
                 <input type="hidden" name="attr_arme3_comp_jet" value="0" />
@@ -1158,15 +1158,15 @@
                         data-i18n-title="attaque" title="Attaque">&nbsp;</button>
                     <input type="text" class="compspe" name="attr_armeD_nom" data-i18n-placeholder="weapon-name" placeholder="Nom de l'arme" title="Nom de l'arme" />
                     <SELECT name="attr_armeD_comp" style="width: 55px;margin-left:3px;margin-right:3px;" data-i18n-title="competence" title="Compétence">
-                            <OPTION value="0" SELECTED data-i18n="choisir"> - Choisir une compétence :</OPTION>
-                            <OPTION value="Combat" data-i18n="combat">
-                            <OPTION value="Athletics" data-i18n="athletics">Athlétisme</OPTION>
-                            <OPTION value="Tir" data-i18n="tir">Tir</OPTION>
-                            <OPTION value="Focus" data-i18n="focus">Focus</OPTION>
-                            <OPTION value="Foi" data-i18n="faith">Foi</OPTION>
-                            <OPTION value="Psionique" data-i18n="psionics">Psionique</OPTION>
-                            <OPTION value="Sorcellerie" data-i18n="spellcasting">Sorcellerie</OPTION>
-                    </SELECT>
+                        <OPTION value="0" SELECTED data-i18n="choisir"> - Choisir une compétence :</OPTION>
+                        <OPTION value="Combat" data-i18n="combat">
+                        <OPTION value="Athletics" data-i18n="athletics">Athlétisme</OPTION>
+                        <OPTION value="Tir" data-i18n="tir">Tir</OPTION>
+                        <OPTION value="Focus" data-i18n="focus">Focus</OPTION>
+                        <OPTION value="Faith" data-i18n="faith">Foi</OPTION>
+                        <OPTION value="Psionics" data-i18n="psionics">Psionique</OPTION>
+                        <OPTION value="Spellcasting" data-i18n="spellcasting">Sorcellerie</OPTION>
+                        </SELECT>
                     <input type="hidden" name="attr_armeD_comp_rel" value="0" />
                     <input type="hidden" name="attr_armeD_comp_jet" value="0" />
                     <input type="hidden" name="attr_armeD_comp_brut" value="0" />
@@ -1431,19 +1431,21 @@
     <input type="hidden" name="attr_rollrngquery" value="?{@{text_portee}|@{text_courte},0|@{text_moyenne},2|@{text_longue},4}[@{text_portee}]" />
 
     <!-- STATS -->
-    <input type="hidden" name="attr_RollAGI" value="{ 1d@{agilite_de}!![@{text_agilite}] , @{joker_de}!![@{text_joker}] }kh1 + (@{agilite_bonus})[@{text_bonus}]" />
-    <!--- @{malusblessures}[@{text_blessures}] - @{malusfatigue}[@{text_fatigue}] - @{encombrement}[@{text_encombrement}] + @{rollmodquery}"
-    />-->
+    <!-- Agilité -->
+    <input type="hidden" name="attr_RollAGI" value="{ 1d@{agilite_de}!![@{text_agilite}] , @{joker_de}!![@{text_joker}] }kh1 + (@{agilite_bonus})[@{text_bonus}] - @{malusblessures}[@{text_blessures}] - @{malusfatigue}[@{text_fatigue}] - @{encombrement}[@{text_encombrement}] + @{rollmodquery}"
+    />
     <input type="hidden" name="attr_relRollAGI" value="&{template:sawo} {{etat=[[@{templateetat}]]}} {{name=^{agilite}}} {{perso=@{character_name}}} {{secoue=[[@{secoue}]]}} {{relances=[[  { floor( ( { @{rollAGI} } ) /(@{rolldiffquery}), 0d0 }kh1 - 1 ]]}} {{blessures=[[@{blessures}]]}} {{fatigue=[[@{fatigue}]]}} {{encombrement=[[@{encombrement}]]}}"
     />
     <input type="hidden" name="attr_jetRollAGI" value="&{template:sawo} {{etat=[[@{templateetat}]]}} {{name=^{agilite}}} {{perso=@{character_name}}} {{secoue=[[@{secoue}]]}} {{jet=[[@{rollAGI}]]}} {{blessures=[[@{blessures}]]}} {{fatigue=[[@{fatigue}]]}} {{encombrement=[[@{encombrement}]]}}"
     />
 
+    <!-- Ame -->
     <input type="hidden" name="attr_RollAME" value="{ 1d@{ame_de}!![@{text_ame}] , @{joker_de}!![@{text_joker}] }kh1 + (@{ame_bonus})[@{text_bonus}] - @{malusblessures}[@{text_blessures}] - @{malusfatigue}[@{text_fatigue}] + @{rollmodquery}" />
     <input type="hidden" name="attr_relRollAME" value="&{template:sawo} {{etat=[[@{templateetat}]]}} {{name=Âme}} {{perso=@{character_name}}} {{secoue=[[@{secoue}]]}} {{relances=[[  { floor( ( { @{rollAME} } ) /(@{rolldiffquery}), 0d0 }kh1 ]]}} {{blessures=[[@{blessures}]]}} {{fatigue=[[@{fatigue}]]}}"
     />
     <input type="hidden" name="attr_jetRollAME" value="&{template:sawo} {{etat=[[@{templateetat}]]}} {{name=Âme}} {{perso=@{character_name}}} {{secoue=[[@{secoue}]]}} {{jet=[[@{rollAME}]]}} {{blessures=[[@{blessures}]]}} {{fatigue=[[@{fatigue}]]}}" />
 
+    <!-- Force -->
     <input type="hidden" name="attr_RollFOR" value="{ 1d@{force_de}!![@{text_force}] , @{joker_de}!![@{text_joker}] }kh1 + (@{force_bonus})[@{text_bonus}] - @{malusblessures}[@{text_blessures}] - @{malusfatigue}[@{text_fatigue}] - @{encombrement}[@{text_encombrement}] + @{rollmodquery}"
     />
     <input type="hidden" name="attr_relRollFOR" value="&{template:sawo} {{etat=[[@{templateetat}]]}} {{name=Force}} {{perso=@{character_name}}} {{secoue=[[@{secoue}]]}} {{relances=[[  { floor( ( { @{rollFOR} } ) /(@{rolldiffquery}), 0d0 }kh1 ]]}} {{blessures=[[@{blessures}]]}} {{fatigue=[[@{fatigue}]]}} {{encombrement=[[@{encombrement}]]}}"
@@ -1451,6 +1453,7 @@
     <input type="hidden" name="attr_jetRollFOR" value="&{template:sawo} {{etat=[[@{templateetat}]]}} {{name=Force}} {{perso=@{character_name}}} {{secoue=[[@{secoue}]]}} {{jet=[[@{rollFOR}]]}} {{blessures=[[@{blessures}]]}} {{fatigue=[[@{fatigue}]]}} {{encombrement=[[@{encombrement}]]}}"
     />
 
+    <!-- Intellect -->
     <input type="hidden" name="attr_RollINT" value="{ 1d@{intellect_de}!![@{text_intellect}] , @{joker_de}!![@{text_joker}] }kh1 + (@{intellect_bonus})[@{text_bonus}] - @{malusblessures}[@{text_blessures}] - @{malusfatigue}[@{text_fatigue}] + @{rollmodquery}"
     />
     <input type="hidden" name="attr_relRollINT" value="&{template:sawo} {{etat=[[@{templateetat}]]}} {{name=Intellect}} {{perso=@{character_name}}} {{secoue=[[@{secoue}]]}} {{relances=[[  { floor( ( { @{rollINT} } ) /(@{rolldiffquery}), 0d0 }kh1 ]]}} {{blessures=[[@{blessures}]]}} {{fatigue=[[@{fatigue}]]}}"
@@ -1458,6 +1461,7 @@
     <input type="hidden" name="attr_jetRollINT" value="&{template:sawo} {{etat=[[@{templateetat}]]}} {{name=Intellect}} {{perso=@{character_name}}} {{secoue=[[@{secoue}]]}} {{jet=[[@{rollINT}]]}} {{blessures=[[@{blessures}]]}} {{fatigue=[[@{fatigue}]]}}"
     />
 
+    <!-- Vigueur -->
     <input type="hidden" name="attr_RollVIG" value="{ 1d@{vigueur_de}!![@{text_vigueur}] , @{joker_de}!![@{text_joker}] }kh1 + (@{vigueur_bonus})[@{text_bonus}] - @{malusblessures}[@{text_blessures}] - @{malusfatigue}[@{text_fatigue}] + @{rollmodquery}" />
     <input type="hidden" name="attr_relRollVIG" value="&{template:sawo} {{etat=[[@{templateetat}]]}} {{name=Vigueur}} {{perso=@{character_name}}} {{secoue=[[@{secoue}]]}} {{relances=[[  { floor( ( { @{rollVIG} } ) /(@{rolldiffquery}), 0d0 }kh1 ]]}} {{blessures=[[@{blessures}]]}} {{fatigue=[[@{fatigue}]]}}"
     />
@@ -1469,25 +1473,43 @@
     <input type="hidden" name="attr_ciblearcane" value="@{rolldiffquery}" />
     <input type="hidden" name="attr_atknom" value="@{target|character_name}" />
 
+    <!-- Corps à corps  -->
     <input type="hidden" name="attr_RollBastCombat" value="{ 1d@{combat_de}!![@{text_combat}],@{joker_de}!![@{text_joker}]}kh1 + (@{combat_bonus})[@{text_bonus}] - @{malusblessures}[@{text_blessures}] - @{malusfatigue}[@{text_fatigue}] - @{encombrement}[@{text_encombrement}] + @{rollmodquery}"
     />
     <input type="hidden" name="attr_relRollBastCombat" value="{ floor( ( { @{RollBastCombat} } - (@{cibleparade}[Parade] - 4 ) ) /4), 0d0 }kh1 " />
     <input type="hidden" name="attr_jetRollBastCombat" value="@{RollBastCombat}" />
 
+    <!-- Lancer -->
     <input type="hidden" name="attr_RollBastAthletics" value="{ 1d@{athletics_de}!![@{text_athletics}],@{joker_de}!![@{text_joker}]}kh1 + (@{athletics_bonus})[@{text_bonus}] - @{malusblessures}[@{text_blessures}] - @{malusfatigue}[@{text_fatigue}] - @{encombrement}[@{text_encombrement}] - @{rollrngquery} + @{rollmodquery}"
     />
-    <input type="hidden" name="attr_relRollBastAthletics" value="{ floor( ( { @{rollBastAthletics} } ) /4), 0d0 }kh1" />
+    <input type="hidden" name="attr_relRollBastAthletics" value="{ floor( ( { @{RollBastAthletics} } ) /4), 0d0 }kh1" />
     <input type="hidden" name="attr_jetRollBastAthletics" value="@{RollBastAthletics}" />
 
+    <!-- Tir -->
     <input type="hidden" name="attr_RollBastTir" value="{ 1d@{tir_de}!![@{text_tir}], @{rolljokerquery}}kh1 + (@{tir_bonus})[@{text_bonus}] - @{malusblessures}[@{text_blessures}] - @{malusfatigue}[@{text_fatigue}] - @{encombrement}[@{text_encombrement}] - @{rollrngquery} + @{rollmodquery}"
     />
     <input type="hidden" name="attr_relRollBastTir" value="{ floor( ( { @{rollBastTir} } ) /4), 0d0 }kh1" />
     <input type="hidden" name="attr_jetRollBastTir" value="@{RollBastTir}" />
 
-    <input type="hidden" name="attr_RollBastArcane" value="{ 1d@{arcane_de}!![@{text_arcane}], @{rolljokerquery}}kh1 + (@{arcane_bonus})[@{text_bonus}] - @{malusblessures}[@{text_blessures}] - @{malusfatigue}[@{text_fatigue}] + @{rollmodquery}" />
-    <input type="hidden" name="attr_relRollBastArcane" value="{ floor( ( { @{RollBastArcane} } ) / ( @{ciblearcane})[@{text_difficulte}] ), 0d0 }kh1 " />
-    <input type="hidden" name="attr_jetRollBastArcane" value="@{RollBastArcane}" />
+    <!-- Pouvoirs -->
+    <input type="hidden" name="attr_RollBastFocus" value="{ 1d@{focus_de}!![@{text_focus}], @{rolljokerquery}}kh1 + (@{focus_bonus})[@{text_bonus}] - @{malusblessures}[@{text_blessures}] - @{malusfatigue}[@{text_fatigue}] + @{rollmodquery}" />
+    <input type="hidden" name="attr_relRollBastFocus" value="{ floor( ( { @{RollBastFocus} } ) / ( @{ciblearcane})[@{text_difficulte}] ), 0d0 }kh1 " />
+    <input type="hidden" name="attr_jetRollBastFocus" value="@{RollBastFocus}" />
 
+    <input type="hidden" name="attr_RollBastFaith" value="{ 1d@{faith_de}!![@{text_faith}], @{rolljokerquery}}kh1 + (@{faith_bonus})[@{text_bonus}] - @{malusblessures}[@{text_blessures}] - @{malusfatigue}[@{text_fatigue}] + @{rollmodquery}" />
+    <input type="hidden" name="attr_relRollBastFaith" value="{ floor( ( { @{RollBastFaith} } ) / ( @{ciblearcane})[@{text_difficulte}] ), 0d0 }kh1 " />
+    <input type="hidden" name="attr_jetRollBastFaith" value="@{RollBastFaith}" />
+
+    <input type="hidden" name="attr_RollBastPsionics" value="{ 1d@{psionics_de}!![@{text_psionics}], @{rolljokerquery}}kh1 + (@{psionics_bonus})[@{text_bonus}] - @{malusblessures}[@{text_blessures}] - @{malusfatigue}[@{text_fatigue}] + @{rollmodquery}" />
+    <input type="hidden" name="attr_relRollBastPsionics" value="{ floor( ( { @{RollBastPsionics} } ) / ( @{ciblearcane})[@{text_difficulte}] ), 0d0 }kh1 " />
+    <input type="hidden" name="attr_jetRollBastPsionics" value="@{RollBastPsionics}" />
+
+    <input type="hidden" name="attr_RollBastSpellcasting" value="{ 1d@{spellcasting_de}!![@{text_spellcasting}], @{rolljokerquery}}kh1 + (@{spellcasting_bonus})[@{text_bonus}] - @{malusblessures}[@{text_blessures}] - @{malusfatigue}[@{text_fatigue}] + @{rollmodquery}"
+    />
+    <input type="hidden" name="attr_relRollBastSpellcasting" value="{ floor( ( { @{RollBastSpellcasting} } ) / ( @{ciblearcane})[@{text_difficulte}] ), 0d0 }kh1 " />
+    <input type="hidden" name="attr_jetRollBastSpellcasting" value="@{RollBastSpellcasting}" />
+
+    <!-- Force -->
     <input type="hidden" name="attr_RollBastForce" value="1d@{force_de}!!+(@{force_bonus})[@{text_force}]" />
 
     <!-- WEAPONS -->
@@ -1523,17 +1545,40 @@
     <input type="hidden" name="attr_jetRollIncomp" value="&{template:sawo} {{etat=[[@{templateetat}]]}} {{name=@{text_nonentraine}}} {{perso=@{character_name}}} {{secoue=[[@{secoue}]]}} {{jet=[[@{RollIncomp}]]}} {{blessures=[[@{blessures}]]}} {{fatigue=[[@{fatigue}]]}}"
     />
 
-    <!-- Atletics -->
-    <input type="hidden" name="attr_RollAthletics" value="{ 1d@{athletics_de}!![Athletics],@{joker_de}!![@{text_joker}]}kh1 + (@{athletics_bonus})[@{text_bonus}] - @{malusblessures}[@{text_blessures}] - @{malusfatigue}[@{text_fatigue}] - @{encombrement}[@{text_encombrement}] + @{rollmodquery}"
+    <!-- Athletics -->
+    <!--<input type="hidden" name="attr_RollAthletics" value="{ 1d@{athletics_de}!![Athletics],@{joker_de}!![@{text_joker}]}kh1 + (@{athletics_bonus})[@{text_bonus}] - @{malusblessures}[@{text_blessures}] - @{malusfatigue}[@{text_fatigue}] - @{encombrement}[@{text_encombrement}] + @{rollmodquery}"
+    />-->
+    <input type="hidden" name="attr_relRollAthletics" value="&{template:sawo} {{etat=[[@{templateetat}]]}} {{name=@{text_athletics}}} {{perso=@{character_name}}} {{secoue=[[@{secoue}]]}} {{elances=[[@{AthleticsCombat}]]}} {{atkcible=[[@{atkcible}]]}} {{cible=@{atknom}}} {{blessures=[[@{blessures}]]}} {{fatigue=[[@{fatigue}]]}} {{encombrement=[[@{encombrement}]]}}"
     />
-    <input type="hidden" name="attr_relRollAthletics" value="&{template:sawo} {{etat=[[@{templateetat}]]}} {{name=@{text_athletics}}} {{perso=@{character_name}}} {{secoue=[[@{secoue}]]}} {{relances=[[  { floor( ( { @{RollAthletics} } ) /(@{rolldiffquery}), 0d0 }kh1 ]]}} {{blessures=[[@{blessures}]]}} {{fatigue=[[@{fatigue}]]}} {{encombrement=[[@{encombrement}]]}}"
-    />
-    <input type="hidden" name="attr_jetRollAthletics" value="&{template:sawo} {{etat=[[@{templateetat}]]}} {{name=@{text_athletics}}} {{perso=@{character_name}}} {{secoue=[[@{secoue}]]}} {{jet=[[@{RollAthletics}]]}} {{blessures=[[@{blessures}]]}} {{fatigue=[[@{fatigue}]]}} {{encombrement=[[@{encombrement}]]}}"
+    <input type="hidden" name="attr_jetRollAthletics" value="&{template:sawo} {{etat=[[@{templateetat}]]}} {{name=@{text_athletics}}} {{perso=@{character_name}}} {{secoue=[[@{secoue}]]}} {{jet=[[@{jetRollBastAthletics}]]}} {{blessures=[[@{blessures}]]}} {{fatigue=[[@{fatigue}]]}} {{encombrement=[[@{encombrement}]]}}"
     />
 
+    <!-- Culture Ge -->
+    <input type="hidden" name="attr_RollCommonKnowledge" value="{ 1d@{commonknowledge_de}!![CommonKnowledge],@{joker_de}!![@{text_joker}]}kh1 + (@{commonknowledge_bonus})[@{text_bonus}] - @{malusblessures}[@{text_blessures}] - @{malusfatigue}[@{text_fatigue}] - @{encombrement}[@{text_encombrement}] + @{rollmodquery}"
+    />
+    <input type="hidden" name="attr_relRollCommonKnowledge" value="&{template:sawo} {{etat=[[@{templateetat}]]}} {{name=@{text_commonknowledge}}} {{perso=@{character_name}}} {{secoue=[[@{secoue}]]}} {{relances=[[  { floor( ( { @{RollCommonKnowledge} } ) /(@{rolldiffquery}), 0d0 }kh1 ]]}} {{blessures=[[@{blessures}]]}} {{fatigue=[[@{fatigue}]]}} {{encombrement=[[@{encombrement}]]}}"
+    />
+    <input type="hidden" name="attr_jetRollCommonKnowledge" value="&{template:sawo} {{etat=[[@{templateetat}]]}} {{name=@{text_commonknowledge}}} {{perso=@{character_name}}} {{secoue=[[@{secoue}]]}} {{jet=[[@{RollCommonKnowledge}]]}} {{blessures=[[@{blessures}]]}} {{fatigue=[[@{fatigue}]]}} {{encombrement=[[@{encombrement}]]}}"
+    />
+
+    <!-- Performance -->
+    <input type="hidden" name="attr_RollPerformance" value="{ 1d@{performance_de}!![Performance],@{joker_de}!![@{text_joker}]}kh1 + (@{performance_bonus})[@{text_bonus}] - @{malusblessures}[@{text_blessures}] - @{malusfatigue}[@{text_fatigue}] - @{encombrement}[@{text_encombrement}] + @{rollmodquery}"
+    />
+    <input type="hidden" name="attr_relRollPerformance" value="&{template:sawo} {{etat=[[@{templateetat}]]}} {{name=@{text_performance}}} {{perso=@{character_name}}} {{secoue=[[@{secoue}]]}} {{relances=[[  { floor( ( { @{RollPerformance} } ) /(@{rolldiffquery}), 0d0 }kh1 ]]}} {{blessures=[[@{blessures}]]}} {{fatigue=[[@{fatigue}]]}} {{encombrement=[[@{encombrement}]]}}"
+    />
+    <input type="hidden" name="attr_jetRollPerformance" value="&{template:sawo} {{etat=[[@{templateetat}]]}} {{name=@{text_performance}}} {{perso=@{character_name}}} {{secoue=[[@{secoue}]]}} {{jet=[[@{RollPerformance}]]}} {{blessures=[[@{blessures}]]}} {{fatigue=[[@{fatigue}]]}} {{encombrement=[[@{encombrement}]]}}"
+    />
+
+    <!-- Battle -->
+    <input type="hidden" name="attr_RollBattle" value="{ 1d@{battle_de}!![Battle],@{joker_de}!![@{text_joker}]}kh1 + (@{battle_bonus})[@{text_bonus}] - @{malusblessures}[@{text_blessures}] - @{malusfatigue}[@{text_fatigue}] - @{encombrement}[@{text_encombrement}] + @{rollmodquery}"
+    />
+    <input type="hidden" name="attr_relRollBattle" value="&{template:sawo} {{etat=[[@{templateetat}]]}} {{name=@{text_battle}}} {{perso=@{character_name}}} {{secoue=[[@{secoue}]]}} {{relances=[[  { floor( ( { @{RollBattle} } ) /(@{rolldiffquery}), 0d0 }kh1 ]]}} {{blessures=[[@{blessures}]]}} {{fatigue=[[@{fatigue}]]}} {{encombrement=[[@{encombrement}]]}}"
+    />
+    <input type="hidden" name="attr_jetRollBattle" value="&{template:sawo} {{etat=[[@{templateetat}]]}} {{name=@{text_battle}}} {{perso=@{character_name}}} {{secoue=[[@{secoue}]]}} {{jet=[[@{RollBattle}]]}} {{blessures=[[@{blessures}]]}} {{fatigue=[[@{fatigue}]]}} {{encombrement=[[@{encombrement}]]}}"
+    />
 
     <!-- Combat -->
-    <input type="hidden" name="attr_relRollCombat" value="&{template:sawo} {{etat=[[@{templateetat}]]}} {{name=@{text_combat}}} {{perso=@{character_name}}} {{secoue=[[@{secoue}]]}} {{relances=[[@{relRollBastCombat}]]}} {{atkcible=[[@{atkcible}]]}} {{cible=@{atknom}}} {{blessures=[[@{blessures}]]}} {{fatigue=[[@{fatigue}]]}} {{encombrement=[[@{encombrement}]]}}"
+    <input type="hidden" name="attr_relRollCombat" value="&{template:sawo} {{etat=[[@{templateetat}]]}} {{name=@{text_combat}}} {{perso=@{character_name}}} {{secoue=[[@{secoue}]]}} {{elances=[[@{relRollBastCombat}]]}} {{atkcible=[[@{atkcible}]]}} {{cible=@{atknom}}} {{blessures=[[@{blessures}]]}} {{fatigue=[[@{fatigue}]]}} {{encombrement=[[@{encombrement}]]}}"
     />
     <input type="hidden" name="attr_jetRollCombat" value="&{template:sawo} {{etat=[[@{templateetat}]]}} {{name=@{text_combat}}} {{perso=@{character_name}}} {{secoue=[[@{secoue}]]}} {{jet=[[@{jetRollBastCombat}]]}} {{blessures=[[@{blessures}]]}} {{fatigue=[[@{fatigue}]]}} {{encombrement=[[@{encombrement}]]}}"
     />
@@ -1544,6 +1589,22 @@
     <input type="hidden" name="attr_relRollConduite" value="&{template:sawo} {{etat=[[@{templateetat}]]}} {{name=@{text_conduite}}} {{perso=@{character_name}}} {{secoue=[[@{secoue}]]}} {{relances=[[  { floor( ( { @{RollConduite} } ) /(@{rolldiffquery}), 0d0 }kh1 ]]}} {{blessures=[[@{blessures}]]}} {{fatigue=[[@{fatigue}]]}} {{encombrement=[[@{encombrement}]]}}"
     />
     <input type="hidden" name="attr_jetRollConduite" value="&{template:sawo} {{etat=[[@{templateetat}]]}} {{name=@{text_conduite}}} {{perso=@{character_name}}} {{secoue=[[@{secoue}]]}} {{jet=[[@{RollConduite}]]}} {{blessures=[[@{blessures}]]}} {{fatigue=[[@{fatigue}]]}} {{encombrement=[[@{encombrement}]]}}"
+    />
+
+    <!-- Thievery -->
+    <input type="hidden" name="attr_RollThieverie" value="{ 1d@{thieverie_de}!![Thieverie],@{joker_de}!![@{text_joker}]}kh1 + (@{thieverie_bonus})[@{text_bonus}] - @{malusblessures}[@{text_blessures}] - @{malusfatigue}[@{text_fatigue}] - @{encombrement}[@{text_encombrement}] + @{rollmodquery}"
+    />
+    <input type="hidden" name="attr_relRollThieverie" value="&{template:sawo} {{etat=[[@{templateetat}]]}} {{name=@{text_thieverie}}} {{perso=@{character_name}}} {{secoue=[[@{secoue}]]}} {{relances=[[  { floor( ( { @{RollThieverie} } ) /(@{rolldiffquery}), 0d0 }kh1 ]]}} {{blessures=[[@{blessures}]]}} {{fatigue=[[@{fatigue}]]}} {{encombrement=[[@{encombrement}]]}}"
+    />
+    <input type="hidden" name="attr_jetRollThieverie" value="&{template:sawo} {{etat=[[@{templateetat}]]}} {{name=@{text_thieverie}}} {{perso=@{character_name}}} {{secoue=[[@{secoue}]]}} {{jet=[[@{RollThieverie}]]}} {{blessures=[[@{blessures}]]}} {{fatigue=[[@{fatigue}]]}} {{encombrement=[[@{encombrement}]]}}"
+    />
+
+    <!-- Electronics -->
+    <input type="hidden" name="attr_RollElectronics" value="{ 1d@{electronics_de}!![Electronics],@{joker_de}!![@{text_joker}]}kh1 + (@{electronics_bonus})[@{text_bonus}] - @{malusblessures}[@{text_blessures}] - @{malusfatigue}[@{text_fatigue}] - @{encombrement}[@{text_encombrement}] + @{rollmodquery}"
+    />
+    <input type="hidden" name="attr_relRollElectronics" value="&{template:sawo} {{etat=[[@{templateetat}]]}} {{name=@{text_electronics}}} {{perso=@{character_name}}} {{secoue=[[@{secoue}]]}} {{relances=[[  { floor( ( { @{RollElectronics} } ) /(@{rolldiffquery}), 0d0 }kh1 ]]}} {{blessures=[[@{blessures}]]}} {{fatigue=[[@{fatigue}]]}} {{encombrement=[[@{encombrement}]]}}"
+    />
+    <input type="hidden" name="attr_jetRollElectronics" value="&{template:sawo} {{etat=[[@{templateetat}]]}} {{name=@{text_electronics}}} {{perso=@{character_name}}} {{secoue=[[@{secoue}]]}} {{jet=[[@{RollElectronics}]]}} {{blessures=[[@{blessures}]]}} {{fatigue=[[@{fatigue}]]}} {{encombrement=[[@{encombrement}]]}}"
     />
 
     <!-- Discretion -->
@@ -1570,6 +1631,30 @@
     <input type="hidden" name="attr_jetRollIntimidation" value="&{template:sawo} {{etat=[[@{templateetat}]]}} {{name=@{text_intimidation}}} {{perso=@{character_name}}} {{secoue=[[@{secoue}]]}} {{jet=[[@{RollIntimidation}]]}} {{blessures=[[@{blessures}]]}} {{fatigue=[[@{fatigue}]]}}"
     />
 
+    <!-- Focus -->
+    <input type="hidden" name="attr_RollFocus" value="{ 1d@{focus_de}!![Focus],@{joker_de}!![@{text_joker}]}kh1 + (@{focus_bonus})[@{text_bonus}] - @{malusblessures}[@{text_blessures}] - @{malusfatigue}[@{text_fatigue}] - @{encombrement}[@{text_encombrement}] + @{rollmodquery}"
+    />
+    <input type="hidden" name="attr_relRollFocus" value="&{template:sawo} {{etat=[[@{templateetat}]]}} {{name=@{text_focus}}} {{perso=@{character_name}}} {{secoue=[[@{secoue}]]}} {{relances=[[  { floor( ( { @{RollFocus} } ) /(@{rolldiffquery}), 0d0 }kh1 ]]}} {{blessures=[[@{blessures}]]}} {{fatigue=[[@{fatigue}]]}} {{encombrement=[[@{encombrement}]]}}"
+    />
+    <input type="hidden" name="attr_jetRollFocus" value="&{template:sawo} {{etat=[[@{templateetat}]]}} {{name=@{text_focus}}} {{perso=@{character_name}}} {{secoue=[[@{secoue}]]}} {{jet=[[@{RollFocus}]]}} {{blessures=[[@{blessures}]]}} {{fatigue=[[@{fatigue}]]}} {{encombrement=[[@{encombrement}]]}}"
+    />
+
+    <!-- Faith -->
+    <input type="hidden" name="attr_RollFaith" value="{ 1d@{faith_de}!![Faith],@{joker_de}!![@{text_joker}]}kh1 + (@{faith_bonus})[@{text_bonus}] - @{malusblessures}[@{text_blessures}] - @{malusfatigue}[@{text_fatigue}] - @{encombrement}[@{text_encombrement}] + @{rollmodquery}"
+    />
+    <input type="hidden" name="attr_relRollFaith" value="&{template:sawo} {{etat=[[@{templateetat}]]}} {{name=@{text_faith}}} {{perso=@{character_name}}} {{secoue=[[@{secoue}]]}} {{relances=[[  { floor( ( { @{RollFaith} } ) /(@{rolldiffquery}), 0d0 }kh1 ]]}} {{blessures=[[@{blessures}]]}} {{fatigue=[[@{fatigue}]]}} {{encombrement=[[@{encombrement}]]}}"
+    />
+    <input type="hidden" name="attr_jetRollFaith" value="&{template:sawo} {{etat=[[@{templateetat}]]}} {{name=@{text_faith}}} {{perso=@{character_name}}} {{secoue=[[@{secoue}]]}} {{jet=[[@{RollFaith}]]}} {{blessures=[[@{blessures}]]}} {{fatigue=[[@{fatigue}]]}} {{encombrement=[[@{encombrement}]]}}"
+    />
+
+    <!-- Hacking -->
+    <input type="hidden" name="attr_RollHacking" value="{ 1d@{hacking_de}!![Hacking],@{joker_de}!![@{text_joker}]}kh1 + (@{hacking_bonus})[@{text_bonus}] - @{malusblessures}[@{text_blessures}] - @{malusfatigue}[@{text_fatigue}] - @{encombrement}[@{text_encombrement}] + @{rollmodquery}"
+    />
+    <input type="hidden" name="attr_relRollHacking" value="&{template:sawo} {{etat=[[@{templateetat}]]}} {{name=@{text_hacking}}} {{perso=@{character_name}}} {{secoue=[[@{secoue}]]}} {{relances=[[  { floor( ( { @{RollHacking} } ) /(@{rolldiffquery}), 0d0 }kh1 ]]}} {{blessures=[[@{blessures}]]}} {{fatigue=[[@{fatigue}]]}} {{encombrement=[[@{encombrement}]]}}"
+    />
+    <input type="hidden" name="attr_jetRollHacking" value="&{template:sawo} {{etat=[[@{templateetat}]]}} {{name=@{text_hacking}}} {{perso=@{character_name}}} {{secoue=[[@{secoue}]]}} {{jet=[[@{RollHacking}]]}} {{blessures=[[@{blessures}]]}} {{fatigue=[[@{fatigue}]]}} {{encombrement=[[@{encombrement}]]}}"
+    />
+
     <!-- Jeu -->
     <input type="hidden" name="attr_RollJeu" value="{ 1d@{jeu_de}!![Jeu],@{joker_de}!![@{text_joker}]}kh1 + (@{jeu_bonus})[@{text_bonus}] - @{malusblessures}[@{text_blessures}] - @{malusfatigue}[@{text_fatigue}] + @{rollmodquery}" />
     <input type="hidden" name="attr_relRollJeu" value="&{template:sawo} {{etat=[[@{templateetat}]]}} {{name=@{text_jeu}}} {{perso=@{character_name}}} {{secoue=[[@{secoue}]]}} {{relances=[[  { floor( ( { @{RollJeu} } ) /(@{rolldiffquery}), 0d0 }kh1 ]]}} {{blessures=[[@{blessures}]]}} {{fatigue=[[@{fatigue}]]}}"
@@ -1583,6 +1668,22 @@
     <input type="hidden" name="attr_relRollNavigation" value="&{template:sawo} {{etat=[[@{templateetat}]]}} {{name=@{text_navigation}}} {{perso=@{character_name}}} {{secoue=[[@{secoue}]]}} {{relances=[[  { floor( ( { @{RollNavigation} } ) /(@{rolldiffquery}), 0d0 }kh1 ]]}} {{blessures=[[@{blessures}]]}} {{fatigue=[[@{fatigue}]]}} {{encombrement=[[@{encombrement}]]}}"
     />
     <input type="hidden" name="attr_jetRollNavigation" value="&{template:sawo} {{etat=[[@{templateetat}]]}} {{name=@{text_navigation}}} {{perso=@{character_name}}} {{secoue=[[@{secoue}]]}} {{jet=[[@{RollNavigation}]]}} {{blessures=[[@{blessures}]]}} {{fatigue=[[@{fatigue}]]}} {{encombrement=[[@{encombrement}]]}}"
+    />
+
+    <!-- Occultism -->
+    <input type="hidden" name="attr_RollOccultism" value="{ 1d@{occultism_de}!![Occultism],@{joker_de}!![@{text_joker}]}kh1 + (@{occultism_bonus})[@{text_bonus}] - @{malusblessures}[@{text_blessures}] - @{malusfatigue}[@{text_fatigue}] - @{encombrement}[@{text_encombrement}] + @{rollmodquery}"
+    />
+    <input type="hidden" name="attr_relRollOccultism" value="&{template:sawo} {{etat=[[@{templateetat}]]}} {{name=@{text_occultism}}} {{perso=@{character_name}}} {{secoue=[[@{secoue}]]}} {{relances=[[  { floor( ( { @{RollOccultism} } ) /(@{rolldiffquery}), 0d0 }kh1 ]]}} {{blessures=[[@{blessures}]]}} {{fatigue=[[@{fatigue}]]}} {{encombrement=[[@{encombrement}]]}}"
+    />
+    <input type="hidden" name="attr_jetRollOccultism" value="&{template:sawo} {{etat=[[@{templateetat}]]}} {{name=@{text_occultism}}} {{perso=@{character_name}}} {{secoue=[[@{secoue}]]}} {{jet=[[@{RollOccultism}]]}} {{blessures=[[@{blessures}]]}} {{fatigue=[[@{fatigue}]]}} {{encombrement=[[@{encombrement}]]}}"
+    />
+
+    <!-- Psionics -->
+    <input type="hidden" name="attr_RollPsionics" value="{ 1d@{psionics_de}!![Psionics],@{joker_de}!![@{text_joker}]}kh1 + (@{psionics_bonus})[@{text_bonus}] - @{malusblessures}[@{text_blessures}] - @{malusfatigue}[@{text_fatigue}] - @{encombrement}[@{text_encombrement}] + @{rollmodquery}"
+    />
+    <input type="hidden" name="attr_relRollPsionics" value="&{template:sawo} {{etat=[[@{templateetat}]]}} {{name=@{text_psionics}}} {{perso=@{character_name}}} {{secoue=[[@{secoue}]]}} {{relances=[[  { floor( ( { @{RollPsionics} } ) /(@{rolldiffquery}), 0d0 }kh1 ]]}} {{blessures=[[@{blessures}]]}} {{fatigue=[[@{fatigue}]]}} {{encombrement=[[@{encombrement}]]}}"
+    />
+    <input type="hidden" name="attr_jetRollPsionics" value="&{template:sawo} {{etat=[[@{templateetat}]]}} {{name=@{text_psionics}}} {{perso=@{character_name}}} {{secoue=[[@{secoue}]]}} {{jet=[[@{RollPsionics}]]}} {{blessures=[[@{blessures}]]}} {{fatigue=[[@{fatigue}]]}} {{encombrement=[[@{encombrement}]]}}"
     />
 
     <!-- Perception -->
@@ -1631,11 +1732,35 @@
     <input type="hidden" name="attr_jetRollSarcasme" value="&{template:sawo} {{etat=[[@{templateetat}]]}} {{name=@{text_sarcasme}}} {{perso=@{character_name}}} {{secoue=[[@{secoue}]]}} {{jet=[[@{RollSarcasme}]]}} {{blessures=[[@{blessures}]]}} {{fatigue=[[@{fatigue}]]}}"
     />
 
+    <!-- Science -->
+    <input type="hidden" name="attr_RollScience" value="{ 1d@{science_de}!![Science],@{joker_de}!![@{text_joker}]}kh1 + (@{science_bonus})[@{text_bonus}] - @{malusblessures}[@{text_blessures}] - @{malusfatigue}[@{text_fatigue}] - @{encombrement}[@{text_encombrement}] + @{rollmodquery}"
+    />
+    <input type="hidden" name="attr_relRollScience" value="&{template:sawo} {{etat=[[@{templateetat}]]}} {{name=@{text_science}}} {{perso=@{character_name}}} {{secoue=[[@{secoue}]]}} {{relances=[[  { floor( ( { @{RollScience} } ) /(@{rolldiffquery}), 0d0 }kh1 ]]}} {{blessures=[[@{blessures}]]}} {{fatigue=[[@{fatigue}]]}} {{encombrement=[[@{encombrement}]]}}"
+    />
+    <input type="hidden" name="attr_jetRollScience" value="&{template:sawo} {{etat=[[@{templateetat}]]}} {{name=@{text_science}}} {{perso=@{character_name}}} {{secoue=[[@{secoue}]]}} {{jet=[[@{RollScience}]]}} {{blessures=[[@{blessures}]]}} {{fatigue=[[@{fatigue}]]}} {{encombrement=[[@{encombrement}]]}}"
+    />
+
+    <!-- Weird Science -->
+    <input type="hidden" name="attr_RollWeirdScience" value="{ 1d@{weirdscience_de}!![WeirdScience],@{joker_de}!![@{text_joker}]}kh1 + (@{weirdscience_bonus})[@{text_bonus}] - @{malusblessures}[@{text_blessures}] - @{malusfatigue}[@{text_fatigue}] - @{encombrement}[@{text_encombrement}] + @{rollmodquery}"
+    />
+    <input type="hidden" name="attr_relRollWeirdScience" value="&{template:sawo} {{etat=[[@{templateetat}]]}} {{name=@{text_weirdscience}}} {{perso=@{character_name}}} {{secoue=[[@{secoue}]]}} {{relances=[[  { floor( ( { @{RollWeirdScience} } ) /(@{rolldiffquery}), 0d0 }kh1 ]]}} {{blessures=[[@{blessures}]]}} {{fatigue=[[@{fatigue}]]}} {{encombrement=[[@{encombrement}]]}}"
+    />
+    <input type="hidden" name="attr_jetRollWeirdScience" value="&{template:sawo} {{etat=[[@{templateetat}]]}} {{name=@{text_weirdscience}}} {{perso=@{character_name}}} {{secoue=[[@{secoue}]]}} {{jet=[[@{RollWeirdScience}]]}} {{blessures=[[@{blessures}]]}} {{fatigue=[[@{fatigue}]]}} {{encombrement=[[@{encombrement}]]}}"
+    />
+
     <!-- Soins -->
     <input type="hidden" name="attr_RollSoins" value="{ 1d@{soins_de}!![Soins],@{joker_de}!![@{text_joker}]}kh1 + (@{soins_bonus})[@{text_bonus}] - @{malusblessures}[@{text_blessures}] - @{malusfatigue}[@{text_fatigue}] + @{rollmodquery}" />
     <input type="hidden" name="attr_relRollSoins" value="&{template:sawo} {{etat=[[@{templateetat}]]}} {{name=@{text_soins}}} {{perso=@{character_name}}} {{secoue=[[@{secoue}]]}} {{relances=[[  { floor( ( { @{RollSoins} } ) /(@{rolldiffquery}), 0d0 }kh1 ]]}} {{blessures=[[@{blessures}]]}} {{fatigue=[[@{fatigue}]]}}"
     />
     <input type="hidden" name="attr_jetRollSoins" value="&{template:sawo} {{etat=[[@{templateetat}]]}} {{name=@{text_soins}}} {{perso=@{character_name}}} {{secoue=[[@{secoue}]]}} {{jet=[[@{RollSoins}]]}} {{blessures=[[@{blessures}]]}} {{fatigue=[[@{fatigue}]]}}"
+    />
+
+    <!-- Spellcasting -->
+    <input type="hidden" name="attr_RollSpellcasting" value="{ 1d@{spellcasting_de}!![Spellcasting],@{joker_de}!![@{text_joker}]}kh1 + (@{spellcasting_bonus})[@{text_bonus}] - @{malusblessures}[@{text_blessures}] - @{malusfatigue}[@{text_fatigue}] + @{rollmodquery}"
+    />
+    <input type="hidden" name="attr_relRollSpellcasting" value="&{template:sawo} {{etat=[[@{templateetat}]]}} {{name=@{text_spellcasting}}} {{perso=@{character_name}}} {{secoue=[[@{secoue}]]}} {{relances=[[  { floor( ( { @{RollSpellcasting} } ) /(@{rolldiffquery}), 0d0 }kh1 ]]}} {{blessures=[[@{blessures}]]}} {{fatigue=[[@{fatigue}]]}}"
+    />
+    <input type="hidden" name="attr_jetRollSpellcasting" value="&{template:sawo} {{etat=[[@{templateetat}]]}} {{name=@{text_spellcasting}}} {{perso=@{character_name}}} {{secoue=[[@{secoue}]]}} {{jet=[[@{RollSpellcasting}]]}} {{blessures=[[@{blessures}]]}} {{fatigue=[[@{fatigue}]]}}"
     />
 
     <!-- Survie -->
@@ -1651,6 +1776,14 @@
     <input type="hidden" name="attr_jetRollTir" value="&{template:sawo} {{etat=[[@{templateetat}]]}} {{name=@{text_tir}}} {{perso=@{character_name}}} {{secoue=[[@{secoue}]]}} {{jet=[[@{jetRollBastTir}]]}} {{blessures=[[@{blessures}]]}} {{fatigue=[[@{fatigue}]]}} {{encombrement=[[@{encombrement}]]}}"
     />
 
+    <!-- Academics -->
+    <input type="hidden" name="attr_RollAcademics" value="{ 1d@{academics_de}!![Academics],@{joker_de}!![@{text_joker}]}kh1 + (@{academics_bonus})[@{text_bonus}] - @{malusblessures}[@{text_blessures}] - @{malusfatigue}[@{text_fatigue}] - @{encombrement}[@{text_encombrement}] + @{rollmodquery}"
+    />
+    <input type="hidden" name="attr_relRollAcademics" value="&{template:sawo} {{etat=[[@{templateetat}]]}} {{name=@{text_academics}}} {{perso=@{character_name}}} {{secoue=[[@{secoue}]]}} {{relances=[[  { floor( ( { @{RollAcademics} } ) /(@{rolldiffquery}), 0d0 }kh1 ]]}} {{blessures=[[@{blessures}]]}} {{fatigue=[[@{fatigue}]]}} {{encombrement=[[@{encombrement}]]}}"
+    />
+    <input type="hidden" name="attr_jetRollAcademics" value="&{template:sawo} {{etat=[[@{templateetat}]]}} {{name=@{text_academics}}} {{perso=@{character_name}}} {{secoue=[[@{secoue}]]}} {{jet=[[@{RollAcademics}]]}} {{blessures=[[@{blessures}]]}} {{fatigue=[[@{fatigue}]]}} {{encombrement=[[@{encombrement}]]}}"
+    />
+
     <!-- Tripes-->
     <input type="hidden" name="attr_RollTripes" value="{ 1d@{tripes_de}!![Tripes],@{joker_de}!![@{text_joker}]}kh1 + (@{tripes_bonus})[@{text_bonus}] + (@{trempe})[Trempe] - @{malusblessures}[@{text_blessures}] - @{malusfatigue}[@{text_fatigue}] + @{rollmodquery}"
     />
@@ -1660,7 +1793,7 @@
     />
 
     <!-- Course -->
-    <input type="hiden" name="attr_jetRollCourse" value="{}" />
+    <!--<input type="hiden" name="attr_jetRollCourse" value="{}" />-->
 
     <!-- *** HIDDEN ROLLS  & ATTRIBUTES ** -->
     <!-- ROLL TEMPLATES -->
