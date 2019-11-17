@@ -381,7 +381,10 @@ input[type=radio].sheet-blessure[value="0"]:checked+span {
 
 .sheet-blessure.sheet-bless1,
 .sheet-blessure.sheet-bless2,
-.sheet-blessure.sheet-bless3 {
+.sheet-blessure.sheet-bless3,
+.sheet-blessure.sheet-fatigue1,
+.sheet-blessure.sheet-fatigue2,
+.sheet-blessure.sheet-fatigue3 {
     display: none;
     width: 0px;
     max-width: 0px;
@@ -405,19 +408,19 @@ input[type=checkbox].sheet-persoBless3:checked~div.sheet-main .sheet-blessure.sh
     min-width: 30px;
 }
 
-input[type=checkbox].sheet-persoFatigue1:checked~div.sheet-main .sheet-fatigue.sheet-fatigue1 {
+input[type=checkbox].sheet-persoFatigue1:checked~div.sheet-main .sheet-blessure.sheet-fatigue1 {
     display: inline-block;
     width: 30px;
     min-width: 30px;
 }
 
-input[type=checkbox].sheet-persoFatigue2:checked~div.sheet-main .sheet-fatigue.sheet-fatigue2 {
+input[type=checkbox].sheet-persoFatigue2:checked~div.sheet-main .sheet-blessure.sheet-fatigue2 {
     display: inline-block;
     width: 30px;
     min-width: 30px;
 }
 
-input[type=checkbox].sheet-persoFatigue3:checked~div.sheet-main .sheet-fatigue.sheet-fatigue3 {
+input[type=checkbox].sheet-persoFatigue3:checked~div.sheet-main .sheet-blessure.sheet-fatigue3 {
     display: inline-block;
     width: 30px;
     min-width: 30px;

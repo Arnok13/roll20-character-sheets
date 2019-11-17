@@ -188,10 +188,13 @@
             });
         });
         //===BLESSURES et Malus blessure 
-        // TODO conf blessures 
         on("change:confBlessures", function(eventinfo) {
             var conf = parseInt(eventinfo.newValue) || 0;
             setAttrs({ bless1: parseInt(+(conf > 0)) || 0, bless2: parseInt(+(conf > 1)) || 0, bless3: parseInt(+(conf > 2)) || 0 });
+        });
+        on("change:confFatigue", function(eventinfo) {
+            var conf = parseInt(eventinfo.newValue) || 0;
+            setAttrs({ fatigue3: parseInt(+(conf > 0)) || 0 });
         });
         on("change:blessures", function(eventinfo) {
             var malusblessures = 0;
@@ -259,8 +262,7 @@
                 function(values) {
                     setAttrs({
                         resistance_base: 2 + Math.floor((parseInt(values.vigueur_de) + parseInt(values.vigueur_bonus)) / 2),
-                        resistance: parseInt(values.resistance_bonus) + 2 + Math.floor((parseInt(values.vigueur_de) + parseInt(values.vigueur_bonus)) /
-                            2)
+                        resistance: parseInt(values.resistance_bonus) + 2 + Math.floor((parseInt(values.vigueur_de) + parseInt(values.vigueur_bonus)) / 2)
                     });
                 });
         });
@@ -296,13 +298,39 @@
             });
         });
         // === Inventaire et encombrement 
-        on("change:force_de", function(eventinfo) { setAttrs({ encombmax: parseInt(eventinfo.newValue) * 2.5 }); });
+        on("change:force_de change:force_bonus", function() {
+            getAttrs(["force_de", "force_bonus"],
+                function(values) {
+                    var newForce = parseInt(values.force_de) || 4;
+                    var bonusValue = parseInt(values.force_bonus) || 0;
+                    var uncombranceValue = 0;
+                    switch (newForce) {
+                        case 4:
+                            uncombranceValue = 10;
+                            break;
+                        case 6:
+                            uncombranceValue = 20;
+                            break;
+                        case 8:
+                            uncombranceValue = 30;
+                            break;
+                        case 10:
+                            uncombranceValue = 40;
+                            break;
+                        case 12:
+                            uncombranceValue = 50;
+                            break;
+                        default:
+                            uncombranceValue = 0;
+                    };
+                    setAttrs({ encombmax: uncombranceValue + (bonusValue * 10) });
+                });
+        });
         on("change:repeating_equipements:equipqte change:repeating_equipements:equippdsunit",
             function() {
                 getAttrs(["repeating_equipements_equipqte", "repeating_equipements_equippdsunit"], function(values) {
                     var qte = parseFloat(values.repeating_equipements_equipqte) || 1.0;
-                    var pds = parseFloat(values.repeating_equipements_equippdsunit) ||
-                        0.0;
+                    var pds = parseFloat(values.repeating_equipements_equippdsunit) || 0.0;
                     setAttrs({ repeating_equipements_equippoids: qte * pds });
                 });
             });
@@ -324,7 +352,11 @@
             getAttrs(["encombmax", "encombpoids"], function(values) {
                 var lemax = parseInt(values.encombmax) || 1;
                 var lepoids = parseInt(values.encombpoids) || 0;
-                setAttrs({ encombrement: Math.floor(lepoids / lemax) });
+                var malus = 0;
+                if (lepoids > lemax) {
+                    malus = 2;
+                };
+                setAttrs({ encombrement: malus });
             });
         });
         // === Attaques 
