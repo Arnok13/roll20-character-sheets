@@ -325,6 +325,21 @@
                             </SELECT> +
                             <input type="number" class="selde" name="attr_discretion_bonus" value="0" min="-9" />
                         </div>
+                        <div class="input SheetParsec">
+                            <!-- ELECTRONICS -->
+                            <button type="roll" name="Btrel-Electronics" class="btRolrelDefault" value="@{relRollElectronics}" data-i18n="electronics">Électronique</button>
+                            <button type="roll" name="Btjet-Electronics" class="btRoljetDefault" value="@{jetRollElectronics}" data-i18n="electronics">Électronique</button>
+                            <button type="roll" name="BtBrut-Electronics" class="btRolbrutDefault" value="/em @{character_name} @{text_jet-de} @{text_electronics}&#010;/roll @{RollElectronics}" data-i18n="electronics">Électronique</button>                        
+                            <div class="attcomptext" data-i18n="int-u">INT</div>
+                            <SELECT name="attr_electronics_de" class="selde">
+                                <OPTION value="4"  data-i18n="d4">&nbsp;d4</OPTION>
+                                <OPTION value="6" SELECTED data-i18n="d6">&nbsp;d6</OPTION>
+                                <OPTION value="8" data-i18n="d8">&nbsp;d8</OPTION>
+                                <OPTION value="10" data-i18n="d10">d10</OPTION>
+                                <OPTION value="12" data-i18n="d12">d12</OPTION>
+                            </SELECT> +
+                            <input type="number" class="selde" name="attr_electronics_bonus" value="0" min="-9" />
+                        </div>
                         <!-- FIN DISCRÉTION -->
                         <div class="input chkPerformance">
                             <!-- PERFORMANCE -->
@@ -406,11 +421,11 @@
                             <input type="number" class="selde" name="attr_thieverie_bonus" value="-2" min="-9" />
                         </div>
                         <!-- FIN CAMBRIOLE -->
-                        <div class="input chkElectronics">
+                        <div class="input SheetInterface SheetSaWo">
                             <!-- ELECTRONICS -->
                             <button type="roll" name="Btrel-Electronics" class="btRolrel" value="@{relRollElectronics}" data-i18n="electronics">Électronique</button>
                             <button type="roll" name="Btjet-Electronics" class="btRoljet" value="@{jetRollElectronics}" data-i18n="electronics">Électronique</button>
-                            <button type="roll" name="BtBrut-Electronics" class="btRolbrut" value="/em @{character_name} @{text_jet-de} @{text_electronics}&#010;/roll @{RollElectronics}" data-i18n="electronics">Électronique</button>
+                            <button type="roll" name="BtBrut-Electronics" class="btRolbrut" value="/em @{character_name} @{text_jet-de} @{text_electronics}&#010;/roll @{RollElectronics}" data-i18n="electronics">Électronique</button>                        
                             <div class="attcomptext" data-i18n="int-u">INT</div>
                             <SELECT name="attr_electronics_de" class="selde">
                                 <OPTION value="4" SELECTED data-i18n="d4">&nbsp;d4</OPTION>
