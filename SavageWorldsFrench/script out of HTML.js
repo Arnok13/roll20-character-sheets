@@ -65,6 +65,7 @@
                 update["text_psionics"] = getTranslationByKey("psionics");
                 update["text_spellcasting"] = getTranslationByKey("spellcasting");
                 update["text_course"] = getTranslationByKey("course");
+                update["text_distracted"] = getTranslationByKey("distracted-u");
                 // Version
                 var vers = parseFloat(values.sheetVersion) || 0;
                 if (vers < 3.0) {
@@ -211,36 +212,60 @@
             }
             setAttrs({ malusfatigue: malusfatigue });
         });
+        // === Distracted
+        on("change:distracted", function(eventinfo) {
+            var malusDistracted = 0;
+            if (eventinfo.newValue == 1) {
+                malusDistracted = 2;
+            }
+            setAttrs({ malusDistracted: malusDistracted });
+        });
+        // === Entangled
+        on("change:entangled", function(eventinfo) {
+            if (eventinfo.newValue == 1) {
+                    setAttrs({distracted:1});
+            } 
+        });
+        // === Bound
+        on("change:bound", function(eventinfo) {
+            if (eventinfo.newValue == 1) {
+                    setAttrs({distracted:1, vulnerable:1});
+            } 
+        });
+        // === Stunned
+        on("change:sonne", function(eventinfo) {
+            if (eventinfo.newValue == 1) {
+                setAttrs({distracted:1});
+            } else {
+                setAttrs({distracted:1, vulnerable:1});
+            }
+        });
         // === ARMES FIXES 
         on("change:arme1_comp", function(eventinfo) {
             setAttrs({
                 arme1_comp_rel: "@{relRollBast" + eventinfo.newValue + "}",
-                arme1_comp_jet: "@{jetRollBast" + eventinfo.newValue +
-                    "}",
+                arme1_comp_jet: "@{jetRollBast" + eventinfo.newValue + "}",
                 arme1_comp_brut: "@{RollBast" + eventinfo.newValue + "}"
             });
         });
         on("change:arme2_comp", function(eventinfo) {
             setAttrs({
                 arme2_comp_rel: "@{relRollBast" + eventinfo.newValue + "}",
-                arme2_comp_jet: "@{jetRollBast" + eventinfo.newValue +
-                    "}",
+                arme2_comp_jet: "@{jetRollBast" + eventinfo.newValue + "}",
                 arme2_comp_brut: "@{RollBast" + eventinfo.newValue + "}"
             });
         });
         on("change:arme3_comp", function(eventinfo) {
             setAttrs({
                 arme3_comp_rel: "@{relRollBast" + eventinfo.newValue + "}",
-                arme3_comp_jet: "@{jetRollBast" + eventinfo.newValue +
-                    "}",
+                arme3_comp_jet: "@{jetRollBast" + eventinfo.newValue + "}",
                 arme3_comp_brut: "@{RollBast" + eventinfo.newValue + "}"
             });
         });
         // === ARMES DYNAMIQUES 
         on("change:repeating_armes:armed_comp", function(eventinfo) {
             setAttrs({
-                repeating_armes_armeD_comp_rel: "@{relRollBast" + eventinfo.newValue +
-                    "}",
+                repeating_armes_armeD_comp_rel: "@{relRollBast" + eventinfo.newValue + "}",
                 repeating_armes_armeD_comp_jet: "@{jetRollBast" + eventinfo.newValue + "}",
                 repeating_armes_armeD_comp_brut: "@{RollBast" + eventinfo.newValue + "}"
             });

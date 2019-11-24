@@ -70,11 +70,11 @@
     "debilitated": "Exténué",
     "etat-critique": "en État critique",
     "blesse": "Blessé",
-    "secoue": "Secoué",
+    "secoue": "Secoué : jet d'Ame pour sortir de cet état sinon que des action gratuits et du déplacement (y compris courrir)",
     "normal": "Normal",
     "est": "est",
     "contre": "contre",
-    "fait-jet": "faire un jet",
+    "fait-jet": "fait un jet",
     "attaque": "Attaque",
     "attaque-avec": "attaque avec",
     "pouvoir-de": "Pouvoir de",
@@ -199,7 +199,7 @@
     "resistance": "Résistance",
     "sarcasme": "Sarcasme",
     "savage": "Savage Worlds",
-    "secoue-u": "SECOUÉ : ",
+    "secoue-u": "Secoué : ",
     "sexe": "Sexe : ",
     "signes": "Signes particuliers : ",
     "soins": "Soins",
@@ -249,10 +249,9 @@
     "fatigue-extended": "Fatigue étendu / 3 niveaux",
     "weirdscience": "Science étrange",
     "focus": "Focus",
-    "distracted": "-2 sur tous les jets de Traits, jusqu'à la fin du tour suivant du personnage",
-    "vulnerable": "toutes les actions contre le personnage se font à +2 jusqu'à la fin du tour suivant (pas de cumul avec Surprise)",
-    "entangled": "le personnage ne peut pas bouger et reste Distrait tant qu'il est dans cet état",
-    "bound": "le personnage ne peut pas bouger. Il est également Distrait et Vulnérable tant qu'il est dans cet état (il ne peut que tenter de se libérer",
-    "sonne": "le personnage est Distrait, il ne peut pas bouger ou faire d'actions. Toute action faite contre lui sont considérées comme de la Surprise. A chaque début de tour il fait un jet de Vigueur pour sortir de cet état (Distrait et Vulnérable avec un succès/rien avec une Prouesse"
-
+    "distracted": "Distrait : -2 sur tous les jets de Traits, jusqu'à la fin du tour suivant du personnage",
+    "vulnerable": "Vulnérable : toutes les actions contre le personnage se font à +2 jusqu'à la fin du tour suivant (pas de cumul avec Surprise)",
+    "entangled": "Enchevêtré : le personnage ne peut pas bouger et reste Distrait tant qu'il est dans cet état",
+    "bound": "Bloqué : le personnage ne peut pas bouger. Il est également Distrait et Vulnérable tant qu'il est dans cet état (il ne peut que tenter de se libérer)",
+    "sonne": "Sonné : le personnage est Distrait, tombe au sol et il ne peut pas bouger ou faire d'actions. Toutes les actions faites contre lui sont considérées comme de la Surprise. A chaque début de tour il fait un jet de Vigueur pour sortir de cet état (Distrait et Vulnérable avec un succès/rien avec une Prouesse)"
 }
