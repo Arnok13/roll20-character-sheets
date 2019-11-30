@@ -253,5 +253,18 @@
     "vulnerable": "Vulnérable : toutes les actions contre le personnage se font à +2 jusqu'à la fin du tour suivant (pas de cumul avec Surprise)",
     "entangled": "Enchevêtré : le personnage ne peut pas bouger et reste Distrait tant qu'il est dans cet état",
     "bound": "Bloqué : le personnage ne peut pas bouger. Il est également Distrait et Vulnérable tant qu'il est dans cet état (il ne peut que tenter de se libérer)",
-    "sonne": "Sonné : le personnage est Distrait, tombe au sol et il ne peut pas bouger ou faire d'actions. Toutes les actions faites contre lui sont considérées comme de la Surprise. A chaque début de tour il fait un jet de Vigueur pour sortir de cet état (Distrait et Vulnérable avec un succès/rien avec une Prouesse)"
+    "sonne": "Sonné : le personnage est Distrait, tombe au sol et il ne peut pas bouger ou faire d'actions. Toutes les actions faites contre lui sont considérées comme de la Surprise. A chaque début de tour il fait un jet de Vigueur pour sortir de cet état (Distrait et Vulnérable avec un succès/rien avec une Prouesse)",
+    "comp_crystal": "Canal. Cristal",
+    "language": "Langue",
+    "crystal-naming": "Cristal",
+    "crystal_name-u": "Nom :",
+    "crystal_name": "nom du cristal",
+    "crystal_benefits" : "Bénéfices",
+    "benefits": "bénéfices",
+    "crystal_theme-u": "Thème :",
+    "crystal_theme": "thème du cristal",
+    "disposition": "Tempérament",
+    "crystalpower": "Pouvoirs",
+    "crystalpowermodifier" : "Modificateur",
+    "ingeneering": "Ingéniérie"
 }

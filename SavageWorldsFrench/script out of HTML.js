@@ -66,6 +66,8 @@
                 update["text_spellcasting"] = getTranslationByKey("spellcasting");
                 update["text_course"] = getTranslationByKey("course");
                 update["text_distracted"] = getTranslationByKey("distracted-u");
+                update["text_crystal"] = getTranslationByKey("comp_crystal");
+                update["text_ingeneering"] = getTranslationByKey("ingeneering");
                 // Version
                 var vers = parseFloat(values.sheetVersion) || 0;
                 if (vers < 3.0) {
@@ -299,6 +301,7 @@
                 chkEquitation: eventinfo.newValue,
                 chkIntimidation: eventinfo.newValue,
                 chkJeu: eventinfo.newValue,
+                chkLanguage : eventinfo.newValue,
                 chkNavigation: eventinfo.newValue,
                 chkPilotage: eventinfo.newValue,
                 chkRecherche: eventinfo.newValue,

@@ -1267,6 +1267,7 @@ input[type=checkbox].sheet-chkFocus,
 input[type=checkbox].sheet-chkFaith,
 input[type=checkbox].sheet-chkHacking,
 input[type=checkbox].sheet-chkJeu,
+input[type=checkbox].sheet-chkLanguage,
 input[type=checkbox].sheet-chkNavigation,
 input[type=checkbox].sheet-chkOccultism,
 input[type=checkbox].sheet-chkPilotage,
@@ -1318,6 +1319,7 @@ div.sheet-chkFocus,
 div.sheet-chkFaith,
 div.sheet-chkHacking,
 div.sheet-chkJeu,
+div.sheet-chkLanguage,
 div.sheet-chkNavigation,
 div.sheet-chkOccultism,
 div.sheet-chkPilotage,
@@ -1401,6 +1403,10 @@ input[type=checkbox].sheet-chkHacking:checked~div.sheet-main div.sheet-chkHackin
 }
 
 input[type=checkbox].sheet-chkJeu:checked~div.sheet-main div.sheet-chkJeu {
+    display: block;
+}
+
+input[type=checkbox].sheet-chkLanguage:checked~div.sheet-main div.sheet-chkLanguage {
     display: block;
 }
 
