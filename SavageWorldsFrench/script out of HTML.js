@@ -68,6 +68,9 @@
                 update["text_distracted"] = getTranslationByKey("distracted-u");
                 update["text_crystal"] = getTranslationByKey("comp_crystal");
                 update["text_ingeneering"] = getTranslationByKey("ingeneering");
+                update["text_crystalpowermodifier"] = getTranslationByKey("text_crystalpowermodifier");
+                update["text_requisition"] = getTranslationByKey("text_requisition");
+
                 // Version
                 var vers = parseFloat(values.sheetVersion) || 0;
                 if (vers < 3.0) {
@@ -411,4 +414,13 @@
                 ciblearcane: ciblearcane,
                 atknom: atknom
             });
+        });
+        // == Gestion des ressources
+        on("change:confMoney", function(eventinfo) {
+            var conf = parseInt(eventinfo.newValue) || 0;
+            setAttrs({Money: conf});
+        });
+        // == Gestion de niveau de blessure à ignorer
+        on("change:confIgnorewoundlevel", function(eventinfo) {
+
         });

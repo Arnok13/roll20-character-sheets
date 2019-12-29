@@ -1298,7 +1298,10 @@ input[type=checkbox].sheet-persoBless2,
 input[type=checkbox].sheet-persoBless3,
 input[type=checkbox].sheet-persoFatigue1,
 input[type=checkbox].sheet-persoFatigue2,
-input[type=checkbox].sheet-persoFatigue3 {
+input[type=checkbox].sheet-persoFatigue3, 
+input[type=radio].sheet-chkMoney,
+input[type=radio].sheet-chkRequisitionDice,
+input[type=radio].sheet-chkRequisitionValue {
     display: none;
 }
 
@@ -1480,6 +1483,12 @@ div.sheet-SheetCrystal {
     display: none;
 }
 
+div.sheet-Money,
+div.sheet-RequisitionDice,
+div.sheet-RequisitionValue {
+    display: none;
+}
+
 input[type=radio].sheet-chkSheetSaWo:checked~div.sheet-main div.sheet-SheetSaWo {
     display: inline-block;
 }
@@ -1507,6 +1516,19 @@ input[type=radio].sheet-chkSheetParsec:checked~div.sheet-main div.sheet-SheetPar
 input[type=radio].sheet-chkSheetCrystal:checked~div.sheet-main div.sheet-SheetCrystal {
     display: inline-block;
 }
+
+input[type=radio].sheet-chkMoney:checked~div.sheet-main div.sheet-Money {
+    display: inline-block;
+}
+
+input[type=radio].sheet-chkRequisitionDice:checked~div.sheet-main div.sheet-RequisitionDice {
+    display: inline-block;
+}
+
+input[type=radio].sheet-chkRequisitionValue:checked~div.sheet-main div.sheet-RequisitionValue {
+    display: inline-block;
+}
+
 
 div.sheet-persocustom {
     visibility: hidden;

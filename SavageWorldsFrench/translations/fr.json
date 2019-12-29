@@ -266,5 +266,16 @@
     "disposition": "Tempérament",
     "crystalpower": "Pouvoirs",
     "crystalpowermodifier" : "Modificateur",
-    "ingeneering": "Ingéniérie"
+    "ingeneering": "Ingéniérie",
+    "text_crystalpowermodifier": "Modificateur Pouvoir Cristal",
+    "moneymanager": "Gestion des ressources :",
+    "money": "Argent",
+    "requisition": "Dé de Réquisition",
+    "value": "Valeur de Réquisition",
+    "ignorewoundsmanager": "Niveau(x) de blessures à ignorer",
+    "iwm_none": "Aucun",
+    "iwm_one": "Un niveau",
+    "iwm_two": "Deux niveaux",
+    "fatiguemanager" : "Niveau de Fatigue",
+    "text_requisition" : "Réquisition"
 }
