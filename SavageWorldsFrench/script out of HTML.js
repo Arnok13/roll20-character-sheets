@@ -70,6 +70,7 @@
                 update["text_ingeneering"] = getTranslationByKey("ingeneering");
                 update["text_crystalpowermodifier"] = getTranslationByKey("text_crystalpowermodifier");
                 update["text_requisition"] = getTranslationByKey("text_requisition");
+                update["text_streetcred"] = getTranslationByKey("text_streetcred");
 
                 // Version
                 var vers = parseFloat(values.sheetVersion) || 0;
@@ -292,7 +293,8 @@
                 function(values) {
                     setAttrs({
                         resistance_base: 2 + Math.floor((parseInt(values.vigueur_de) + parseInt(values.vigueur_bonus)) / 2),
-                        resistance: parseInt(values.resistance_bonus) + 2 + Math.floor((parseInt(values.vigueur_de) + parseInt(values.vigueur_bonus)) / 2)
+                        resistance: parseInt(values.resistance_bonus) + 2 + Math.floor((parseInt(values.vigueur_de) + parseInt(values.vigueur_bonus)) / 2),
+                        strain_limit: parseInt(values.vigueur_de)
                     });
                 });
         });

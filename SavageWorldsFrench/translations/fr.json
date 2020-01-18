@@ -285,5 +285,12 @@
     "tapRank" : "Rang du TAP",
     "tap_range" : "Portée du TAP",
     "tapSkills" : "Stats du Sprite",
-    "tapSkillName" : "Compétences du Sprite"
+    "tapSkillName" : "Compétences du Sprite",
+    "base-strain" : "Cyber-Tension",
+    "limit-strain" : "Limite de Cyber-Tension",
+    "languages" : "LANGUES",
+    "strain-u" : "Cyber-Tension",
+    "street-cred-u" : "Réputation",
+    "streetcred" : "Réputation",
+    "text_streetcred" : "Réputation"
 }

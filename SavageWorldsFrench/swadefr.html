@@ -3,7 +3,7 @@
     <!-- TABS -->
     <input type="radio" name="attr_chkvie" value="0" class="onglmain" data-i18n-title="feuille" title="Feuille" checked /><span data-i18n="feuille">Feuille</span>
     <input type="radio" name="attr_chkvie" value="1" class="onglconfig" title="Configuration" /><span data-i18n="configuration">Configuration</span>
-    <span style="display:inline-block;width:150px;text-align: center;color: #888888;font-size: 0.9em;">SWADE v1.0 (11/30/2019)</span>
+    <span style="display:inline-block;width:150px;text-align: center;color: #888888;font-size: 0.9em;">SWADE v1.0 (01/18/2020)</span>
     <!-- Styling -->
     <input type="radio" name="attr_sheetDead" value="0" class="chkSheetSaWo" checked />
     <!-- Savage Worlds -->
@@ -519,34 +519,32 @@
                             + <input type="number" class="selde" name="attr_battle_bonus" value="-2" min="-9" />
                         </div>
                         <!-- FIN BATTLE -->
-                        <div class="SheetSaWo SheetBnB SheetDead SheetInterface SheetLankh SheetParsec">
-                            <div class="input chkCombat ">
-                                <!-- COMBAT -->
-                                <button type="roll" 
-                                    name="Btrel-Combat" 
-                                    class="btRolrel" 
-                                    value="@{relRollCombat}" 
-                                    data-i18n="combat">Combat</button>
-                                <button type="roll" 
-                                    name="Btjet-Combat" 
-                                    class="btRoljet" 
-                                    value="@{jetRollCombat}" 
-                                    data-i18n="combat">Combat</button>
-                                <button type="roll" 
-                                    name="BtBrut-Combat" 
-                                    class="btRolbrut" 
-                                    value="/em @{character_name} @{text_jet-de} @{text_combat}&#010;/roll @{RollBastCombat}" 
-                                    data-i18n="combat">Combat</button>
-                                <div class="attcomptext" data-i18n="agi-u">AGI</div>
-                                <SELECT name="attr_combat_de" class="selde">
-                                    <OPTION value="4" SELECTED data-i18n="d4">&nbsp;d4</OPTION>
-                                    <OPTION value="6" data-i18n="d6">&nbsp;d6</OPTION>
-                                    <OPTION value="8" data-i18n="d8">&nbsp;d8</OPTION>
-                                    <OPTION value="10" data-i18n="d10">d10</OPTION>
-                                    <OPTION value="12" data-i18n="d12">d12</OPTION>
-                                </SELECT>
-                                + <input type="number" class="selde" name="attr_combat_bonus" value="-2" min="-9" />
-                            </div>
+                        <div class="input chkCombat ">
+                            <!-- COMBAT -->
+                            <button type="roll" 
+                                name="Btrel-Combat" 
+                                class="btRolrel" 
+                                value="@{relRollCombat}" 
+                                data-i18n="combat">Combat</button>
+                            <button type="roll" 
+                                name="Btjet-Combat" 
+                                class="btRoljet" 
+                                value="@{jetRollCombat}" 
+                                data-i18n="combat">Combat</button>
+                            <button type="roll" 
+                                name="BtBrut-Combat" 
+                                class="btRolbrut" 
+                                value="/em @{character_name} @{text_jet-de} @{text_combat}&#010;/roll @{RollBastCombat}" 
+                                data-i18n="combat">Combat</button>
+                            <div class="attcomptext" data-i18n="agi-u">AGI</div>
+                            <SELECT name="attr_combat_de" class="selde">
+                                <OPTION value="4" SELECTED data-i18n="d4">&nbsp;d4</OPTION>
+                                <OPTION value="6" data-i18n="d6">&nbsp;d6</OPTION>
+                                <OPTION value="8" data-i18n="d8">&nbsp;d8</OPTION>
+                                <OPTION value="10" data-i18n="d10">d10</OPTION>
+                                <OPTION value="12" data-i18n="d12">d12</OPTION>
+                            </SELECT>
+                            + <input type="number" class="selde" name="attr_combat_bonus" value="-2" min="-9" />
                         </div>
                         <!-- FIN COMBAT -->
                         <div class="input chkConduite">
@@ -605,34 +603,32 @@
                             + <input type="number" class="selde" name="attr_thieverie_bonus" value="-2" min="-9" />
                         </div>
                         <!-- FIN CAMBRIOLE -->
-                        <div class="SheetSaWo SheetInterface">
-                            <div class="input chkElectronics">
-                                <!-- ELECTRONICS -->
-                                <button type="roll" 
-                                    name="Btrel-Electronics" 
-                                    class="btRolrel" 
-                                    value="@{relRollElectronics}" 
-                                    data-i18n="electronics">Électronique</button>
-                                <button type="roll" 
-                                    name="Btjet-Electronics" 
-                                    class="btRoljet" 
-                                    value="@{jetRollElectronics}" 
-                                    data-i18n="electronics">Électronique</button>
-                                <button type="roll" 
-                                    name="BtBrut-Electronics" 
-                                    class="btRolbrut" 
-                                    value="/em @{character_name} @{text_jet-de} @{text_electronics}&#010;/roll @{RollElectronics}" 
-                                    data-i18n="electronics">Électronique</button>
-                                <div class="attcomptext" data-i18n="int-u">INT</div>
-                                <SELECT name="attr_electronics_de" class="selde">
-                                    <OPTION value="4" SELECTED data-i18n="d4">&nbsp;d4</OPTION>
-                                    <OPTION value="6" data-i18n="d6">&nbsp;d6</OPTION>
-                                    <OPTION value="8" data-i18n="d8">&nbsp;d8</OPTION>
-                                    <OPTION value="10" data-i18n="d10">d10</OPTION>
-                                    <OPTION value="12" data-i18n="d12">d12</OPTION>
-                                </SELECT>
-                                + <input type="number" class="selde" name="attr_electronics_bonus" value="-2" min="-9" />
-                            </div>
+                        <div class="input chkElectronics">
+                            <!-- ELECTRONICS -->
+                            <button type="roll" 
+                                name="Btrel-Electronics" 
+                                class="btRolrel" 
+                                value="@{relRollElectronics}" 
+                                data-i18n="electronics">Électronique</button>
+                            <button type="roll" 
+                                name="Btjet-Electronics" 
+                                class="btRoljet" 
+                                value="@{jetRollElectronics}" 
+                                data-i18n="electronics">Électronique</button>
+                            <button type="roll" 
+                                name="BtBrut-Electronics" 
+                                class="btRolbrut" 
+                                value="/em @{character_name} @{text_jet-de} @{text_electronics}&#010;/roll @{RollElectronics}" 
+                                data-i18n="electronics">Électronique</button>
+                            <div class="attcomptext" data-i18n="int-u">INT</div>
+                            <SELECT name="attr_electronics_de" class="selde">
+                                <OPTION value="4" SELECTED data-i18n="d4">&nbsp;d4</OPTION>
+                                <OPTION value="6" data-i18n="d6">&nbsp;d6</OPTION>
+                                <OPTION value="8" data-i18n="d8">&nbsp;d8</OPTION>
+                                <OPTION value="10" data-i18n="d10">d10</OPTION>
+                                <OPTION value="12" data-i18n="d12">d12</OPTION>
+                            </SELECT>
+                            + <input type="number" class="selde" name="attr_electronics_bonus" value="-2" min="-9" />
                         </div>
                         <!-- FIN ELECTRONICS -->
                         <div class="input chkEquitation">
@@ -754,14 +750,14 @@
                             <button type="roll" name="BtBrut-Language" class="btRolbrut" value="/em @{character_name} @{text_jet-de} @{text_language}&#010;/roll @{RollLanguage}" data-i18n="language">Langage</button>
                             <input type="text" class="compspe" name="attr_language_name" data-i18n-placeholder="language" placeholder="Language" value="" data-i18n-title="language-skill-name" title="Langue correspondant à cette compétence" />
                             <div class="attcomptext" data-i18n="int-u">INT</div>
-                            <SELECT name="attr_jeu_de" class="selde">
+                            <SELECT name="attr_language_de" class="selde">
                                 <OPTION value="4" SELECTED data-i18n="d4">&nbsp;d4</OPTION>
                                 <OPTION value="6" data-i18n="d6">&nbsp;d6</OPTION>
                                 <OPTION value="8" data-i18n="d8">&nbsp;d8</OPTION>
                                 <OPTION value="10" data-i18n="d10">d10</OPTION>
                                 <OPTION value="12" data-i18n="d12">d12</OPTION>
                             </SELECT> +
-                            <input type="number" class="selde" name="attr_jeu_bonus" value="-2" min="-9" />
+                            <input type="number" class="selde" name="attr_language_bonus" value="-2" min="-9" />
                         </div>
                         <!-- FIN LANGUAGE -->
                         <div class="input chkNavigation">
@@ -1032,6 +1028,25 @@
                     </div>
                 </div>
                 <!-- FIN COMPETENCES -->
+                <div>
+                    <div class="redtitle2 disp SheetInterface" data-i18n="languages">LANGUES</div>
+                    <input type="checkbox" name="attr_dispLanguages" class="dispchk" data-i18n-title="show-hide-content" title="Afficher/masquer le contenu" checked /><span class="dispchk">E</span>
+                    <fieldset class="repeating_languages">
+                        <button type="roll" name="Btrel-Language2" class="btRolrel" value="&{template:sawo} {{etat=[[@{templateetat}]]}} {{name=@{language_name2}}} {{perso=@{character_name}}} {{secoue=[[@{secoue}]]}} {{distracted=[[@{distracted}]]}} {{vulnerable=[[@{vulnerable}]]}} {{entangled=[[@{entangled}]]}} {{bound=[[@{bound}]]}} {{sonne=[[@{sonne}]]}} {{relances=[[  { floor( ( { { 1d@{language_de2}!![@{language_name2}],@{joker_de}!![@{text_joker}]}kh1 + (@{language_bonus2})[@{text_bonus}] - @{malusblessures}[@{text_blessures}] - @{malusfatigue}[@{text_fatigue}] - @{malusDistracted}[@{text_distracted}] + @{rollmodquery} } ) /(@{rolldiffquery}), 0d0 }kh1 - 1 ]]}} {{blessures=[[@{blessures}]]}} {{fatigue=[[@{fatigue}]]}}">&nbsp;</button>
+                        <button type="roll" name="Btjet-Language2" class="btRoljet" value="&{template:sawo} {{etat=[[@{templateetat}]]}} {{name=@{language_name2}}} {{perso=@{character_name}}} {{secoue=[[@{secoue}]]}} {{distracted=[[@{distracted}]]}} {{vulnerable=[[@{vulnerable}]]}} {{entangled=[[@{entangled}]]}} {{bound=[[@{bound}]]}} {{sonne=[[@{sonne}]]}} {{jet=[[{ 1d@{language_de2}!![@{language_name2}],@{joker_de}!![@{text_joker}]}kh1 + (@{language_bonus2})[@{text_bonus}] - @{malusblessures}[@{text_blessures}] - @{malusfatigue}[@{text_fatigue}] - @{malusDistracted}[@{text_distracted}] + @{rollmodquery}]]}} {{blessures=[[@{blessures}]]}} {{fatigue=[[@{fatigue}]]}}">&nbsp;</button>
+                        <button type="roll" name="BtBrut-Language2" class="btRolbrut" value="/em @{character_name} @{text_jet-de} @{language_name2}&#010;/roll { 1d@{language_de2}!![@{comp_nom}],@{joker_de}!![@{text_joker}]}kh1 + (@{language_bonus2})[@{text_bonus}] - @{malusblessures}[@{text_blessures}] - @{malusfatigue}[@{text_fatigue}] - @{malusDistracted}[@{text_distracted}] + @{rollmodquery}">&nbsp;</button>
+                        <input type="text" class="compspe" name="attr_language_name2" data-i18n-placeholder="language" placeholder="Langue" />
+                        <div class="attcomptext" data-i18n="int-u">(INT)</div>
+                        <SELECT name="attr_language_de2" class="selde">
+                            <OPTION value="4" data-i18n="d4">&nbsp;d4</OPTION>
+                            <OPTION value="6" SELECTED data-i18n="d6">&nbsp;d6</OPTION>
+                            <OPTION value="8" data-i18n="d8">&nbsp;d8</OPTION>
+                            <OPTION value="10" data-i18n="d10">d10</OPTION>
+                            <OPTION value="12" data-i18n="d12">d12</OPTION>
+                        </SELECT> +
+                        <input type="number" class="selde" name="attr_language_bonus2" value="0" />
+                    </fieldset>
+                </div>
             </div>
             <!-- FIN TRAITS -->
         </div>
@@ -1131,6 +1146,27 @@
                         <input type="number" name="attr_resistance_base" value="4" data-i18n-title="base-resistance" title="Valeur de Résistance de base" readonly /> +
                         <input type="number" name="attr_resistance_bonus" value="0" data-i18n-title="bonus-resistance" title="Armure (torse) et autres bonus de vigueur" /> =
                         <input type="number" name="attr_resistance" value="4" data-i18n-title="total-resistance" title="Résistance totale" readonly />
+                    </div>
+                    <div class="input SheetInterface">
+                        <div class="comptext" data-i18n="strain-u">Cyber Tension</div>
+                        <input type="number" name="attr_strain_base" value="0" data-i18n-title="base-strain" title="Valeur de la cybertension"/> / 
+                        <input type="number" name="attr_strain_limit" value="4" data-i18n-title="limit-strain" title="Valeur maximale de la cybertension" readonly/>
+                    </div>
+                    <div class="input SheetInterface">
+                        <div class="comptext" data-i18n="street-cred-u">Réputation</div>
+                        <div>
+                            <button type="roll" name="Btrel-StreetCred" class="btRolrel" value="@{relRollStreetCred}" data-i18n="streetcred">Réputation</button>
+                            <button type="roll" name="Btjet-StreetCred" class="btRoljet" value="@{jetRollStreetCred}" data-i18n="streetcred">Réputation</button>
+                            <button type="roll" name="BtBrut-StreetCred" class="btRolbrut" value="/em @{character_name} @{text_jet-de} @{text_streetcred}&#010;/roll @{RollStreetCred}" data-i18n="streetcred">Réputation</button>
+                            <SELECT name="attr_streetcred_de" class="selde">
+                                    <OPTION value="4" data-i18n="d4">&nbsp;d4</OPTION>
+                                    <OPTION value="6" SELECTED data-i18n="d6">&nbsp;d6</OPTION>
+                                    <OPTION value="8" data-i18n="d8">&nbsp;d8</OPTION>
+                                    <OPTION value="10" data-i18n="d10">d10</OPTION>
+                                    <OPTION value="12" data-i18n="d12">d12</OPTION>
+                            </SELECT>
+                            +<input type="number" class="selde" name="attr_streetcred_bonus" value="0" min="-9" />
+                        </div>
                     </div>
                     <div class="input SheetDead">
                         <div class="comptext" data-i18n="trempe">TREMPE</div>
@@ -1742,25 +1778,25 @@
                 <input type="checkbox" name="attr_chkCombat" value="1" class="chkSkill" checked /><span data-i18n="combat">Combat</span>
                 <input type="checkbox" name="attr_chkConduite" value="1" class="chkSkill" checked /><span data-i18n="conduite">Conduite</span>
                 <input type="checkbox" name="attr_chkThieverie" value="1" class="chkSkill" checked /><span data-i18n="thieverie">Cambriole</span>
-                <input type="checkbox" name="attr_chkElectronics" value="1" class="chkSkill" /><span data-i18n="electronics">Electronique</span>
+                <input type="checkbox" name="attr_chkElectronics" value="1" class="chkSkill" checked/><span data-i18n="electronics">Electronique</span>
                 <input type="checkbox" name="attr_chkEquitation" value="1" class="chkSkill" checked /><span data-i18n="equitation">Équitation</span>
                 <input type="checkbox" name="attr_chkIntimidation" value="1" class="chkSkill" checked /><span data-i18n="intimidation">Intimidation</span>
-                <input type="checkbox" name="attr_chkFocus" value="1" class="chkSkill" /><span data-i18n="focus">Focus</span>
-                <input type="checkbox" name="attr_chkFaith" value="1" class="chkSkill" /><span data-i18n="faith">Foi</span>
-                <input type="checkbox" name="attr_chkHacking" value="1" class="chkSkill" /><span data-i18n="hacking">Hacking</span>
+                <input type="checkbox" name="attr_chkFocus" value="1" class="chkSkill" checked/><span data-i18n="focus">Focus</span>
+                <input type="checkbox" name="attr_chkFaith" value="1" class="chkSkill" checked/><span data-i18n="faith">Foi</span>
+                <input type="checkbox" name="attr_chkHacking" value="1" class="chkSkill" checked/><span data-i18n="hacking">Hacking</span>
                 <input type="checkbox" name="attr_chkJeu" value="1" class="chkSkill" checked /><span data-i18n="jeu">Jeu</span>
                 <input type="checkbox" name="attr_chkLanguage" value=1 class="chkSkill" checked/><span data-i18n="language">Langue</span>
                 <input type="checkbox" name="attr_chkNavigation" value="1" class="chkSkill" checked /><span data-i18n="navigation">Navigation</span>
-                <input type="checkbox" name="attr_chkOccultism" value="1" class="chkSkill" /><span data-i18n="occult">Occultisme</span>
+                <input type="checkbox" name="attr_chkOccultism" value="1" class="chkSkill" checked/><span data-i18n="occult">Occultisme</span>
                 <input type="checkbox" name="attr_chkPilotage" value="1" class="chkSkill" checked /><span data-i18n="pilotage">Pilotage</span>
-                <input type="checkbox" name="attr_chkPsionic" value="1" class="chkSkill" /><span data-i18n="psionics">Psionique</span>
+                <input type="checkbox" name="attr_chkPsionic" value="1" class="chkSkill" checked/><span data-i18n="psionics">Psionique</span>
                 <input type="checkbox" name="attr_chkRecherche" value="1" class="chkSkill" checked /><span data-i18n="recherche">Recherche</span>
                 <input type="checkbox" name="attr_chkReparation" value="1" class="chkSkill" checked /><span data-i18n="reparation">Réparation</span>
                 <input type="checkbox" name="attr_chkSarcasme" value="1" class="chkSkill" checked /><span data-i18n="sarcasme">Sarcasme</span>
                 <input type="checkbox" name="attr_chkScience" value="1" class="chkSkill" checked /><span data-i18n="science">Science</span>
-                <input type="checkbox" name="attr_chkWeirdScience" value="1" class="chkSkill" /><span data-i18n="weirdscience">Science Etrange</span>
-                <input type="checkbox" name="attr_chkSoins" value="1" class="chkSkill" checked /><span data-i18n="soins">Soins</span>
-                <input type="checkbox" name="attr_chkSpellcasting" value="1" class="chkSkill" /><span data-i18n="spellcasting">Sorcellerie</span>
+                <input type="checkbox" name="attr_chkWeirdScience" value="1" class="chkSkill" checked/><span data-i18n="weirdscience">Science Etrange</span>
+                <input type="checkbox" name="attr_chkSoins" value="1" class="chkSkill" checked checked/><span data-i18n="soins">Soins</span>
+                <input type="checkbox" name="attr_chkSpellcasting" value="1" class="chkSkill" checked/><span data-i18n="spellcasting">Sorcellerie</span>
                 <input type="checkbox" name="attr_chkSurvie" value="1" class="chkSkill" checked /><span data-i18n="survie">Survie</span>
                 <input type="checkbox" name="attr_chkTir" value="1" class="chkSkill" checked /><span data-i18n="tir">Tir</span>
                 <input type="checkbox" name="attr_chkAcademics" value="1" class="chkSkill" checked /><span data-i18n="academics">Universalis</span>
@@ -2125,6 +2161,11 @@
     <input type="hiden" name="attr_RollRequisition" value="{ 1d@{requisition_de}!![@{text_requisition}],@{joker_de}!![@{text_joker}]}kh1 + @{rollmodquery}" />
     <input type="hidden" name="attr_relRollRequisition" value="&{template:sawo} {{etat=[[@{templateetat}]]}} {{name=@{text_requisition}}} {{perso=@{character_name}}} {{secoue=[[@{secoue}]]}} {{distracted=[[@{distracted}]]}} {{vulnerable=[[@{vulnerable}]]}} {{entangled=[[@{entangled}]]}} {{bound=[[@{bound}]]}} {{sonne=[[@{sonne}]]}} {{relances=[[  { floor( ( { @{RollRequisition} } ) /(@{rolldiffquery}), 0d0 }kh1 - 1 ]]}}" />
     <input type="hidden" name="attr_jetRollRequisition" value="&{template:sawo} {{etat=[[@{templateetat}]]}} {{name=@{text_requisition}}} {{perso=@{character_name}}} {{secoue=[[@{secoue}]]}} {{distracted=[[@{distracted}]]}} {{vulnerable=[[@{vulnerable}]]}} {{entangled=[[@{entangled}]]}} {{bound=[[@{bound}]]}} {{sonne=[[@{sonne}]]}} {{jet=[[@{RollRequisition}]]}}" />
+
+    <!-- Requisition -->
+    <input type="hiden" name="attr_RollStreetCred" value="{ 1d@{streetcred_de}!![@{text_streetcred}],@{joker_de}!![@{text_joker}]}kh1 + @{streetcred_bonus}[@text_bonus] + @{rollmodquery}" />
+    <input type="hidden" name="attr_relRollStreetCred" value="&{template:sawo} {{etat=[[@{templateetat}]]}} {{name=@{text_streetcred}}} {{perso=@{character_name}}} {{relances=[[  { floor( ( { @{RollStreetCred} } ) /(@{rolldiffquery}), 0d0 }kh1 - 1 ]]}}" />
+    <input type="hidden" name="attr_jetRollStreetCred" value="&{template:sawo} {{etat=[[@{templateetat}]]}} {{name=@{text_streetcred}}} {{perso=@{character_name}}} {{jet=[[@{RollStreetCred}]]}}" />
 
     <!-- *** HIDDEN ROLLS  & ATTRIBUTES ** -->
 
