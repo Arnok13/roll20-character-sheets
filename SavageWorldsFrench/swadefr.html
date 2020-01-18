@@ -1243,40 +1243,55 @@
             </div>
             <!-- END Crystal Description -->
             <div class="colblock SheetInterface">
-                    <!-- TAP Description-->
-                    <div class="redtitle1 disp" data-i18n="tap-naming">Tendril Access Processor (TAP)</div>
-                    <input type="checkbox" name="attr_dispTap" value="1" class="dispchk" data-i18n-title="show-hide-content" title="Afficher/masquer le contenu" checked /><span class="dispchk">E</span>
-                    <div class="dispchk">
-                        <div class="input">
-                                <div class="blacktext1" data-i18n="firewall_name-u">Firewall :</div>
-                                <input type="number" name="attr_Firewall_value" value="" data-i18n-title="firewall_value" /> 
-                        </div>
-                        <div class="blacktext1" data-i18n="tap_sprite-u">Sprite :</div>
-                        <div class="input">
-                            <div class="redtitle2" style="display: inline-block;width: 140px;" data-i18n="crystal_benefits">Bénéfices</div>
-                        </div>
-                        <div class="input">
-                            <input type="text" style="width: 260px;" name="attr_benefitsname" data-i18n-placeholder="benefits" placeholder="Benefits" />
-                        </div>
-                        <div>
-                                <div class="redtitle2" style="display: inline-block;width: 140px;" data-i18n="disposition">Tempérament</div>
-                        </div>
-                        <div class="input">
-                            <input type="text" style="width: 260px;" name="attr_dispositionname" data-i18n-placeholder="disposition" placeholder="Disposition" />
-                        </div>
-                        <div>
-                                <div class="redtitle2" style="display: inline-block;width: 140px;" data-i18n="crystalpower">Pouvoirs</div>
-                        </div>
-                        <fieldset class="repeating_crystalpower">
-                                <div class="input">
-                                    <button type="roll" name="Btrel-CrystalPower" class="btRolrel" value="&{template:sawo} {{etat=[[@{templateetat}]]}} {{name=@{crystalpower_name}}} {{perso=@{character_name}}} {{secoue=[[@{secoue}]]}} {{distracted=[[@{distracted}]]}} {{vulnerable=[[@{vulnerable}]]}} {{entangled=[[@{entangled}]]}} {{bound=[[@{bound}]]}} {{sonne=[[@{sonne}]]}} {{relances=[[  { floor( ( { { 1d@{crystal_de}!![@{crystalpower_name}],@{joker_de}!![@{text_joker}]}kh1 + (@{crystal_bonus})[@{text_bonus}] - @{malusblessures}[@{text_blessures}] - @{malusfatigue}[@{text_fatigue}] - @{malusDistracted}[@{text_distracted}] + @{crystalpowermodifier}[@{text_crystalpowermodifier}] + @{rollmodquery} } ) /(@{rolldiffquery}), 0d0 }kh1 - 1 ]]}} {{blessures=[[@{blessures}]]}} {{fatigue=[[@{fatigue}]]}}">&nbsp;</button>
-                                    <button type="roll" name="Btjet-CrystalPower" class="btRoljet" value="&{template:sawo} {{etat=[[@{templateetat}]]}} {{name=@{crystalpower_name}}} {{perso=@{character_name}}} {{secoue=[[@{secoue}]]}} {{distracted=[[@{distracted}]]}} {{vulnerable=[[@{vulnerable}]]}} {{entangled=[[@{entangled}]]}} {{bound=[[@{bound}]]}} {{sonne=[[@{sonne}]]}} {{jet=[[{ 1d@{crystal_de}!![@{crystalpower_name}],@{joker_de}!![@{text_joker}]}kh1 + (@{crystal_bonus})[@{text_bonus}] - @{malusblessures}[@{text_blessures}] - @{malusfatigue}[@{text_fatigue}] - @{malusDistracted}[@{text_distracted}] + @{crystalpowermodifier}[@{text_crystalpowermodifier}] + @{rollmodquery}]]}} {{blessures=[[@{blessures}]]}} {{fatigue=[[@{fatigue}]]}}">&nbsp;</button>
-                                    <button type="roll" name="BtBrut-CrystalPower" class="btRolbrut" value="/em @{character_name} @{text_jet-de} @{crystalpower_name}&#010;/roll { 1d@{crystal_de}!![@{crystalpower_name}],@{joker_de}!![@{text_joker}]}kh1 + (@{crystal_bonus})[@{text_bonus}] - @{malusblessures}[@{text_blessures}] - @{malusfatigue}[@{text_fatigue}] - @{malusDistracted}[@{text_distracted}] + @{crystalpowermodifier}[@{text_crystalpowermodifier}] + @{rollmodquery}">&nbsp;</button>
-                                    <input type="text" class="compspe" style="width: 200px;" name="attr_crystalpower_name" data-i18n-placeholder="crystalpower" placeholder="Crystal Power" />
-                                    <input type="number" style="width: 35px;" name="attr_crystalpowermodifier" data-i18n-placeholder="crystalpowermodifier" value="0" placeholder="Crystal Power Modifier" />
-                                </div>
-                        </fieldset>
-                        </div>
+                <!-- TAP Description-->
+                <div class="redtitle1 disp" data-i18n="tap-naming">Tendril Access Processor (TAP)</div>
+                <input type="checkbox" name="attr_dispTap" value="1" class="dispchk" data-i18n-title="show-hide-content" title="Afficher/masquer le contenu" checked /><span class="dispchk">E</span>
+                <div class="dispchk">
+                    <div class="input">
+                            <div class="blacktext1" data-i18n="firewall_name-u">Firewall :</div>
+                            <input type="number" name="attr_Firewall_value" value="" data-i18n-title="firewall_value" /> 
+                    </div>
+                    <div class="blacktext1" data-i18n="tap_sprite-u">Sprite :</div>
+                    <div class="blacktext2" data-i18n="dejoker">Dé Joker</div>
+                    <SELECT name="attr_sprite_joker_de" class="selde joker">
+                        <OPTION value="0d4" SELECTED>&nbsp;-</OPTION>
+                        <OPTION value="1d4" data-i18n="d4">&nbsp;d4</OPTION>
+                        <OPTION value="1d6" data-i18n="d6">&nbsp;d6</OPTION>
+                        <OPTION value="1d8" data-i18n="d8">&nbsp;d8</OPTION>
+                        <OPTION value="1d10" data-i18n="d10">d10</OPTION>
+                        <OPTION value="1d12" data-i18n="d12">d12</OPTION>
+                    </SELECT> 
+                    <div class="input">
+                        <div class="redtitle2" style="display: inline-block;width: 140px;" data-i18n="tap_rank">Rang</div>
+                    </div>
+                    <div class="input">
+                        <input type="" style="width: 260px;" name="attr_taprankname" data-i18n-placeholder="tapRank" placeholder="Rang du tap" />
+                    </div>
+                    <div>
+                        <div class="redtitle2" style="display: inline-block;width: 140px;" data-i18n="tap_range">Portée du TAP</div>
+                    </div>
+                    <div class="input">
+                        <input type="text" style="width: 260px;" name="attr_taprange" data-i18n-placeholder="tap_range" placeholder="Porté du TAP" />
+                    </div>
+                    <div>
+                        <div class="redtitle2" style="display: inline-block;width: 140px;" data-i18n="tapSkills">Statistiques du Sprite</div>
+                    </div>
+                    <fieldset class="repeating_tapSkill">
+                            <div class="input">
+                                <button type="roll" name="Btrel-TapSkill" class="btRolrel" value="&{template:sawo} {{name=@{tapSkill_name}}} {{perso=@{character_name}}} {{relances=[[  { floor( ( { { 1d@{tapSkill_de}!![@tapSkill_name}],@{sprite_joker_de}!![@{text_joker}]}kh1 + @{rollmodquery} } ) /(@{rolldiffquery}), 0d0 }kh1 - 1 ]]}} ">&nbsp;</button>
+                                <button type="roll" name="Btjet-TapSkill" class="btRoljet" value="&{template:sawo} {{name=@{tapSkill_name}}} {{perso=@{character_name}}} {{jet=[[{ 1d@{tapSkill_de}!![@{tapSkill_name}],@{sprit_joker_de}!![@{text_joker}]}kh1 + @{rollmodquery}]]}} ">&nbsp;</button>
+                                <button type="roll" name="BtBrut-TapSkill" class="btRolbrut" value="/em @{character_name} @{text_jet-de} @{tapSkill_name}&#010;/roll { 1d@{tapSkill_de}!![@{tapSkill_name}],@{sprite_joker_de}!![@{text_joker}]}kh1 + @{rollmodquery}">&nbsp;</button>
+                                <input type="text" class="compspe" style="width: 200px;" name="attr_tapSkill_name" data-i18n-placeholder="tapSkillName" placeholder="TAP Skill" />
+                                <SELECT name="attr_tapSkill_de" class="selde">
+                                    <OPTION value="4" SELECTED data-i18n="d4">&nbsp;d4</OPTION>
+                                    <OPTION value="6" data-i18n="d6">&nbsp;d6</OPTION>
+                                    <OPTION value="8" data-i18n="d8">&nbsp;d8</OPTION>
+                                    <OPTION value="10" data-i18n="d10">d10</OPTION>
+                                    <OPTION value="12" data-i18n="d12">d12</OPTION>
+                                </SELECT>
+                            </div>
+                    </fieldset>
+                    </div>
                 </div>
                 <!-- END TAP Description -->
         </div>

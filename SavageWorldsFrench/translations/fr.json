@@ -277,5 +277,13 @@
     "iwm_one": "Un niveau",
     "iwm_two": "Deux niveaux",
     "fatiguemanager" : "Niveau de Fatigue",
-    "text_requisition" : "Réquisition"
+    "text_requisition" : "Réquisition",
+    "tap-naming" : "Tendril Access Processor",
+    "firewall_name-u" : "Firewall :",
+    "tap_sprite-u" : "Sprite :",
+    "tap_rank" : "Rang",
+    "tapRank" : "Rang du TAP",
+    "tap_range" : "Portée du TAP",
+    "tapSkills" : "Statistiques du Sprite",
+    "tapSkillName" : "Compétences du Sprite"
 }
