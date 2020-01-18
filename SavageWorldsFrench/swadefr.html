@@ -605,7 +605,7 @@
                             + <input type="number" class="selde" name="attr_thieverie_bonus" value="-2" min="-9" />
                         </div>
                         <!-- FIN CAMBRIOLE -->
-                        <div class="SheetSaWo SheetInterface SheetParsec">
+                        <div class="SheetSaWo SheetInterface">
                             <div class="input chkElectronics">
                                 <!-- ELECTRONICS -->
                                 <button type="roll" 
@@ -652,35 +652,35 @@
                         </div>
                         <!-- FIN ÉQUITATION -->
                         <div class="input SheetCrystal">
-                                <!-- Ingeneering -->
-                                <button type="roll" name="Btrel-Ingeneering" class="btRolrel" value="@{relRollIngeneering}" data-i18n="ingeneering">Ingenierie</button>
-                                <button type="roll" name="Btjet-Ingeneering" class="btRoljet" value="@{jetRollIngeneering}" data-i18n="ingeneering">Ingenierie</button>
-                                <button type="roll" name="BtBrut-Ingeneering" class="btRolbrut" value="/em @{character_name} @{text_jet-de} @{text_ingeneering}&#010;/roll @{RollIngeneering}" data-i18n="ingeneering">Ingenierie</button>
-                                <div class="attcomptext" data-i18n="int-u">INT</div>
-                                <SELECT name="attr_ingeneering_de" class="selde">
-                                    <OPTION value="4" SELECTED data-i18n="d4">&nbsp;d4</OPTION>
-                                    <OPTION value="6" data-i18n="d6">&nbsp;d6</OPTION>
-                                    <OPTION value="8" data-i18n="d8">&nbsp;d8</OPTION>
-                                    <OPTION value="10" data-i18n="d10">d10</OPTION>
-                                    <OPTION value="12" data-i18n="d12">d12</OPTION>
-                                </SELECT> +
-                                <input type="number" class="selde" name="attr_ingeneering_bonus" value="-2" min="-9" />
-                            </div>
-                            <!-- FIN INTIMIDATION -->
-                            <div class="input chkIntimidation">
-                            <!-- INTIMIDATION -->
-                            <button type="roll" name="Btrel-Intimidation" class="btRolrel" value="@{relRollIntimidation}" data-i18n="intimidation">Intimidation</button>
-                            <button type="roll" name="Btjet-Intimidation" class="btRoljet" value="@{jetRollIntimidation}" data-i18n="intimidation">Intimidation</button>
-                            <button type="roll" name="BtBrut-Intimidation" class="btRolbrut" value="/em @{character_name} @{text_jet-de} @{text_intimidation}&#010;/roll @{RollIntimidation}" data-i18n="intimidation">Intimidation</button>
-                            <div class="attcomptext" data-i18n="ame-u">ÂME</div>
-                            <SELECT name="attr_intimidation_de" class="selde">
+                            <!-- Ingeneering -->
+                            <button type="roll" name="Btrel-Ingeneering" class="btRolrel" value="@{relRollIngeneering}" data-i18n="ingeneering">Ingenierie</button>
+                            <button type="roll" name="Btjet-Ingeneering" class="btRoljet" value="@{jetRollIngeneering}" data-i18n="ingeneering">Ingenierie</button>
+                            <button type="roll" name="BtBrut-Ingeneering" class="btRolbrut" value="/em @{character_name} @{text_jet-de} @{text_ingeneering}&#010;/roll @{RollIngeneering}" data-i18n="ingeneering">Ingenierie</button>
+                            <div class="attcomptext" data-i18n="int-u">INT</div>
+                            <SELECT name="attr_ingeneering_de" class="selde">
                                 <OPTION value="4" SELECTED data-i18n="d4">&nbsp;d4</OPTION>
                                 <OPTION value="6" data-i18n="d6">&nbsp;d6</OPTION>
                                 <OPTION value="8" data-i18n="d8">&nbsp;d8</OPTION>
                                 <OPTION value="10" data-i18n="d10">d10</OPTION>
                                 <OPTION value="12" data-i18n="d12">d12</OPTION>
                             </SELECT> +
-                            <input type="number" class="selde" name="attr_intimidation_bonus" value="-2" min="-9" />
+                            <input type="number" class="selde" name="attr_ingeneering_bonus" value="-2" min="-9" />
+                        </div>
+                        <!-- FIN INTIMIDATION -->
+                        <div class="input chkIntimidation">
+                        <!-- INTIMIDATION -->
+                        <button type="roll" name="Btrel-Intimidation" class="btRolrel" value="@{relRollIntimidation}" data-i18n="intimidation">Intimidation</button>
+                        <button type="roll" name="Btjet-Intimidation" class="btRoljet" value="@{jetRollIntimidation}" data-i18n="intimidation">Intimidation</button>
+                        <button type="roll" name="BtBrut-Intimidation" class="btRolbrut" value="/em @{character_name} @{text_jet-de} @{text_intimidation}&#010;/roll @{RollIntimidation}" data-i18n="intimidation">Intimidation</button>
+                        <div class="attcomptext" data-i18n="ame-u">ÂME</div>
+                        <SELECT name="attr_intimidation_de" class="selde">
+                            <OPTION value="4" SELECTED data-i18n="d4">&nbsp;d4</OPTION>
+                            <OPTION value="6" data-i18n="d6">&nbsp;d6</OPTION>
+                            <OPTION value="8" data-i18n="d8">&nbsp;d8</OPTION>
+                            <OPTION value="10" data-i18n="d10">d10</OPTION>
+                            <OPTION value="12" data-i18n="d12">d12</OPTION>
+                        </SELECT> +
+                        <input type="number" class="selde" name="attr_intimidation_bonus" value="-2" min="-9" />
                         </div>
                         <!-- FIN INTIMIDATION -->
                         <div class="input chkFocus">
@@ -747,23 +747,21 @@
                             <input type="number" class="selde" name="attr_jeu_bonus" value="-2" min="-9" />
                         </div>
                         <!-- FIN JEU -->
-                        <div class= "SheetBnB SheetDead SheetLankh SheetSaWo">
-                            <div class="input chkLanguage ">
-                                <!-- LANGUAGE -->
-                                <button type="roll" name="Btrel-Language" class="btRolrel" value="@{relRollLanguage}" data-i18n="language">Langage</button>
-                                <button type="roll" name="Btjet-Language" class="btRoljet" value="@{jetRollLanguage}" data-i18n="language">Langage</button>
-                                <button type="roll" name="BtBrut-Language" class="btRolbrut" value="/em @{character_name} @{text_jet-de} @{text_language}&#010;/roll @{RollLanguage}" data-i18n="language">Langage</button>
-                                <input type="text" class="compspe" name="attr_language_name" data-i18n-placeholder="language" placeholder="Language" value="" data-i18n-title="language-skill-name" title="Langue correspondant à cette compétence" />
-                                <div class="attcomptext" data-i18n="int-u">INT</div>
-                                <SELECT name="attr_jeu_de" class="selde">
-                                    <OPTION value="4" SELECTED data-i18n="d4">&nbsp;d4</OPTION>
-                                    <OPTION value="6" data-i18n="d6">&nbsp;d6</OPTION>
-                                    <OPTION value="8" data-i18n="d8">&nbsp;d8</OPTION>
-                                    <OPTION value="10" data-i18n="d10">d10</OPTION>
-                                    <OPTION value="12" data-i18n="d12">d12</OPTION>
-                                </SELECT> +
-                                <input type="number" class="selde" name="attr_jeu_bonus" value="-2" min="-9" />
-                            </div>
+                        <div class="input chkLanguage ">
+                            <!-- LANGUAGE -->
+                            <button type="roll" name="Btrel-Language" class="btRolrel" value="@{relRollLanguage}" data-i18n="language">Langage</button>
+                            <button type="roll" name="Btjet-Language" class="btRoljet" value="@{jetRollLanguage}" data-i18n="language">Langage</button>
+                            <button type="roll" name="BtBrut-Language" class="btRolbrut" value="/em @{character_name} @{text_jet-de} @{text_language}&#010;/roll @{RollLanguage}" data-i18n="language">Langage</button>
+                            <input type="text" class="compspe" name="attr_language_name" data-i18n-placeholder="language" placeholder="Language" value="" data-i18n-title="language-skill-name" title="Langue correspondant à cette compétence" />
+                            <div class="attcomptext" data-i18n="int-u">INT</div>
+                            <SELECT name="attr_jeu_de" class="selde">
+                                <OPTION value="4" SELECTED data-i18n="d4">&nbsp;d4</OPTION>
+                                <OPTION value="6" data-i18n="d6">&nbsp;d6</OPTION>
+                                <OPTION value="8" data-i18n="d8">&nbsp;d8</OPTION>
+                                <OPTION value="10" data-i18n="d10">d10</OPTION>
+                                <OPTION value="12" data-i18n="d12">d12</OPTION>
+                            </SELECT> +
+                            <input type="number" class="selde" name="attr_jeu_bonus" value="-2" min="-9" />
                         </div>
                         <!-- FIN LANGUAGE -->
                         <div class="input chkNavigation">
@@ -830,22 +828,20 @@
                             <input type="number" class="selde" name="attr_psionics_bonus" value="-2" min="-9" />
                         </div>
                         <!-- FIN PSIONICS -->
-                        <div class="SheetSaWo SheetDead SheetLankh SheetBnB SheetInterface SheetParsec">
-                            <div class="input chkReparation">
-                                <!-- RÉPARATION -->
-                                <button type="roll" name="Btrel-Reparation" class="btRolrel" value="@{relRollReparation}" data-i18n="reparation">Réparation</button>
-                                <button type="roll" name="Btjet-Reparation" class="btRoljet" value="@{jetRollReparation}" data-i18n="reparation">Réparation</button>
-                                <button type="roll" name="BtBrut-Reparation" class="btRolbrut" value="/em @{character_name} @{text_jet-de} @{text_reparation}&#010;/roll @{RollReparation}" data-i18n="reparation">Réparation</button>
-                                <div class="attcomptext" data-i18n="int-u">INT</div>
-                                <SELECT name="attr_reparation_de" class="selde">
-                                    <OPTION value="4" SELECTED data-i18n="d4">&nbsp;d4</OPTION>
-                                    <OPTION value="6" data-i18n="d6">&nbsp;d6</OPTION>
-                                    <OPTION value="8" data-i18n="d8">&nbsp;d8</OPTION>
-                                    <OPTION value="10" data-i18n="d10">d10</OPTION>
-                                    <OPTION value="12" data-i18n="d12">d12</OPTION>
-                                </SELECT> +
-                                <input type="number" class="selde" name="attr_reparation_bonus" value="-2" min="-9" />
-                            </div>
+                        <div class="input chkReparation">
+                            <!-- RÉPARATION -->
+                            <button type="roll" name="Btrel-Reparation" class="btRolrel" value="@{relRollReparation}" data-i18n="reparation">Réparation</button>
+                            <button type="roll" name="Btjet-Reparation" class="btRoljet" value="@{jetRollReparation}" data-i18n="reparation">Réparation</button>
+                            <button type="roll" name="BtBrut-Reparation" class="btRolbrut" value="/em @{character_name} @{text_jet-de} @{text_reparation}&#010;/roll @{RollReparation}" data-i18n="reparation">Réparation</button>
+                            <div class="attcomptext" data-i18n="int-u">INT</div>
+                            <SELECT name="attr_reparation_de" class="selde">
+                                <OPTION value="4" SELECTED data-i18n="d4">&nbsp;d4</OPTION>
+                                <OPTION value="6" data-i18n="d6">&nbsp;d6</OPTION>
+                                <OPTION value="8" data-i18n="d8">&nbsp;d8</OPTION>
+                                <OPTION value="10" data-i18n="d10">d10</OPTION>
+                                <OPTION value="12" data-i18n="d12">d12</OPTION>
+                            </SELECT> +
+                            <input type="number" class="selde" name="attr_reparation_bonus" value="-2" min="-9" />
                         </div>
                         <!-- FIN RÉPARATION -->
                         <div class="input chkRecherche">
@@ -880,22 +876,20 @@
                             <input type="number" class="selde" name="attr_sarcasme_bonus" value="-2" min="-9" />
                         </div>
                         <!-- FIN SARCASME -->
-                        <div class="SheetSaWo SheetDead SheetLankh SheetBnB SheetInterface SheetParsec">
-                            <div class="input chkScience">
-                                <!-- SCIENCE -->
-                                <button type="roll" name="Btrel-Science" class="btRolrel" value="@{relRollScience}" data-i18n="science">Science</button>
-                                <button type="roll" name="Btjet-Science" class="btRoljet" value="@{jetRollScience}" data-i18n="science">Science</button>
-                                <button type="roll" name="BtBrut-Science" class="btRolbrut" value="/em @{character_name} @{text_jet-de} @{text_science}&#010;/roll @{RollScience}" data-i18n="science">Science</button>
-                                <div class="attcomptext" data-i18n="int-u">INT</div>
-                                <SELECT name="attr_science_de" class="selde">
-                                    <OPTION value="4" SELECTED data-i18n="d4">&nbsp;d4</OPTION>
-                                    <OPTION value="6" data-i18n="d6">&nbsp;d6</OPTION>
-                                    <OPTION value="8" data-i18n="d8">&nbsp;d8</OPTION>
-                                    <OPTION value="10" data-i18n="d10">d10</OPTION>
-                                    <OPTION value="12" data-i18n="d12">d12</OPTION>
-                                </SELECT> +
-                                <input type="number" class="selde" name="attr_science_bonus" value="-2" min="-9" />
-                            </div>
+                        <div class="input chkScience">
+                            <!-- SCIENCE -->
+                            <button type="roll" name="Btrel-Science" class="btRolrel" value="@{relRollScience}" data-i18n="science">Science</button>
+                            <button type="roll" name="Btjet-Science" class="btRoljet" value="@{jetRollScience}" data-i18n="science">Science</button>
+                            <button type="roll" name="BtBrut-Science" class="btRolbrut" value="/em @{character_name} @{text_jet-de} @{text_science}&#010;/roll @{RollScience}" data-i18n="science">Science</button>
+                            <div class="attcomptext" data-i18n="int-u">INT</div>
+                            <SELECT name="attr_science_de" class="selde">
+                                <OPTION value="4" SELECTED data-i18n="d4">&nbsp;d4</OPTION>
+                                <OPTION value="6" data-i18n="d6">&nbsp;d6</OPTION>
+                                <OPTION value="8" data-i18n="d8">&nbsp;d8</OPTION>
+                                <OPTION value="10" data-i18n="d10">d10</OPTION>
+                                <OPTION value="12" data-i18n="d12">d12</OPTION>
+                            </SELECT> +
+                            <input type="number" class="selde" name="attr_science_bonus" value="-2" min="-9" />
                         </div>
                         <!-- FIN SCIENCE -->
                         <div class="input chkWeirdScience">
@@ -1730,52 +1724,28 @@
                 <!--<div class="row" style="text-align: center;"><input type="checkbox" name="attr_chkAllComp" value="1" class="chkSkill" title="Afficher/Masquer toutes les compétence" checked /><span data-i18n="toutes">Toutes</span></div>-->
                 <input type="checkbox" name="attr_chkPerformance" value="1" class="chkSkill" checked /><span data-i18n="performance">Artiste</span>
                 <input type="checkbox" name="attr_chkBattle" value="1" class="chkSkill" checked /><span data-i18n="battle">Batailles</span>
-                <div class="SheetSaWo SheetDead SheetLankh SheetBnB SheetInterface SheetParsec">                
-                    <input type="checkbox" name="attr_chkCombat" value="1" class="chkSkill" checked /><span data-i18n="combat">Combat</span>
-                </div>
+                <input type="checkbox" name="attr_chkCombat" value="1" class="chkSkill" checked /><span data-i18n="combat">Combat</span>
                 <input type="checkbox" name="attr_chkConduite" value="1" class="chkSkill" checked /><span data-i18n="conduite">Conduite</span>
                 <input type="checkbox" name="attr_chkThieverie" value="1" class="chkSkill" checked /><span data-i18n="thieverie">Cambriole</span>
-                <div class="SheetSaWo SheetInterface SheetParsec">
-                    <input type="checkbox" name="attr_chkElectronics" value="1" class="chkSkill" /><span data-i18n="electronics">Electronique</span>
-                </div>
+                <input type="checkbox" name="attr_chkElectronics" value="1" class="chkSkill" /><span data-i18n="electronics">Electronique</span>
                 <input type="checkbox" name="attr_chkEquitation" value="1" class="chkSkill" checked /><span data-i18n="equitation">Équitation</span>
                 <input type="checkbox" name="attr_chkIntimidation" value="1" class="chkSkill" checked /><span data-i18n="intimidation">Intimidation</span>
-                <div class="SheetSaWo">
-                    <input type="checkbox" name="attr_chkFocus" value="1" class="chkSkill" /><span data-i18n="focus">Focus</span>
-                </div>
-                <div class="SheetSaWo SheetDead SheetLankh SheetInterface SheetParsec SheetBnB">
-                    <input type="checkbox" name="attr_chkFaith" value="1" class="chkSkill" /><span data-i18n="faith">Foi</span>
-                </div>
-                <div class="SheetSaWo SheetInterface SheetParsec">
-                    <input type="checkbox" name="attr_chkHacking" value="1" class="chkSkill" /><span data-i18n="hacking">Hacking</span>
-                </div>
+                <input type="checkbox" name="attr_chkFocus" value="1" class="chkSkill" /><span data-i18n="focus">Focus</span>
+                <input type="checkbox" name="attr_chkFaith" value="1" class="chkSkill" /><span data-i18n="faith">Foi</span>
+                <input type="checkbox" name="attr_chkHacking" value="1" class="chkSkill" /><span data-i18n="hacking">Hacking</span>
                 <input type="checkbox" name="attr_chkJeu" value="1" class="chkSkill" checked /><span data-i18n="jeu">Jeu</span>
-                <div class="SheetSaWo SheetDead SheetLankh SheetInterface SheetParsec SheetBnB">
-                    <input type="checkbox" name="attr_chkLanguage" value=1 class="chkSkill" checked/><span data-i18n="language">Langue</span>
-                </div>
+                <input type="checkbox" name="attr_chkLanguage" value=1 class="chkSkill" checked/><span data-i18n="language">Langue</span>
                 <input type="checkbox" name="attr_chkNavigation" value="1" class="chkSkill" checked /><span data-i18n="navigation">Navigation</span>
-                <div class="SheetSaWo SheetDead SheetLankh SheetInterface SheetParsec SheetBnB">
-                    <input type="checkbox" name="attr_chkOccultism" value="1" class="chkSkill" /><span data-i18n="occult">Occultisme</span>
-                </div>
+                <input type="checkbox" name="attr_chkOccultism" value="1" class="chkSkill" /><span data-i18n="occult">Occultisme</span>
                 <input type="checkbox" name="attr_chkPilotage" value="1" class="chkSkill" checked /><span data-i18n="pilotage">Pilotage</span>
-                <div class="SheetSaWo SheetDead SheetLankh SheetInterface SheetParsec SheetBnB">
-                    <input type="checkbox" name="attr_chkPsionic" value="1" class="chkSkill" /><span data-i18n="psionics">Psionique</span>
-                </div>
+                <input type="checkbox" name="attr_chkPsionic" value="1" class="chkSkill" /><span data-i18n="psionics">Psionique</span>
                 <input type="checkbox" name="attr_chkRecherche" value="1" class="chkSkill" checked /><span data-i18n="recherche">Recherche</span>
-                <div class="SheetSaWo SheetDead SheetLankh SheetInterface SheetParsec SheetBnB">
-                    <input type="checkbox" name="attr_chkReparation" value="1" class="chkSkill" checked /><span data-i18n="reparation">Réparation</span>
-                </div>
+                <input type="checkbox" name="attr_chkReparation" value="1" class="chkSkill" checked /><span data-i18n="reparation">Réparation</span>
                 <input type="checkbox" name="attr_chkSarcasme" value="1" class="chkSkill" checked /><span data-i18n="sarcasme">Sarcasme</span>
-                <div class="SheetSaWo SheetDead SheetLankh SheetInterface SheetParsec SheetBnB">
-                    <input type="checkbox" name="attr_chkScience" value="1" class="chkSkill" checked /><span data-i18n="science">Science</span>
-                </div>
-                <div class="SheetSaWo SheetDead">
-                    <input type="checkbox" name="attr_chkWeirdScience" value="1" class="chkSkill" /><span data-i18n="weirdscience">Science Etrange</span>
-                </div>
+                <input type="checkbox" name="attr_chkScience" value="1" class="chkSkill" checked /><span data-i18n="science">Science</span>
+                <input type="checkbox" name="attr_chkWeirdScience" value="1" class="chkSkill" /><span data-i18n="weirdscience">Science Etrange</span>
                 <input type="checkbox" name="attr_chkSoins" value="1" class="chkSkill" checked /><span data-i18n="soins">Soins</span>
-                <div class="SheetSaWo SheetLankh SheetBnB">
-                    <input type="checkbox" name="attr_chkSpellcasting" value="1" class="chkSkill" /><span data-i18n="spellcasting">Sorcellerie</span>
-                </div>
+                <input type="checkbox" name="attr_chkSpellcasting" value="1" class="chkSkill" /><span data-i18n="spellcasting">Sorcellerie</span>
                 <input type="checkbox" name="attr_chkSurvie" value="1" class="chkSkill" checked /><span data-i18n="survie">Survie</span>
                 <input type="checkbox" name="attr_chkTir" value="1" class="chkSkill" checked /><span data-i18n="tir">Tir</span>
                 <input type="checkbox" name="attr_chkAcademics" value="1" class="chkSkill" checked /><span data-i18n="academics">Universalis</span>
