@@ -1261,11 +1261,11 @@
                         <OPTION value="1d10" data-i18n="d10">d10</OPTION>
                         <OPTION value="1d12" data-i18n="d12">d12</OPTION>
                     </SELECT> 
-                    <div class="input">
+                    <div>
                         <div class="redtitle2" style="display: inline-block;width: 140px;" data-i18n="tap_rank">Rang</div>
                     </div>
                     <div class="input">
-                        <input type="" style="width: 260px;" name="attr_taprankname" data-i18n-placeholder="tapRank" placeholder="Rang du tap" />
+                        <input type="text" style="width: 260px;" name="attr_taprankname" data-i18n-placeholder="tapRank" placeholder="Rang du tap" />
                     </div>
                     <div>
                         <div class="redtitle2" style="display: inline-block;width: 140px;" data-i18n="tap_range">Portée du TAP</div>
@@ -1279,9 +1279,9 @@
                     <fieldset class="repeating_tapSkill">
                             <div class="input">
                                 <button type="roll" name="Btrel-TapSkill" class="btRolrel" value="&{template:sawo} {{name=@{tapSkill_name}}} {{perso=@{character_name}}} {{relances=[[  { floor( ( { { 1d@{tapSkill_de}!![@tapSkill_name}],@{sprite_joker_de}!![@{text_joker}]}kh1 + @{rollmodquery} } ) /(@{rolldiffquery}), 0d0 }kh1 - 1 ]]}} ">&nbsp;</button>
-                                <button type="roll" name="Btjet-TapSkill" class="btRoljet" value="&{template:sawo} {{name=@{tapSkill_name}}} {{perso=@{character_name}}} {{jet=[[{ 1d@{tapSkill_de}!![@{tapSkill_name}],@{sprit_joker_de}!![@{text_joker}]}kh1 + @{rollmodquery}]]}} ">&nbsp;</button>
+                                <button type="roll" name="Btjet-TapSkill" class="btRoljet" value="&{template:sawo} {{name=@{tapSkill_name}}} {{perso=@{character_name}}} {{jet=[[{ 1d@{tapSkill_de}!![@{tapSkill_name}],@{sprite_joker_de}!![@{text_joker}]}kh1 + @{rollmodquery}]]}} ">&nbsp;</button>
                                 <button type="roll" name="BtBrut-TapSkill" class="btRolbrut" value="/em @{character_name} @{text_jet-de} @{tapSkill_name}&#010;/roll { 1d@{tapSkill_de}!![@{tapSkill_name}],@{sprite_joker_de}!![@{text_joker}]}kh1 + @{rollmodquery}">&nbsp;</button>
-                                <input type="text" class="compspe" style="width: 200px;" name="attr_tapSkill_name" data-i18n-placeholder="tapSkillName" placeholder="TAP Skill" />
+                                <input type="text" class="compspe" name="attr_tapSkill_name" data-i18n-placeholder="tapSkillName" placeholder="TAP Skill" />
                                 <SELECT name="attr_tapSkill_de" class="selde">
                                     <OPTION value="4" SELECTED data-i18n="d4">&nbsp;d4</OPTION>
                                     <OPTION value="6" data-i18n="d6">&nbsp;d6</OPTION>
