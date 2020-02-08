@@ -278,8 +278,8 @@
         });
         // === CARACS DÉRIVÉES 
         // Parade 
-        on("change:combat_de change:combat_bonus change: parade_bonus ", function() {
-            getAttrs(["combat_de ", "combat_bonus ", "parade_bonus "], function(values) {
+        on("change:combat_de change:combat_bonus change:parade_bonus ", function() {
+            getAttrs(["combat_de", "combat_bonus", "parade_bonus"], function(values) {
                 setAttrs({
                     parade_base: 2 + Math.floor((parseInt(values.combat_de) + parseInt(values.combat_bonus)) / 2),
                     parade: parseInt(values.parade_bonus) +
