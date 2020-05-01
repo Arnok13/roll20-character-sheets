@@ -532,6 +532,16 @@ input[type=radio].sheet-chkSheetCrystal:checked~div.sheet-main input[type="check
     color: darkgreen;
 }
 
+input[type=radio].sheet-chkSheetAchtung:checked~div.sheet-main input[type="checkbox"].sheet-loupe:hover+span,
+input[type=radio].sheet-chkSheetAchtung:checked~div.sheet-main input[type="checkbox"].sheet-loupe:checked+span {
+    color: rgb(100, 77, 0);
+}
+
+input[type=radio].sheet-chkSheetAchtung:checked~div.sheet-main input[type="checkbox"].sheet-loupe:hover+span,
+input[type=radio].sheet-chkSheetAchtung:checked~div.sheet-main input[type="checkbox"].sheet-loupe:checked+span {
+    color:cadetblue;
+}
+
 
 /************************************** INPUTS ***************************/
 
@@ -786,6 +796,13 @@ input[type=radio].sheet-chkSheetCrystal:checked~div.sheet-main button[type="roll
     color: darkgreen;
 }
 
+input[type=radio].sheet-chkSheetAchtung:checked~div.sheet-main button[type="roll"].sheet-btRolrel:hover:before,
+input[type=radio].sheet-chkSheetAchtung:checked~div.sheet-main button[type="roll"].sheet-btRoljet:hover:before,
+input[type=radio].sheet-chkSheetAchtung:checked~div.sheet-main button[type="roll"].sheet-btRolbrut:hover:before {
+    color:rgb(139, 102, 0);
+}
+
+
 button[type="roll"].sheet-btRolrel:hover,
 button[type="roll"].sheet-btRoljet:hover,
 button[type="roll"].sheet-btRolbrut:hover,
@@ -832,6 +849,13 @@ input[type=radio].sheet-chkSheetCrystal:checked~div.sheet-main button[type="roll
 input[type=radio].sheet-chkSheetCrystal:checked~div.sheet-main button[type="roll"].sheet-btRolbrut:hover {
     border-color: darkgreen;
 }
+
+input[type=radio].sheet-chkSheetAchtung:checked~div.sheet-main button[type="roll"].sheet-btRolrel:hover,
+input[type=radio].sheet-chkSheetAchtung:checked~div.sheet-main button[type="roll"].sheet-btRoljet:hover,
+input[type=radio].sheet-chkSheetAchtung:checked~div.sheet-main button[type="roll"].sheet-btRolbrut:hover {
+    border-color:rgb(90, 83, 83);
+}
+
 
 input[type=checkbox].sheet-chkRolrel:checked~div.sheet-main button[type=roll].sheet-btRolrel,
 input[type=checkbox].sheet-chkRolrel:checked~div.sheet-main button[type=roll].sheet-btRolrelDefault {
@@ -894,6 +918,10 @@ input[type=radio].sheet-chkSheetParsec:checked~div.sheet-main button[type="roll"
 
 input[type=radio].sheet-chkSheetCrystal:checked~div.sheet-main button[type="roll"].sheet-btDesc:hover {
     color: darkgreen;
+}
+
+input[type=radio].sheet-chkSheetAchtung:checked~div.sheet-main button[type="roll"].sheet-btDesc:hover {
+    color:rgb(90, 83, 83);
 }
 
 
@@ -1018,6 +1046,11 @@ input[type=radio].sheet-chkSheetCrystal:checked~div.sheet-main {
     background: linear-gradient(rgb(92, 123, 91), #709675, rgb(149, 180, 149), rgb(186, 226, 189));
 }
 
+input[type=radio].sheet-chkSheetAchtung:checked~div.sheet-main {
+    background: linear-gradient(rgb(119, 97, 50), #968c70, rgb(180, 174, 149), rgb(226, 217, 186));
+}
+
+
 div.sheet-configuration {
     display: none;
     width: 100%;
@@ -1080,6 +1113,11 @@ input[type=radio].sheet-chkSheetCrystal:checked~div.sheet-main div.sheet-redtitl
     color: rgb(56, 128, 66);
 }
 
+input[type=radio].sheet-chkSheetAchtung:checked~div.sheet-main div.sheet-redtitle1 {
+    color: rgb(128, 105, 56);
+}
+
+
 div.sheet-redtitle2 {
     font-family: Candal;
     font-size: 12px;
@@ -1117,6 +1155,11 @@ input[type=radio].sheet-chkSheetCrystal:checked~div.sheet-main div.sheet-redtitl
     color: rgb(97, 123, 91);
 }
 
+input[type=radio].sheet-chkSheetAchtung:checked~div.sheet-main div.sheet-redtitle2 {
+    color: rgb(123, 115, 91);
+}
+
+
 div.sheet-redtitle3 {
     display: inline-block;
     font-family: Candal;
@@ -1150,6 +1193,11 @@ input[type=radio].sheet-chkSheetParsec:checked~div.sheet-main div.sheet-redtitle
 input[type=radio].sheet-chkSheetCrystal:checked~div.sheet-main div.sheet-redtitle3 {
     color: rgb(95, 123, 91);
 }
+
+input[type=radio].sheet-chkSheetAchtung:checked~div.sheet-main div.sheet-redtitle3 {
+    color: rgb(123, 117, 91);
+}
+
 
 div.sheet-colblock {
     background-color: white;
@@ -1292,6 +1340,7 @@ input[type=radio].sheet-chkSheetBnB,
 input[type=radio].sheet-chkSheetInterface,
 input[type=radio].sheet-chkSheetParsec,
 input[type=radio].sheet-chkSheetCrystal,
+input[type=radio].sheet-chkSheetAchtung,
 input[type=checkbox].sheet-dispLogo,
 input[type=checkbox].sheet-persoBless1,
 input[type=checkbox].sheet-persoBless2,
@@ -1479,7 +1528,8 @@ div.sheet-SheetLankh,
 div.sheet-SheetBnB,
 div.sheet-SheetInterface,
 div.sheet-SheetParsec,
-div.sheet-SheetCrystal {
+div.sheet-SheetCrystal,
+div.sheet-SheetAchtung {
     display: none;
 }
 
@@ -1516,6 +1566,11 @@ input[type=radio].sheet-chkSheetParsec:checked~div.sheet-main div.sheet-SheetPar
 input[type=radio].sheet-chkSheetCrystal:checked~div.sheet-main div.sheet-SheetCrystal {
     display: inline-block;
 }
+
+input[type=radio].sheet-chkSheetAchtung:checked~div.sheet-main div.sheet-SheetAchtung {
+    display: inline-block;
+}
+
 
 input[type=radio].sheet-chkMoney:checked~div.sheet-main div.sheet-Money {
     display: inline-block;
