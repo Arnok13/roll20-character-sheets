@@ -3,7 +3,7 @@
     <!-- TABS -->
     <input type="radio" name="attr_chkvie" value="0" class="onglmain" data-i18n-title="feuille" title="Feuille" checked /><span data-i18n="feuille">Feuille</span>
     <input type="radio" name="attr_chkvie" value="1" class="onglconfig" title="Configuration" /><span data-i18n="configuration">Configuration</span>
-    <span style="display:inline-block;width:150px;text-align: center;color: #888888;font-size: 0.9em;">SWADE v1.0 (01/18/2020)</span>
+    <span style="display:inline-block;width:150px;text-align: center;color: #888888;font-size: 0.9em;">SWADE v1.01 (05/02/2020)</span>
     <!-- Styling -->
     <input type="radio" name="attr_sheetDead" value="0" class="chkSheetSaWo" checked />
     <!-- Savage Worlds -->
@@ -19,7 +19,8 @@
     <!-- The Last Parsec -->
     <input type="radio" name="attr_sheetDead" value="6" class="chkSheetCrystal" />
     <!-- Crystal Heart -->
-    <input type="radio" name="attr_sheetAchtung" value="6" class="chkSheetAchtung" />
+    <input type="radio" name="attr_sheetDead" value="7" class="chkSheetAchtung" />
+    <!-- Achtung! Cthulhu -->
 
     <!-- hidden settings -->
     <input type="checkbox" name="attr_sheetStyle" value="0" class="chkRolrel" />
@@ -74,6 +75,9 @@
     <input type="checkbox" name="attr_chkSurvie" class="chkSurvie" value="1" checked />
     <input type="checkbox" name="attr_chkTir" class="chkTir" value="1" checked />
     <input type="checkbox" name="attr_chkAcademics" class="chkAcademics" value="1" checked />
+    <input type="checkbox" name="attr_chkMythos" class="chkMythos" value="1" checked />
+    <input type="checkbox" name="attr_chkPsychology" class="chkPsychology" value="1" checked />
+
     <!-- Real start of the sheet -->
     <div class="main"> <!--- ***  MAIN *** -->
         <div class="mycol"> <!-- ** COL1 ** -->
@@ -751,6 +755,23 @@
                             <input type="number" class="selde" name="attr_language_bonus" value="-2" min="-9" />
                         </div>
                         <!-- FIN LANGUAGE -->
+
+                        <!-- Mythos -->
+                        <div class="input chkMythos">
+                            <button type="roll" name="Btrel-Mythos" class="btRolrel" value="@{relRollMythos}" data-i18n="mythos">Mythe</button>
+                            <button type="roll" name="Btjet-Mythos" class="btRoljet" value="@{jetRollMythos}" data-i18n="mythos">Mythe</button>
+                            <button type="roll" name="BtBrut-Mythos" class="btRolbrut" value="/em @{character_name} @{text_jet-de} @{text_mythos}&#010;/roll @{RollMythos}" data-i18n="mythos">Navigation</button>
+                            <div class="attcomptext" data-i18n="int-u">INT</div>
+                            <SELECT name="attr_mythos_de" class="selde">
+                                <OPTION value="4" SELECTED data-i18n="d4">&nbsp;d4</OPTION>
+                                <OPTION value="6" data-i18n="d6">&nbsp;d6</OPTION>
+                                <OPTION value="8" data-i18n="d8">&nbsp;d8</OPTION>
+                                <OPTION value="10" data-i18n="d10">d10</OPTION>
+                                <OPTION value="12" data-i18n="d12">d12</OPTION>
+                            </SELECT> +
+                            <input type="number" class="selde" name="attr_mythos_bonus" value="-2" min="-9" />
+                        </div>
+                        <!-- End Mythos -->
                         <div class="input chkNavigation">
                             <!-- NAVIGATION -->
                             <button type="roll" name="Btrel-Navigation" class="btRolrel" value="@{relRollNavigation}" data-i18n="navigation">Navigation</button>
@@ -815,6 +836,24 @@
                             <input type="number" class="selde" name="attr_psionics_bonus" value="-2" min="-9" />
                         </div>
                         <!-- FIN PSIONICS -->
+
+                        <!-- Psychology -->
+                        <div class="input chkPsychology">
+                            <button type="roll" name="Btrel-Psychology" class="btRolrel" value="@{relRollPsychology}" data-i18n="psychology">Psycho</button>
+                            <button type="roll" name="Btjet-Psychology" class="btRoljet" value="@{jetRollPsychology}" data-i18n="psychology">Psycho</button>
+                            <button type="roll" name="BtBrut-Psychology" class="btRolbrut" value="/em @{character_name} @{text_jet-de} @{text_psychology}&#010;/roll @{RollPsychology}" data-i18n="psionics">Psionique</button>
+                            <div class="attcomptext" data-i18n="int-u">INT</div>
+                            <SELECT name="attr_psychology_de" class="selde">
+                                <OPTION value="4" SELECTED data-i18n="d4">&nbsp;d4</OPTION>
+                                <OPTION value="6" data-i18n="d6">&nbsp;d6</OPTION>
+                                <OPTION value="8" data-i18n="d8">&nbsp;d8</OPTION>
+                                <OPTION value="10" data-i18n="d10">d10</OPTION>
+                                <OPTION value="12" data-i18n="d12">d12</OPTION>
+                            </SELECT> +
+                            <input type="number" class="selde" name="attr_psychology_bonus" value="-2" min="-9" />
+                        </div>
+                        <!-- End Psychology -->
+
                         <div class="input chkReparation">
                             <!-- RÉPARATION -->
                             <button type="roll" name="Btrel-Reparation" class="btRolrel" value="@{relRollReparation}" data-i18n="reparation">Réparation</button>
@@ -1027,7 +1066,7 @@
                         <button type="roll" name="Btjet-Language2" class="btRoljet" value="&{template:sawo} {{etat=[[@{templateetat}]]}} {{name=@{language_name2}}} {{perso=@{character_name}}} {{secoue=[[@{secoue}]]}} {{distracted=[[@{distracted}]]}} {{vulnerable=[[@{vulnerable}]]}} {{entangled=[[@{entangled}]]}} {{bound=[[@{bound}]]}} {{sonne=[[@{sonne}]]}} {{jet=[[{ 1d@{language_de2}!![@{language_name2}],@{joker_de}!![@{text_joker}]}kh1 + (@{language_bonus2})[@{text_bonus}] - @{malusblessures}[@{text_blessures}] - @{malusfatigue}[@{text_fatigue}] - @{malusDistracted}[@{text_distracted}] + @{rollmodquery}]]}} {{blessures=[[@{blessures}]]}} {{fatigue=[[@{fatigue}]]}}">&nbsp;</button>
                         <button type="roll" name="BtBrut-Language2" class="btRolbrut" value="/em @{character_name} @{text_jet-de} @{language_name2}&#010;/roll { 1d@{language_de2}!![@{comp_nom}],@{joker_de}!![@{text_joker}]}kh1 + (@{language_bonus2})[@{text_bonus}] - @{malusblessures}[@{text_blessures}] - @{malusfatigue}[@{text_fatigue}] - @{malusDistracted}[@{text_distracted}] + @{rollmodquery}">&nbsp;</button>
                         <input type="text" class="compspe" name="attr_language_name2" data-i18n-placeholder="language" placeholder="Langue" />
-                        <div class="attcomptext" data-i18n="int-u">(INT)</div>
+                        <div class="attcomptext" data-i18n="int-u">INT</div>
                         <SELECT name="attr_language_de2" class="selde">
                             <OPTION value="4" data-i18n="d4">&nbsp;d4</OPTION>
                             <OPTION value="6" SELECTED data-i18n="d6">&nbsp;d6</OPTION>
@@ -1116,7 +1155,7 @@
                         <div class="comptext" data-i18n="allure">ALLURE</div>
                         <input type="number" name="attr_allure_base" value="6" data-i18n-title="base-allure" title="Valeur d'allure de base" /> +
                         <input type="number" name="attr_allure_bonus" value="0" data-i18n-title="bonus-allure" title="Bonus d'allure" /> =
-                        <input type="number" name="attr_allure" value="[[@{allure_base}+(@{allure_bonus})-@{blessures}]]" data-i18n-title="total-allure" title="allure totale" disabled />
+                        <input type="number" name="attr_allure" value="[[@{allure_base}+(@{allure_bonus})-@{blessures}]]" data-i18n-title="total-allure" title="allure totale" readonly />
                     </div>
                     <div class="input">
                         <button type="roll" name="Btrel-Course" class="btRolrel" value="@{relRollCourse}" data-i18n="course">Course</button>
@@ -1141,6 +1180,16 @@
                         <input type="number" name="attr_resistance_base" value="4" data-i18n-title="base-resistance" title="Valeur de Résistance de base" readonly /> +
                         <input type="number" name="attr_resistance_bonus" value="0" data-i18n-title="bonus-resistance" title="Armure (torse) et autres bonus de vigueur" /> =
                         <input type="number" name="attr_resistance" value="4" data-i18n-title="total-resistance" title="Résistance totale" readonly />
+                    </div>
+                    <div class="input SheetAchtung">
+                        <div class="comptext" data-i18n="sanity-u">Sté Mentale</div>
+                        <input type="number" name="attr_sanity_base" value="4" data-i18n-title="base-sanity" title="Valeur de santé mentale" readonly /> +
+                        <input type="number" name="attr_sanity_bonus" value="0" data-i18n-title="bonus-sanity" title="bonus de santé mentale" /> =
+                        <input type="number" name="attr_sanity" value="4" data-i18n-title="total-sanity" title="Santé mentale totale" readonly />
+                    </div>
+                    <div class="input SheetAchtung">
+                        <div class="comptext" data-i18n="dementia-u">Pts Démence</div>
+                        <input type="number" name="attr_dementia" value="0" data-i18n-title="dementia" title="valeur de démence" />
                     </div>
                     <div class="input SheetInterface">
                         <div class="comptext" data-i18n="strain-u">Cyber Tension</div>
@@ -1336,7 +1385,8 @@
                 <input type="checkbox" name="attr_dispPerso" class="dispchk" data-i18n-title="show-hide-content" title="Afficher/masquer le contenu" checked /><span class="dispchk">E</span>
                 <div class="dispchk">
                     <div class="input">
-                        <div class="blacktext1" style="width:60px;" data-i18n="pseudo">Pseudo: </div><input type="text" name="attr_pseudo" style="width:205px;" /></div>
+                        <div class="blacktext1" style="width:60px;" data-i18n="pseudo">Pseudo: </div><input type="text" name="attr_pseudo" style="width:195px;" />
+                    </div>
                     <div class="input">
                         <div class="blacktext1" style="width:50px;" data-i18n="taille">Taille: </div><input type="text" name="attr_taille" style="width:70px;" />
                         <div class="blacktext1" style="width:50px;" data-i18n="poids">Poids: </div><input type="text" name="attr_poids" style="width:70px;" />
@@ -1348,6 +1398,12 @@
                     <div class="input">
                         <div class="blacktext1" style="width:50px;" data-i18n="race">Race: </div><input type="text" name="attr_race" style="width:70px;" />
                         <div class="blacktext1" style="width:50px;" data-i18n="role">Rôle: </div><input type="text" name="attr_role" style="width:70px;" />
+                    </div>
+                    <div class="input sheetAchtung">
+                        <div class="blacktext1" style="width:60px;" data-i18n="service">Service : </div><input type="text" name="attr_service" style="width:195px;" />
+                    </div>
+                    <div class="input SheetAchtung">
+                        <div class="blacktext1" style="width:80px;" data-i18n="occupation">Occupat° : </div><input type="text" name="attr_occupation" style="width:175px;" />
                     </div>
                     <div class="blacktext1" data-i18n="signes">Signes particuliers: </div>
                     <div class="input">
@@ -1796,6 +1852,8 @@
                 <input type="checkbox" name="attr_chkSurvie" value="1" class="chkSkill" checked /><span data-i18n="survie">Survie</span>
                 <input type="checkbox" name="attr_chkTir" value="1" class="chkSkill" checked /><span data-i18n="tir">Tir</span>
                 <input type="checkbox" name="attr_chkAcademics" value="1" class="chkSkill" checked /><span data-i18n="academics">Universalis</span>
+                <input type="checkbox" name="attr_chkMythos" value="1" class="chkSkill" checked /><span data-i18n="mythos">Mythe</span>
+                <input type="checkbox" name="attr_chkPsychology" value="1" class="chkSkill" checked /><span data-i18n="psychology">Psycho</span>
             </div>
         </div>
     </div>
@@ -1875,6 +1933,7 @@
     <input type="hidden" name="attr_text_distracted" value="" />
     <input type="hidden" name="attr_text_ingeneering" value="" />
     <input type="hidden" name="attr_text_crystalpowermodifier" value=""/>
+    <input type="hidden" name="attr_text_mythos" value=""/>
 
     <!-- Roll querries -->
     <input type="hidden" name="attr_rollmodquery" value="(?{@{text_modificateur}|0})[@{text_modificateur}]" />
@@ -2054,6 +2113,11 @@
     <input type="hidden" name="attr_relRollJeu" value="&{template:sawo} {{etat=[[@{templateetat}]]}} {{name=@{text_jeu}}} {{perso=@{character_name}}} {{secoue=[[@{secoue}]]}} {{distracted=[[@{distracted}]]}} {{vulnerable=[[@{vulnerable}]]}} {{entangled=[[@{entangled}]]}} {{bound=[[@{bound}]]}} {{sonne=[[@{sonne}]]}} {{relances=[[  { floor( ( { @{RollJeu} } ) /(@{rolldiffquery}), 0d0 }kh1 - 1 ]]}} {{blessures=[[@{blessures}]]}} {{fatigue=[[@{fatigue}]]}}" />
     <input type="hidden" name="attr_jetRollJeu" value="&{template:sawo} {{etat=[[@{templateetat}]]}} {{name=@{text_jeu}}} {{perso=@{character_name}}} {{secoue=[[@{secoue}]]}} {{distracted=[[@{distracted}]]}} {{vulnerable=[[@{vulnerable}]]}} {{entangled=[[@{entangled}]]}} {{bound=[[@{bound}]]}} {{sonne=[[@{sonne}]]}} {{jet=[[@{RollJeu}]]}} {{blessures=[[@{blessures}]]}} {{fatigue=[[@{fatigue}]]}}" />
 
+    <!-- Mythos -->
+    <input type="hidden" name="attr_RollMythos" value="{ 1d@{mythos_de}!![Mythos],@{joker_de}!![@{text_joker}]}kh1 + (@{mythos_bonus})[@{text_bonus}] - @{malusDistracted}[@{text_distracted}] + @{rollmodquery}" />
+    <input type="hidden" name="attr_relRollMythos" value="&{template:sawo} {{etat=[[@{templateetat}]]}} {{name=@{text_mythos}}} {{perso=@{character_name}}} {{secoue=[[@{secoue}]]}} {{distracted=[[@{distracted}]]}} {{vulnerable=[[@{vulnerable}]]}} {{entangled=[[@{entangled}]]}} {{bound=[[@{bound}]]}} {{sonne=[[@{sonne}]]}} {{relances=[[  { floor( ( { @{RollMythos } ) /(@{rolldiffquery}), 0d0 }kh1 - 1 ]]}} {{blessures=[[@{blessures}]]}} {{fatigue=[[@{fatigue}]]}} {{encombrement=[[@{encombrement}]]}}" />
+    <input type="hidden" name="attr_jetRollMythos" value="&{template:sawo} {{etat=[[@{templateetat}]]}} {{name=@{text_mythos}}} {{perso=@{character_name}}} {{secoue=[[@{secoue}]]}} {{distracted=[[@{distracted}]]}} {{vulnerable=[[@{vulnerable}]]}} {{entangled=[[@{entangled}]]}} {{bound=[[@{bound}]]}} {{sonne=[[@{sonne}]]}} {{jet=[[@{RollMythos}]]}} {{blessures=[[@{blessures}]]}} {{fatigue=[[@{fatigue}]]}} {{encombrement=[[@{encombrement}]]}}" />
+
     <!-- Navigation -->
     <input type="hidden" name="attr_RollNavigation" value="{ 1d@{navigation_de}!![Navigation],@{joker_de}!![@{text_joker}]}kh1 + (@{navigation_bonus})[@{text_bonus}] - @{malusblessures}[@{text_blessures}] - @{malusfatigue}[@{text_fatigue}] - @{malusDistracted}[@{text_distracted}] - @{encombrement}[@{text_encombrement}] + @{rollmodquery}" />
     <input type="hidden" name="attr_relRollNavigation" value="&{template:sawo} {{etat=[[@{templateetat}]]}} {{name=@{text_navigation}}} {{perso=@{character_name}}} {{secoue=[[@{secoue}]]}} {{distracted=[[@{distracted}]]}} {{vulnerable=[[@{vulnerable}]]}} {{entangled=[[@{entangled}]]}} {{bound=[[@{bound}]]}} {{sonne=[[@{sonne}]]}} {{relances=[[  { floor( ( { @{RollNavigation} } ) /(@{rolldiffquery}), 0d0 }kh1 - 1 ]]}} {{blessures=[[@{blessures}]]}} {{fatigue=[[@{fatigue}]]}} {{encombrement=[[@{encombrement}]]}}" />
@@ -2068,6 +2132,11 @@
     <input type="hidden" name="attr_RollPsionics" value="{ 1d@{psionics_de}!![Psionics],@{joker_de}!![@{text_joker}]}kh1 + (@{psionics_bonus})[@{text_bonus}] - @{malusblessures}[@{text_blessures}] - @{malusfatigue}[@{text_fatigue}] - @{malusDistracted}[@{text_distracted}] + @{rollmodquery}" />
     <input type="hidden" name="attr_relRollPsionics" value="&{template:sawo} {{etat=[[@{templateetat}]]}} {{name=@{text_psionics}}} {{perso=@{character_name}}} {{secoue=[[@{secoue}]]}} {{distracted=[[@{distracted}]]}} {{vulnerable=[[@{vulnerable}]]}} {{entangled=[[@{entangled}]]}} {{bound=[[@{bound}]]}} {{sonne=[[@{sonne}]]}} {{relances=[[  { floor( ( { @{RollPsionics} } ) /(@{rolldiffquery}), 0d0 }kh1 - 1 ]]}} {{blessures=[[@{blessures}]]}} {{fatigue=[[@{fatigue}]]}}" />
     <input type="hidden" name="attr_jetRollPsionics" value="&{template:sawo} {{etat=[[@{templateetat}]]}} {{name=@{text_psionics}}} {{perso=@{character_name}}} {{secoue=[[@{secoue}]]}} {{distracted=[[@{distracted}]]}} {{vulnerable=[[@{vulnerable}]]}} {{entangled=[[@{entangled}]]}} {{bound=[[@{bound}]]}} {{sonne=[[@{sonne}]]}} {{jet=[[@{RollPsionics}]]}} {{blessures=[[@{blessures}]]}} {{fatigue=[[@{fatigue}]]}}" />
+
+    <!-- Psychology -->
+    <input type="hidden" name="attr_RollPsychology" value="{ 1d@{psychology_de}!![Psychology],@{joker_de}!![@{text_joker}]}kh1 + (@{psychology_bonus})[@{text_bonus}] - @{malusDistracted}[@{text_distracted}] + @{rollmodquery}" />
+    <input type="hidden" name="attr_relRollPsychology" value="&{template:sawo} {{etat=[[@{templateetat}]]}} {{name=@{text_psychology}}} {{perso=@{character_name}}} {{secoue=[[@{secoue}]]}} {{distracted=[[@{distracted}]]}} {{vulnerable=[[@{vulnerable}]]}} {{entangled=[[@{entangled}]]}} {{bound=[[@{bound}]]}} {{sonne=[[@{sonne}]]}} {{relances=[[  { floor( ( { @{RollPsychology} } ) /(@{rolldiffquery}), 0d0 }kh1 - 1 ]]}} {{blessures=[[@{blessures}]]}} {{fatigue=[[@{fatigue}]]}}" />
+    <input type="hidden" name="attr_jetRollPsychology" value="&{template:sawo} {{etat=[[@{templateetat}]]}} {{name=@{text_psychology}}} {{perso=@{character_name}}} {{secoue=[[@{secoue}]]}} {{distracted=[[@{distracted}]]}} {{vulnerable=[[@{vulnerable}]]}} {{entangled=[[@{entangled}]]}} {{bound=[[@{bound}]]}} {{sonne=[[@{sonne}]]}} {{jet=[[@{RollPsychology}]]}} {{blessures=[[@{blessures}]]}} {{fatigue=[[@{fatigue}]]}}" />
 
     <!-- Perception -->
     <input type="hidden" name="attr_RollPerception" value="{ 1d@{perception_de}!![Perception],@{joker_de}!![@{text_joker}]}kh1 + (@{perception_bonus})[@{text_bonus}] - @{malusblessures}[@{text_blessures}] - @{malusfatigue}[@{text_fatigue}] - @{malusDistracted}[@{text_distracted}] + @{rollmodquery}" />

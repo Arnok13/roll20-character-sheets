@@ -71,6 +71,7 @@
                 update["text_crystalpowermodifier"] = getTranslationByKey("text_crystalpowermodifier");
                 update["text_requisition"] = getTranslationByKey("text_requisition");
                 update["text_streetcred"] = getTranslationByKey("text_streetcred");
+                update["text_mythos"] = getTranslationByKey("text_mythos");
 
                 // Version
                 var vers = parseFloat(values.sheetVersion) || 0;
@@ -298,6 +299,16 @@
                     });
                 });
         });
+        // Santé Mentale
+        on("change:ame_de change:ame_bonus change:sanity_bonus change:dementia", function() {
+            getAttrs(["ame_de", "ame_bonus", "sanity_bonus", "dementia"],
+                function(values) {
+                    setAttrs({
+                        sanity_base: 2 + Math.floor((parseInt(values.ame_de) + parseInt(values.ame_bonus)) / 2),
+                        sanity: parseInt(values.sanity_bonus) + 2 + Math.floor((parseInt(values.ame_de) + parseInt(values.ame_bonus)) / 2) - parseInt(values.dementia)
+                    });
+                });
+        });
         // Affichage / Masquage toutes compétences 
         on("change:chkAllComp", function(eventinfo) {
             setAttrs({
@@ -327,7 +338,9 @@
                 chkScience: eventinfo.newValue,
                 chkWeirdScience: eventinfo.newValue,
                 chkSpellcasting: eventinfo.newValue,
-                chkAcademics: eventinfo.newValue
+                chkAcademics: eventinfo.newValue,
+                chkMythos: eventinfo.newValue,
+                chkPsychology: eventinfo.newValue,
             });
         });
         // === Inventaire et encombrement 

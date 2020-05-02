@@ -537,12 +537,6 @@ input[type=radio].sheet-chkSheetAchtung:checked~div.sheet-main input[type="check
     color: rgb(100, 77, 0);
 }
 
-input[type=radio].sheet-chkSheetAchtung:checked~div.sheet-main input[type="checkbox"].sheet-loupe:hover+span,
-input[type=radio].sheet-chkSheetAchtung:checked~div.sheet-main input[type="checkbox"].sheet-loupe:checked+span {
-    color:cadetblue;
-}
-
-
 /************************************** INPUTS ***************************/
 
 input {
@@ -1330,6 +1324,8 @@ input[type=checkbox].sheet-chkSpellcasting,
 input[type=checkbox].sheet-chkSurvie,
 input[type=checkbox].sheet-chkTir,
 input[type=checkbox].sheet-chkAcademics,
+input[type=checkbox].sheet-chkMythos,
+input[type=checkbox].sheet-chkPsychology,
 input[type=checkbox].sheet-persoExtra,
 input[type=checkbox].sheet-persoPnj,
 input[type=checkbox].sheet-chkPossessions,
@@ -1386,6 +1382,8 @@ div.sheet-chkSpellcasting,
 div.sheet-chkSurvie,
 div.sheet-chkTir,
 div.sheet-chkAcademics,
+div.sheet-chkMythos,
+div.sheet-chkPsychology,
 div.sheet-chkPossessions {
     display: none;
 }
@@ -1515,6 +1513,14 @@ input[type=checkbox].sheet-chkTir:checked~div.sheet-main div.sheet-chkTir {
 }
 
 input[type=checkbox].sheet-chkAcademics:checked~div.sheet-main div.sheet-chkAcademics {
+    display: block;
+}
+
+input[type=checkbox].sheet-chkMythos:checked~div.sheet-main div.sheet-chkMythos {
+    display: block;
+}
+
+input[type=checkbox].sheet-chkPsychology:checked~div.sheet-main div.sheet-chkPsychology {
     display: block;
 }
 
