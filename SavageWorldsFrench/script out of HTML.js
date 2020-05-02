@@ -305,7 +305,7 @@
                 function(values) {
                     setAttrs({
                         sanity_base: 2 + Math.floor((parseInt(values.ame_de) + parseInt(values.ame_bonus)) / 2),
-                        sanity: parseInt(values.sanity_bonus) + 2 + Math.floor((parseInt(values.ame_de) + parseInt(values.ame_bonus)) / 2) - parseInt(values.dementia)
+                        sanity: parseInt(values.sanity_bonus) + 2 + Math.floor((parseInt(values.ame_de) + parseInt(values.ame_bonus)) / 2))
                     });
                 });
         });

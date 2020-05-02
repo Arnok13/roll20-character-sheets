@@ -303,6 +303,7 @@
     "mythos" : "Mythe",
     "psychology" : "Psycho",
     "text_mythos" : "Mythe",
-    "service" : "Service :",
-    "occupation" : "Occupat° :"
+    "service" : "Service : ",
+    "occupation" : "Occupat° : ",
+    "rank" : "Grade : "
 }
